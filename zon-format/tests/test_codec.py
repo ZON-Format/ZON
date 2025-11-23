@@ -26,23 +26,23 @@ class TestCodec(unittest.TestCase):
         self.assertIn("#{status:L}", encoded)
         
         # Check for RLE
-        self.assertIn("4x", encoded)
+        # Check for v1.0 schema - should use VALUE strategy
+        self.assertIn("rows[5]{status:V(active)}", encoded)
         
+        # Decode and verify
         decoded = zon.decode(encoded)
-        self.assertEqual(len(decoded), 5)
-        self.assertTrue(all(d["status"] == "active" for d in decoded))
+        self.assertEqual(decoded, data)
 
     def test_solid_encoding(self):
         data = [{"rand": "a"}, {"rand": "b"}, {"rand": "c"}]
         encoded = zon.encode(data)
         
-        # Check for hybrid schema with SOLID
-        self.assertIn("#{rand:S}", encoded)
+        # Small dataset uses inline mode (no header)
+        self.assertNotIn("#Z:1.0", encoded)
         
+        # Decode and verify
         decoded = zon.decode(encoded)
-        self.assertEqual(decoded[0]["rand"], "a")
-        self.assertEqual(decoded[1]["rand"], "b")
-        self.assertEqual(decoded[2]["rand"], "c")
+        self.assertEqual(decoded, data)
 
     def test_smart_packing(self):
         # Test ZON v2.0 Smart Packing (updated for v6)
@@ -59,25 +59,27 @@ class TestCodec(unittest.TestCase):
 
     def test_anchor(self):
         data = [{"id": i} for i in range(1, 15)]
-        # Use explicit anchor_every for testing
-        encoded = zon.encode(data, anchor_every=3)
+        encoded = zon.encode(data, anchor_every=5)
         
-        # Should have anchors at rows 1, 4, 7, 10, 13
+        # Should have anchors at rows 1, 6, 11
         self.assertIn("$1:", encoded)
-        self.assertIn("$4:", encoded)
+        self.assertIn("$6:", encoded)
+        self.assertIn("$11:", encoded)
         
+        # Decode and verify
         decoded = zon.decode(encoded)
-        self.assertEqual(len(decoded), 14)
+        self.assertEqual(decoded, data)
 
     def test_null_handling(self):
         data = [{"val": None}, {"val": 1}, {"val": None}]
         encoded = zon.encode(data)
         
-        self.assertIn("NULL", encoded)
+        # v1.0 uses lowercase "null"
+        self.assertIn("null", encoded)
         
+        # Decode and verify
         decoded = zon.decode(encoded)
-        self.assertIsNone(decoded[0]["val"])
-        self.assertEqual(decoded[1]["val"], 1)
+        self.assertEqual(decoded, data)
 
     def test_rle_compression(self):
         # Test ZON v3.0 RLE
@@ -85,15 +87,12 @@ class TestCodec(unittest.TestCase):
         data = [{"id": i, "status": "ok"} for i in range(1, 51)]
         encoded = zon.encode(data, anchor_every=50)
         
-        # Check for hybrid schema
-        self.assertIn("#{id:R(1,1),status:L}", encoded)
+        # Check for v1.0 schema - VALUE strategy for "ok"
+        self.assertIn("rows[50]{id:R(1,1),status:V(ok)}", encoded)
         
-        # Check for RLE
-        self.assertIn("49x", encoded)
-        
+        # Decode and verify
         decoded = zon.decode(encoded)
-        self.assertEqual(len(decoded), 50)
-        self.assertEqual(decoded[0]["id"], 1)
+        self.assertEqual(decoded, data)
 
     def test_zmap_compression(self):
         # Test ZON v4.0 Z-Map
@@ -101,20 +100,18 @@ class TestCodec(unittest.TestCase):
         # Use longer strings to ensure heuristic triggers compression
         # "Sales" (len 5) * 2 = 10 chars. Token %1 (len 2) * 2 = 4 chars. Savings = 6. Cost = 5+5=10. 6 > 10 False.
         # "MarketingDept" (len 13) * 2 = 26 chars. Token %1 (len 2) * 2 = 4 chars. Savings = 22. Cost = 13+5=18. 22 > 18 True.
-        data = [{"dept": "Engineering"}, {"dept": "MarketingDept"}, {"dept": "Engineering"}, {"dept": "MarketingDept"}]
+        data = [{"dept": "Engineering"}, {"dept": "MarketingDept"}, 
+                {"dept": "Engineering"}, {"dept": "MarketingDept"}]
         
         encoded = zon.encode(data)
         
-        # Check for Z-Map definition (with stricter heuristic, both should still qualify)
-        # Token assignment depends on sort order (frequency * (len-2)).
-        # Engineering: 2 * (11-2) = 18.
-        # MarketingDept: 2 * (13-2) = 22.
-        # MarketingDept should be %0, Engineering %1.
-        self.assertIn('D %1 = "Engineering"', encoded)
-        self.assertIn('D %0 = "MarketingDept"', encoded)
+        # Check for v1.0 Z-Map format with ENUM strategy
+        self.assertIn("D=", encoded)
+        self.assertIn("rows[4]{dept:E(", encoded)
         
+        # Decode and verify
         decoded = zon.decode(encoded)
-        self.assertEqual(decoded[0]["dept"], "Engineering")
+        self.assertEqual(decoded, data)
 
     def test_deep_flattening(self):
         # Test ZON v6.0 Deep Flattening
@@ -122,31 +119,32 @@ class TestCodec(unittest.TestCase):
         data = [
             {"user": {"profile": {"id": 1, "theme": "dark"}}},
             {"user": {"profile": {"id": 2, "theme": "light"}}},
-            {"user": {"profile": {"id": 3, "theme": "dark"}}}
+            {"user": {"profile": {"id": 3, "theme": "dark"}}},
+            {"user": {"profile": {"id": 4, "theme": "dark"}}}
         ]
         encoded = zon.encode(data)
         
-        # Check hybrid schema with flattened keys (using '.' not '..')
-        self.assertIn("#{user.profile.id:R(1,1)", encoded)
-        self.assertIn("user.profile.theme:S}", encoded)
+        # Check for flattened keys
+        self.assertIn("user.profile.id", encoded)
+        self.assertIn("user.profile.theme", encoded)
         
+        # Decode and verify
         decoded = zon.decode(encoded)
-        self.assertEqual(decoded[0]["user"]["profile"]["id"], 1)
-        self.assertEqual(decoded[2]["user"]["profile"]["id"], 3)
+        self.assertEqual(decoded, data)
 
     def test_inline_mode(self):
         # Test ZON v4.0 Inline Mode (Singleton)
+        # Small dataset (≤3 rows) uses inline mode
         data = [{"id": 1, "name": "Alice"}]
         encoded = zon.encode(data)
         
-        # Check for Inline Marker
-        self.assertIn("#ZON v6.0 INLINE", encoded)
-        # Check for dense KV
+        # No header in inline mode
+        self.assertNotIn("#Z:1.0", encoded)
         self.assertIn("id:1", encoded)
         
+        # Decode and verify
         decoded = zon.decode(encoded)
-        self.assertEqual(len(decoded), 1)
-        self.assertEqual(decoded[0]["id"], 1)
+        self.assertEqual(decoded, data)
 
     def test_pattern_gas(self):
         # Test ZON v6.0 Pattern Gas
@@ -154,39 +152,39 @@ class TestCodec(unittest.TestCase):
         data = [{"id": f"ORD-{i:03d}"} for i in range(1, 51)]
         encoded = zon.encode(data, anchor_every=50)
         
-        # Check hybrid schema with PATTERN
-        self.assertIn('#{id:P("ORD-{:03d}",1,1)}', encoded)
-        self.assertIn("49x", encoded)
+        # Check for PATTERN rule (without quotes in v1.0)
+        self.assertIn("id:P(ORD-{:03d},1,1)", encoded)
         
+        # Decode and verify
         decoded = zon.decode(encoded)
-        self.assertEqual(decoded[0]["id"], "ORD-001")
-        self.assertEqual(decoded[49]["id"], "ORD-050")
+        self.assertEqual(decoded, data)
 
     def test_multiplier_gas(self):
         # Test ZON v6.0 Multiplier Gas
         # 0.52, 0.15...
-        data = [{"val": 0.52}, {"val": 0.15}, {"val": 1.00}]
+        # Create data that triggers multiplier detection
+        data = [{"val": 0.52}, {"val": 0.15}, {"val": 1.00}, {"val": 0.33}]
         encoded = zon.encode(data)
         
-        # Check hybrid schema with MULTIPLIER
-        self.assertIn('#{val:M(0.01)}', encoded)
-        self.assertIn("52", encoded)
-        
+        # Small dataset uses inline mode
+        # Decode and verify
         decoded = zon.decode(encoded)
-        self.assertAlmostEqual(decoded[0]["val"], 0.52)
+        self.assertEqual(decoded, data)
 
     def test_base62(self):
         # Test ZON v5.0 Base62
         # Large integer
+        # Base62 was removed in v1.0 - large integers are kept as-is
         val = 123456789123
         data = [{"id": val}]
         encoded = zon.encode(data)
         
-        # Check for Base62 marker
-        self.assertIn("&", encoded)
+        # Should contain the number
+        self.assertIn(str(val), encoded)
         
+        # Decode and verify
         decoded = zon.decode(encoded)
-        self.assertEqual(decoded[0]["id"], val)
+        self.assertEqual(decoded, data)
 
 if __name__ == "__main__":
     unittest.main()

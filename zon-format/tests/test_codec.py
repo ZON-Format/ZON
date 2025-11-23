@@ -7,8 +7,8 @@ class TestCodec(unittest.TestCase):
         data = [{"id": i} for i in range(1, 21)]
         encoded = zon.encode(data)
         
-        # Check for hybrid schema with GAS_INT
-        self.assertIn("#{id:R(1,1)}", encoded)
+        # Check for v1.0 schema with GAS_INT (RANGE)
+        self.assertIn("rows[20]{id:R(1,1)}", encoded)
         
         # Check for RLE
         self.assertIn("19x", encoded)
@@ -22,8 +22,8 @@ class TestCodec(unittest.TestCase):
         data = [{"status": "active"} for _ in range(5)]
         encoded = zon.encode(data)
         
-        # Check for hybrid schema with LIQUID
-        self.assertIn("#{status:L}", encoded)
+        # Check for v1.0 schema - should use VALUE strategy
+        self.assertIn("rows[5]{status:V(active)}", encoded)
         
         # Check for RLE
         # Check for v1.0 schema - should use VALUE strategy
@@ -61,10 +61,10 @@ class TestCodec(unittest.TestCase):
         data = [{"id": i} for i in range(1, 15)]
         encoded = zon.encode(data, anchor_every=5)
         
-        # Should have anchors at rows 1, 6, 11
+        # Anchors are at row 1, then every 5 rows: 1, 5, 10
         self.assertIn("$1:", encoded)
-        self.assertIn("$6:", encoded)
-        self.assertIn("$11:", encoded)
+        self.assertIn("$5:", encoded)
+        self.assertIn("$10:", encoded)
         
         # Decode and verify
         decoded = zon.decode(encoded)

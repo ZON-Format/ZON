@@ -1,0 +1,484 @@
+{
+  "metrics": [
+    {
+      "date": "2025-01-01",
+      "views": 5569,
+      "clicks": 307,
+      "conversions": 22,
+      "revenue": 6565.8,
+      "bounceRate": 0.7
+    },
+    {
+      "date": "2025-01-02",
+      "views": 7784,
+      "clicks": 239,
+      "conversions": 16,
+      "revenue": 3097.34,
+      "bounceRate": 0.52
+    },
+    {
+      "date": "2025-01-03",
+      "views": 4876,
+      "clicks": 144,
+      "conversions": 17,
+      "revenue": 4459.3,
+      "bounceRate": 0.31
+    },
+    {
+      "date": "2025-01-04",
+      "views": 3298,
+      "clicks": 80,
+      "conversions": 11,
+      "revenue": 741.7,
+      "bounceRate": 0.62
+    },
+    {
+      "date": "2025-01-05",
+      "views": 2886,
+      "clicks": 103,
+      "conversions": 7,
+      "revenue": 2065.95,
+      "bounceRate": 0.39
+    },
+    {
+      "date": "2025-01-06",
+      "views": 5516,
+      "clicks": 353,
+      "conversions": 33,
+      "revenue": 4978.93,
+      "bounceRate": 0.4
+    },
+    {
+      "date": "2025-01-07",
+      "views": 5845,
+      "clicks": 420,
+      "conversions": 59,
+      "revenue": 4549.0,
+      "bounceRate": 0.31
+    },
+    {
+      "date": "2025-01-08",
+      "views": 7742,
+      "clicks": 405,
+      "conversions": 47,
+      "revenue": 5155.82,
+      "bounceRate": 0.5
+    },
+    {
+      "date": "2025-01-09",
+      "views": 4337,
+      "clicks": 196,
+      "conversions": 11,
+      "revenue": 1235.25,
+      "bounceRate": 0.42
+    },
+    {
+      "date": "2025-01-10",
+      "views": 6319,
+      "clicks": 173,
+      "conversions": 12,
+      "revenue": 2450.46,
+      "bounceRate": 0.67
+    },
+    {
+      "date": "2025-01-11",
+      "views": 3574,
+      "clicks": 193,
+      "conversions": 21,
+      "revenue": 5239.19,
+      "bounceRate": 0.55
+    },
+    {
+      "date": "2025-01-12",
+      "views": 4615,
+      "clicks": 295,
+      "conversions": 22,
+      "revenue": 5534.66,
+      "bounceRate": 0.49
+    },
+    {
+      "date": "2025-01-13",
+      "views": 5361,
+      "clicks": 330,
+      "conversions": 23,
+      "revenue": 4746.99,
+      "bounceRate": 0.31
+    },
+    {
+      "date": "2025-01-14",
+      "views": 5628,
+      "clicks": 236,
+      "conversions": 33,
+      "revenue": 9784.33,
+      "bounceRate": 0.39
+    },
+    {
+      "date": "2025-01-15",
+      "views": 7768,
+      "clicks": 525,
+      "conversions": 39,
+      "revenue": 7406.79,
+      "bounceRate": 0.31
+    },
+    {
+      "date": "2025-01-16",
+      "views": 6307,
+      "clicks": 346,
+      "conversions": 49,
+      "revenue": 4082.53,
+      "bounceRate": 0.39
+    },
+    {
+      "date": "2025-01-17",
+      "views": 7430,
+      "clicks": 420,
+      "conversions": 33,
+      "revenue": 4007.66,
+      "bounceRate": 0.38
+    },
+    {
+      "date": "2025-01-18",
+      "views": 4111,
+      "clicks": 309,
+      "conversions": 33,
+      "revenue": 8175.19,
+      "bounceRate": 0.56
+    },
+    {
+      "date": "2025-01-19",
+      "views": 5205,
+      "clicks": 357,
+      "conversions": 38,
+      "revenue": 11307.63,
+      "bounceRate": 0.5
+    },
+    {
+      "date": "2025-01-20",
+      "views": 6200,
+      "clicks": 151,
+      "conversions": 14,
+      "revenue": 3673.6,
+      "bounceRate": 0.49
+    },
+    {
+      "date": "2025-01-21",
+      "views": 6658,
+      "clicks": 196,
+      "conversions": 18,
+      "revenue": 4065.63,
+      "bounceRate": 0.59
+    },
+    {
+      "date": "2025-01-22",
+      "views": 7399,
+      "clicks": 200,
+      "conversions": 23,
+      "revenue": 6255.31,
+      "bounceRate": 0.59
+    },
+    {
+      "date": "2025-01-23",
+      "views": 5953,
+      "clicks": 152,
+      "conversions": 13,
+      "revenue": 2737.63,
+      "bounceRate": 0.6
+    },
+    {
+      "date": "2025-01-24",
+      "views": 4941,
+      "clicks": 392,
+      "conversions": 19,
+      "revenue": 3129.34,
+      "bounceRate": 0.55
+    },
+    {
+      "date": "2025-01-25",
+      "views": 3957,
+      "clicks": 117,
+      "conversions": 13,
+      "revenue": 3618.16,
+      "bounceRate": 0.45
+    },
+    {
+      "date": "2025-01-26",
+      "views": 3777,
+      "clicks": 148,
+      "conversions": 16,
+      "revenue": 2519.47,
+      "bounceRate": 0.44
+    },
+    {
+      "date": "2025-01-27",
+      "views": 6829,
+      "clicks": 382,
+      "conversions": 36,
+      "revenue": 4921.73,
+      "bounceRate": 0.46
+    },
+    {
+      "date": "2025-01-28",
+      "views": 4561,
+      "clicks": 257,
+      "conversions": 32,
+      "revenue": 8509.97,
+      "bounceRate": 0.63
+    },
+    {
+      "date": "2025-01-29",
+      "views": 7383,
+      "clicks": 546,
+      "conversions": 70,
+      "revenue": 5814.35,
+      "bounceRate": 0.48
+    },
+    {
+      "date": "2025-01-30",
+      "views": 4045,
+      "clicks": 194,
+      "conversions": 16,
+      "revenue": 2437.66,
+      "bounceRate": 0.49
+    },
+    {
+      "date": "2025-01-31",
+      "views": 6526,
+      "clicks": 329,
+      "conversions": 32,
+      "revenue": 8218.33,
+      "bounceRate": 0.54
+    },
+    {
+      "date": "2025-02-01",
+      "views": 6108,
+      "clicks": 274,
+      "conversions": 38,
+      "revenue": 3324.06,
+      "bounceRate": 0.51
+    },
+    {
+      "date": "2025-02-02",
+      "views": 5615,
+      "clicks": 350,
+      "conversions": 41,
+      "revenue": 9784.87,
+      "bounceRate": 0.61
+    },
+    {
+      "date": "2025-02-03",
+      "views": 4512,
+      "clicks": 190,
+      "conversions": 13,
+      "revenue": 1348.86,
+      "bounceRate": 0.34
+    },
+    {
+      "date": "2025-02-04",
+      "views": 5068,
+      "clicks": 280,
+      "conversions": 32,
+      "revenue": 6524.46,
+      "bounceRate": 0.68
+    },
+    {
+      "date": "2025-02-05",
+      "views": 7992,
+      "clicks": 434,
+      "conversions": 36,
+      "revenue": 5324.96,
+      "bounceRate": 0.53
+    },
+    {
+      "date": "2025-02-06",
+      "views": 6411,
+      "clicks": 296,
+      "conversions": 33,
+      "revenue": 3594.03,
+      "bounceRate": 0.34
+    },
+    {
+      "date": "2025-02-07",
+      "views": 6805,
+      "clicks": 254,
+      "conversions": 14,
+      "revenue": 1150.22,
+      "bounceRate": 0.51
+    },
+    {
+      "date": "2025-02-08",
+      "views": 5372,
+      "clicks": 193,
+      "conversions": 26,
+      "revenue": 7319.72,
+      "bounceRate": 0.32
+    },
+    {
+      "date": "2025-02-09",
+      "views": 6336,
+      "clicks": 393,
+      "conversions": 25,
+      "revenue": 5881.83,
+      "bounceRate": 0.58
+    },
+    {
+      "date": "2025-02-10",
+      "views": 4182,
+      "clicks": 286,
+      "conversions": 18,
+      "revenue": 1060.85,
+      "bounceRate": 0.45
+    },
+    {
+      "date": "2025-02-11",
+      "views": 6373,
+      "clicks": 288,
+      "conversions": 19,
+      "revenue": 1683.26,
+      "bounceRate": 0.5
+    },
+    {
+      "date": "2025-02-12",
+      "views": 4590,
+      "clicks": 227,
+      "conversions": 13,
+      "revenue": 3080.15,
+      "bounceRate": 0.6
+    },
+    {
+      "date": "2025-02-13",
+      "views": 4091,
+      "clicks": 99,
+      "conversions": 13,
+      "revenue": 1079.34,
+      "bounceRate": 0.44
+    },
+    {
+      "date": "2025-02-14",
+      "views": 7932,
+      "clicks": 259,
+      "conversions": 18,
+      "revenue": 2391.76,
+      "bounceRate": 0.33
+    },
+    {
+      "date": "2025-02-15",
+      "views": 3165,
+      "clicks": 111,
+      "conversions": 15,
+      "revenue": 1385.78,
+      "bounceRate": 0.59
+    },
+    {
+      "date": "2025-02-16",
+      "views": 4075,
+      "clicks": 87,
+      "conversions": 5,
+      "revenue": 1374.3,
+      "bounceRate": 0.35
+    },
+    {
+      "date": "2025-02-17",
+      "views": 6800,
+      "clicks": 199,
+      "conversions": 24,
+      "revenue": 2716.91,
+      "bounceRate": 0.58
+    },
+    {
+      "date": "2025-02-18",
+      "views": 5187,
+      "clicks": 322,
+      "conversions": 32,
+      "revenue": 4547.99,
+      "bounceRate": 0.46
+    },
+    {
+      "date": "2025-02-19",
+      "views": 4828,
+      "clicks": 205,
+      "conversions": 28,
+      "revenue": 2162.62,
+      "bounceRate": 0.52
+    },
+    {
+      "date": "2025-02-20",
+      "views": 5900,
+      "clicks": 402,
+      "conversions": 27,
+      "revenue": 5820.0,
+      "bounceRate": 0.53
+    },
+    {
+      "date": "2025-02-21",
+      "views": 7263,
+      "clicks": 192,
+      "conversions": 12,
+      "revenue": 2874.82,
+      "bounceRate": 0.32
+    },
+    {
+      "date": "2025-02-22",
+      "views": 5106,
+      "clicks": 139,
+      "conversions": 10,
+      "revenue": 830.77,
+      "bounceRate": 0.51
+    },
+    {
+      "date": "2025-02-23",
+      "views": 5800,
+      "clicks": 436,
+      "conversions": 29,
+      "revenue": 2159.51,
+      "bounceRate": 0.36
+    },
+    {
+      "date": "2025-02-24",
+      "views": 4999,
+      "clicks": 341,
+      "conversions": 39,
+      "revenue": 8419.76,
+      "bounceRate": 0.52
+    },
+    {
+      "date": "2025-02-25",
+      "views": 7238,
+      "clicks": 466,
+      "conversions": 59,
+      "revenue": 6098.49,
+      "bounceRate": 0.46
+    },
+    {
+      "date": "2025-02-26",
+      "views": 4021,
+      "clicks": 150,
+      "conversions": 20,
+      "revenue": 4557.59,
+      "bounceRate": 0.55
+    },
+    {
+      "date": "2025-02-27",
+      "views": 5846,
+      "clicks": 263,
+      "conversions": 39,
+      "revenue": 6575.46,
+      "bounceRate": 0.39
+    },
+    {
+      "date": "2025-02-28",
+      "views": 4188,
+      "clicks": 171,
+      "conversions": 17,
+      "revenue": 5096.81,
+      "bounceRate": 0.67
+    },
+    {
+      "date": "2025-03-01",
+      "views": 2815,
+      "clicks": 208,
+      "conversions": 30,
+      "revenue": 5870.62,
+      "bounceRate": 0.64
+    }
+  ]
+}

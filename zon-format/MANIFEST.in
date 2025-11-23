@@ -1,0 +1,10 @@
+include README.md
+include LICENSE
+include SPEC.md
+include QA_REPORT.md
+include EDGE_CASES.md
+recursive-include src *.py
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+recursive-exclude tests *
+recursive-exclude benchmarks *

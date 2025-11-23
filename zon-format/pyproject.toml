@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zon-format"
+version = "1.0.0"
+description = "Zero Overhead Notation - Human-readable data serialization optimized for LLM token efficiency"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "Proprietary"}
+authors = [
+    {name = "Roni Bhakta", email = "ronibhakta1@gmail.com"}
+]
+maintainers = [
+    {name = "Roni Bhakta", email = "ronibhakta1@gmail.com"}
+]
+keywords = [
+    "zon",
+    "serialization",
+    "llm",
+    "compression",
+    "token-efficiency",
+    "data-format",
+    "json-alternative",
+    "toon"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Markup",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/ZON-Format/ZON"
+Documentation = "https://github.com/ZON-Format/ZON/blob/main/README.md"
+Repository = "https://github.com/ZON-Format/ZON"
+Issues = "https://github.com/ZON-Format/ZON/issues"
+
+[project.scripts]
+zon = "zon.cli:main"
+
+[tool.setuptools]
+packages = ["zon"]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+zon = ["py.typed"]

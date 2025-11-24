@@ -1,0 +1,60 @@
+{
+  "orders": [
+    {
+      "orderId": "ORD-0001",
+      "customer": {
+        "id": 1,
+        "name": "Christopher Watson",
+        "email": "benitezjoshua@example.com",
+        "phone": "001-238-797-0447x50588"
+      },
+      "items": [
+        {
+          "sku": "SKU-XPGWNY",
+          "name": "Wireless Mouse",
+          "quantity": 2,
+          "price": 43.7
+        },
+        {
+          "sku": "SKU-FBMCNH",
+          "name": "USB Cable",
+          "quantity": 1,
+          "price": 131.96
+        }
+      ],
+      "subtotal": 219.36,
+      "tax": 17.55,
+      "total": 236.91,
+      "status": "pending",
+      "orderDate": "2025-07-18"
+    },
+    {
+      "orderId": "ORD-0002",
+      "customer": {
+        "id": 2,
+        "name": "Andrew Frazier",
+        "email": "hartchristopher@example.com",
+        "phone": "596.658.0918"
+      },
+      "items": [
+        {
+          "sku": "SKU-XPBETM",
+          "name": "Wireless Mouse",
+          "quantity": 1,
+          "price": 12.72
+        },
+        {
+          "sku": "SKU-LXOXUS",
+          "name": "USB Cable",
+          "quantity": 5,
+          "price": 59.66
+        }
+      ],
+      "subtotal": 311.02,
+      "tax": 24.88,
+      "total": 335.9,
+      "status": "processing",
+      "orderDate": "2025-02-14"
+    }
+  ]
+}

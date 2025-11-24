@@ -1,0 +1,4 @@
+@products(3):id,inStock,name,price
+1,T,Widget,9.99
+2,F,Gadget,19.99
+3,T,Doohickey,14.99

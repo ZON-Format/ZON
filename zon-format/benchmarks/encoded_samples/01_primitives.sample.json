@@ -1,0 +1,12 @@
+{
+  "data": [
+    {
+      "string": "Hello World",
+      "number": 42,
+      "float": 3.14,
+      "bool_true": true,
+      "bool_false": false,
+      "null_value": null
+    }
+  ]
+}

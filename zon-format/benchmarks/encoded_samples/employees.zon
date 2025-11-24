@@ -4,7 +4,7 @@ F,Sales,anna29@example.net,2,Jake Sawyer,84143,12
 T,Marketing,krichards@example.org,3,Oscar Quinn,80421,19
 F,HR,andrew50@example.net,4,Blake Hood,93898,4
 T,Operations,kelliwhite@example.org,5,Natasha Smith,79221,18
-T,Finance,jillhall@example.net,6,Ashley Maldonado,125185,^
+T,Finance,jillhall@example.net,6,Ashley Maldonado,125185,18
 T,Engineering,hallmorgan@example.org,7,Susan Rivera,141750,24
 T,Sales,brianna82@example.org,8,Nicole Santiago,141389,14
 T,Marketing,hernandezjermaine@example.net,9,Elizabeth Lin,66833,5
@@ -82,12 +82,12 @@ T,Sales,petersmith@example.com,80,Ryan Padilla,119691,18
 T,Marketing,david41@example.net,81,Michael Bullock,142156,10
 T,HR,valerie72@example.org,82,Brian Powell,57029,4
 T,Operations,patricknolan@example.org,83,Jessica Thomas,117020,17
-T,Finance,vfisher@example.net,84,Mary Lopez,98757,^
+T,Finance,vfisher@example.net,84,Mary Lopez,98757,17
 T,Engineering,dianamoran@example.org,85,Don Russell,113156,5
 T,Sales,pstanley@example.org,86,Adam Mack,87645,19
 T,Marketing,rachelmiller@example.org,87,Kelly Hamilton,66457,15
 T,HR,michele55@example.com,88,Travis Gonzales,48220,12
-T,Operations,ymiller@example.org,89,Katherine Reid,95912,^
+T,Operations,ymiller@example.org,89,Katherine Reid,95912,12
 T,Finance,amy75@example.net,90,Nicholas Armstrong Jr.,115898,22
 T,Engineering,matthewgarcia@example.com,91,Melissa Schmidt,86843,16
 T,Sales,ronaldparks@example.org,92,Tyler Dennis,86813,11

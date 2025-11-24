@@ -1,0 +1,129 @@
+[
+  {
+    "_id": "bc3bf73b-d8aa-4327-9ac3-2ec314e4150a",
+    "created_at": "2025-11-24T22:02:41.210147",
+    "status": "deleted",
+    "config": {
+      "theme": "light",
+      "notifications": true
+    },
+    "tags": [
+      "tag_8",
+      "tag_6",
+      "tag_2",
+      "tag_5"
+    ],
+    "history": [
+      {
+        "action": "logout",
+        "ts": 1764001961
+      },
+      {
+        "action": "login",
+        "ts": 1764001961
+      }
+    ],
+    "metadata": {
+      "version": 1,
+      "source": "web"
+    },
+    "analytics": {
+      "visits": 89,
+      "score": 0.6318637028941335
+    },
+    "user": {
+      "name": "User_0",
+      "email": "user0@example.com"
+    },
+    "preferences": {
+      "timezone": "UTC"
+    }
+  },
+  {
+    "_id": "46b73951-1425-4861-ae91-a744aa5e738e",
+    "created_at": "2025-11-24T22:02:41.210208",
+    "status": "archived",
+    "config": {
+      "theme": "dark",
+      "notifications": false
+    },
+    "metadata": {
+      "version": 1,
+      "source": "web"
+    },
+    "user": {
+      "name": "User_1",
+      "email": "user1@example.com",
+      "verified": true
+    },
+    "preferences": {
+      "timezone": "UTC"
+    },
+    "analytics": {
+      "visits": 2,
+      "score": 0.3258376146754014
+    }
+  },
+  {
+    "_id": "b479fa99-b754-4d22-af56-9189928d1e8b",
+    "created_at": "2025-11-24T22:02:41.210222",
+    "status": "active",
+    "user": {
+      "name": "User_2",
+      "email": "user2@example.com"
+    },
+    "preferences": {
+      "timezone": "UTC"
+    },
+    "metadata": {
+      "version": 1,
+      "source": "web"
+    },
+    "analytics": {
+      "visits": 30,
+      "score": 0.47281052999365336
+    },
+    "history": [
+      {
+        "action": "view",
+        "ts": 1764001961
+      },
+      {
+        "action": "login",
+        "ts": 1764001961
+      }
+    ]
+  },
+  {
+    "_id": "ad0036ae-147f-4c9e-b30b-3ab2fb318ed9",
+    "created_at": "2025-11-24T22:02:41.210235",
+    "status": "active",
+    "preferences": {
+      "lang": "en",
+      "timezone": "UTC"
+    },
+    "analytics": {
+      "visits": 60,
+      "score": 0.4447770866362952
+    },
+    "history": [
+      {
+        "action": "logout",
+        "ts": 1764001961
+      }
+    ],
+    "metadata": {
+      "version": 1,
+      "source": "web",
+      "context": {
+        "ip": "127.0.0.1",
+        "browser": "Chrome"
+      }
+    },
+    "user": {
+      "name": "User_3",
+      "email": "user3@example.com",
+      "verified": true
+    }
+  }
+]

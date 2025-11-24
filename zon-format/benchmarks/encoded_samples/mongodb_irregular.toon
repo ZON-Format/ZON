@@ -1,0 +1,188 @@
+_id: bc3bf73b-d8aa-4327-9ac3-2ec314e4150a
+created_at: "2025-11-24T22:02:41.210147"
+status: deleted
+config:
+  theme: light
+  notifications: true
+tags[4]: tag_8,tag_6,tag_2,tag_5
+history[2]{action,ts}:
+  logout,1764001961
+  login,1764001961
+metadata:
+  version: 1
+  source: web
+analytics:
+  visits: 89
+  score: 0.6318637028941335
+user:
+  name: User_0
+  email: user0@example.com
+preferences:
+  timezone: UTC
+_id: 46b73951-1425-4861-ae91-a744aa5e738e
+created_at: "2025-11-24T22:02:41.210208"
+status: archived
+config:
+  theme: dark
+  notifications: false
+metadata:
+  version: 1
+  source: web
+user:
+  name: User_1
+  email: user1@example.com
+  verified: true
+preferences:
+  timezone: UTC
+analytics:
+  visits: 2
+  score: 0.3258376146754014
+_id: b479fa99-b754-4d22-af56-9189928d1e8b
+created_at: "2025-11-24T22:02:41.210222"
+status: active
+user:
+  name: User_2
+  email: user2@example.com
+preferences:
+  timezone: UTC
+metadata:
+  version: 1
+  source: web
+analytics:
+  visits: 30
+  score: 0.47281052999365336
+history[2]{action,ts}:
+  view,1764001961
+  login,1764001961
+_id: ad0036ae-147f-4c9e-b30b-3ab2fb318ed9
+created_at: "2025-11-24T22:02:41.210235"
+status: active
+preferences:
+  lang: en
+  timezone: UTC
+analytics:
+  visits: 60
+  score: 0.4447770866362952
+history[1]:
+  action: logout
+  ts: 1764001961
+metadata:
+  version: 1
+  source: web
+  context:
+    ip: 127.0.0.1
+    browser: Chrome
+user:
+  name: User_3
+  email: user3@example.com
+  verified: true
+_id: e4628237-225d-4d5d-87ad-ea0a0f11df05
+created_at: "2025-11-24T22:02:41.210246"
+status: deleted
+tags[2]: tag_1,tag_8
+config:
+  theme: light
+  notifications: false
+metadata:
+  version: 1
+  context:
+    ip: 127.0.0.1
+    browser: Chrome
+history[3]{action,ts}:
+  logout,1764001961
+  view,1764001961
+  logout,1764001961
+user:
+  name: User_4
+  email: user4@example.com
+_id: 1ff339ef-a1f8-4888-ae72-4d32594b8c90
+created_at: "2025-11-24T22:02:41.210259"
+status: archived
+analytics:
+  visits: 95
+  score: 0.3245779767976562
+tags[1]: tag_3
+user:
+  name: User_5
+  email: user5@example.com
+  verified: true
+preferences:
+  lang: en
+history[2]{action,ts}:
+  view,1764001961
+  view,1764001961
+metadata:
+  version: 1
+_id: 7f2f085b-fbeb-4898-b75a-3805a7f2d947
+created_at: "2025-11-24T22:02:41.210272"
+status: deleted
+analytics:
+  visits: 34
+  score: 0.1131118752519582
+history[3]{action,ts}:
+  logout,1764001961
+  logout,1764001961
+  logout,1764001961
+_id: 09d26fff-a508-456a-805c-fa45529b167d
+created_at: "2025-11-24T22:02:41.210281"
+status: archived
+metadata:
+  version: 1
+  context:
+    ip: 127.0.0.1
+    browser: Chrome
+tags[1]: tag_8
+preferences:
+  lang: en
+  timezone: UTC
+analytics:
+  visits: 71
+  score: 0.11479988894221405
+history[3]{action,ts}:
+  login,1764001961
+  login,1764001961
+  logout,1764001961
+config:
+  theme: light
+  notifications: false
+user:
+  name: User_7
+  email: user7@example.com
+  verified: true
+_id: 1ff6177a-a34c-4d2d-b160-52c420feb2e6
+created_at: "2025-11-24T22:02:41.210320"
+status: active
+tags[1]: tag_9
+history[3]{action,ts}:
+  logout,1764001961
+  logout,1764001961
+  login,1764001961
+user:
+  name: User_8
+  email: user8@example.com
+config:
+  theme: light
+  notifications: true
+preferences:
+  lang: en
+analytics:
+  visits: 97
+  score: 0.43160386524677696
+_id: 31293fd2-183a-4680-9b38-c0b99788df16
+created_at: "2025-11-24T22:02:41.210332"
+status: pending
+config:
+  theme: dark
+  notifications: true
+history[1]:
+  action: login
+  ts: 1764001961
+tags[2]: tag_9,tag_10
+metadata:
+  version: 1
+  context:
+    ip: 127.0.0.1
+    browser: Chrome
+analytics:
+  visits: 54
+  score: 0.054221174534313854

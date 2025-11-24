@@ -1,0 +1,2 @@
+@data(1):bool_false,bool_true,float,null_value,number,string
+F,T,3.14,null,42,Hello World

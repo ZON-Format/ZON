@@ -1,0 +1,11 @@
+{
+  "user": {
+    "name": "Alice",
+    "age": 30,
+    "active": true,
+    "address": {
+      "city": "NYC",
+      "zip": "10001"
+    }
+  }
+}

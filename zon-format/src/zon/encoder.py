@@ -38,6 +38,15 @@ class ZonEncoder:
 
         output = []
         
+        # Special case: Irregular schema detection for lists of dicts
+        if isinstance(data, list) and data and all(isinstance(item, dict) for item in data):
+            # Check if all records have the same keys
+            all_keys = [set(item.keys()) for item in data]
+            if len(set(frozenset(keys) for keys in all_keys)) > 1:
+                # Irregular schema - encode as list of objects to preserve exact structure
+                return self._format_zon_node(data)
+        
+        # 1. Root Promotion: Extract primary stream into table
         # If stream_key is None (pure list input), use default key
         if stream_data and stream_key is None:
             stream_key = "data"
@@ -139,44 +148,24 @@ class ZonEncoder:
         all_keys = set().union(*(d.keys() for d in flat_stream))
         cols = sorted(list(all_keys))
         
-        # Analyze columns for compression
-        col_analysis = self._analyze_columns(flat_stream, cols)
+        # Get column names
+        all_keys = set().union(*(d.keys() for d in flat_stream))
+        cols = sorted(list(all_keys))
         
         # Write table header
         col_names = ",".join(cols)  # No space after comma for compactness
         lines.append(f"{TABLE_MARKER}{key}({len(stream)}){META_SEPARATOR}{col_names}")
         
         # Write rows
-        prev_vals = {col: None for col in cols}
-        
-        for i, row in enumerate(flat_stream):
+        for row in flat_stream:
             tokens = []
             
             for col in cols:
                 val = row.get(col)
-                analysis = col_analysis[col]
-                
-                # Auto-increment detection for first column (usually ID)
-                if col == cols[0] and analysis['is_sequential'] and i > 0:
-                    # Use _ for sequential IDs after first
-                    if val == prev_vals[col] + analysis['step']:
-                        tokens.append(GAS_TOKEN)
-                        prev_vals[col] = val
-                        continue
-                
-                # Explicit value
-                formatted_val = self._format_value(val)
-                
-                # Repetition detection
-                # Only use ^ if it saves space (length > 1)
-                if i > 0 and val == prev_vals[col] and analysis['has_repetition'] and len(formatted_val) > 1:
-                    tokens.append(LIQUID_TOKEN)
-                else:
-                    tokens.append(formatted_val)
-                
-                prev_vals[col] = val
+                # Explicit value only - no compression tokens
+                tokens.append(self._format_value(val))
             
-            lines.append(",".join(tokens))  # No space after comma for compactness
+            lines.append(",".join(tokens))
         
         return lines
 
@@ -257,11 +246,32 @@ class ZonEncoder:
         """
     def _format_zon_node(self, val: Any) -> str:
         """
-        Format a value using ZON-style syntax for nested structures.
-        Dicts: {key:val,key:val}
-        Lists: [val,val]
-        Strings: Minimal quoting
+        Format nested structure using YAML-like ZON syntax:
+        - Dict: {key:val,key:val}
+        - List: [val,val]
         """
+        if isinstance(val, dict):
+            if not val:
+                return "{}"
+            items = []
+            for k, v in val.items():
+                # Format key (unquoted if simple)
+                k_str = str(k)
+                # Keys are usually simple, but quote if needed
+                if any(c in k_str for c in [',', ':', '{', '}', '[', ']', '"']):
+                    k_str = json.dumps(k_str)
+                
+                # Format value recursively
+                v_str = self._format_zon_node(v)
+                items.append(f"{k_str}:{v_str}")
+            return "{" + ",".join(items) + "}"
+            
+        elif isinstance(val, list):
+            if not val:
+                return "[]"
+            return "[" + ",".join(self._format_zon_node(item) for item in val) + "]"
+            
+        # Primitives
         if val is None:
             return "null"
         if val is True:
@@ -269,41 +279,33 @@ class ZonEncoder:
         if val is False:
             return "F"
         if isinstance(val, (int, float)):
-            s = str(val)
-            return s[:-2] if s.endswith(".0") else s
-        
-        if isinstance(val, dict):
-            items = []
-            # Sort keys for consistent output
-            for k, v in sorted(val.items()):
-                # Format key (unquoted if simple)
-                key_str = k
-                if self._needs_quotes(k):
-                    key_str = self._csv_quote(k)
-                
-                # Format value recursively
-                val_str = self._format_zon_node(v)
-                items.append(f"{key_str}:{val_str}")
-            return f"{{{','.join(items)}}}"
+            # Preserve exact numeric representation
+            if isinstance(val, float):
+                # Ensure floats always have decimal point
+                s = str(val)
+                # If it's a whole number float (e.g., 127.0), Python str() gives "127.0"
+                # But for some reason it might strip it, so we ensure it
+                if '.' not in s and 'e' not in s.lower():
+                    s += '.0'
+                return s
+            else:
+                return str(val)
             
-        if isinstance(val, list):
-            items = [self._format_zon_node(item) for item in val]
-            return f"[{','.join(items)}]"
-            
-        # String handling
+        # String handling - only quote if necessary
         s = str(val)
-        # For nested ZON nodes, we need to be careful about delimiters
-        # The delimiters are ',' (item sep), ':' (kv sep), '}' (dict end), ']' (list end)
-        # We reuse _needs_quotes but might need stricter rules for nested context?
-        # Actually, if we use standard CSV quoting for the *outer* cell, 
-        # then inside the cell we just need to ensure we don't break the ZON parser.
-        # The ZON parser will look for , : } ]
-        if any(c in s for c in [',', ':', '{', '}', '[', ']']):
-             # Use JSON-style quoting for inner strings to avoid confusion with CSV quotes
-             # But wait, we want to avoid \" escaping if possible.
-             # Let's stick to standard quoting but we need to escape the quote char itself.
-             # If we use "..." for strings, we need to escape " inside.
+        
+        # Quote strings that look like reserved words or numbers to prevent type confusion
+        if s in ['T', 'F', 'null', 'true', 'false']:
+            return json.dumps(s)
+            
+        # Quote if it looks like a number (to preserve string type)
+        if s.replace('.', '', 1).replace('-', '', 1).isdigit():
+            return json.dumps(s)
+            
+        # Quote if contains structural delimiters
+        if any(c in s for c in [',', ':', '{', '}', '[', ']', '"']):
              return json.dumps(s)
+             
         return s
 
     def _format_value(self, val: Any) -> str:
@@ -325,13 +327,19 @@ class ZonEncoder:
         if isinstance(val, bool):
             return "T" if val else "F"
         if isinstance(val, (int, float)):
-            s = str(val)
-            # Remove .0 suffix for cleaner output
-            return s[:-2] if s.endswith(".0") else s
+            # Preserve exact numeric representation
+            if isinstance(val, float):
+                s = str(val)
+                # Ensure decimal point for whole number floats
+                if '.' not in s and 'e' not in s.lower():
+                    s += '.0'
+                return s
+            else:
+                return str(val)
         
         if isinstance(val, (list, dict)):
             # Use ZON-style formatting for complex types
-            # This returns a string like "{k:v}" or "[a,b]"
+            # This returns a string like "k:v|k:v" or "a;b"
             # This string might contain commas, so the WHOLE thing needs to be CSV-quoted
             zon_str = self._format_zon_node(val)
             if self._needs_quotes(zon_str):
@@ -376,8 +384,9 @@ class ZonEncoder:
         - Quote only if contains comma (the delimiter)
         - Quote if contains newline, tab, or quote char
         - Quote if is a reserved token (T, F, null, _, ^)
+        - Quote if contains new bracketless delimiters (|, ;, :)
         
-        Spaces, colons, and other chars are fine without quotes.
+        Spaces are fine without quotes.
         
         Args:
             s: String to check
@@ -408,12 +417,13 @@ class ZonEncoder:
             return True
         
         # Only quote if contains delimiter or control chars
-        if any(c in s for c in [',', '\n', '\r', '\t', '"', '[', ']']):
+        # Added |, ;, : for bracketless format
+        if any(c in s for c in [',', '\n', '\r', '\t', '"', '[', ']', '|', ';', ':']):
             return True
         
         return False
 
-    def _flatten(self, d: Any, parent: str = '', sep: str = '.', max_depth: int = 1, current_depth: int = 0) -> Dict:
+    def _flatten(self, d: Any, parent: str = '', sep: str = '.', max_depth: int = 0, current_depth: int = 0) -> Dict:
         """
         Flatten nested dictionary with depth limit.
         

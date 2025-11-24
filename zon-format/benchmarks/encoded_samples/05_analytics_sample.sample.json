@@ -1,0 +1,44 @@
+{
+  "metrics": [
+    {
+      "date": "2025-01-01",
+      "views": 5569,
+      "clicks": 307,
+      "conversions": 22,
+      "revenue": 6565.8,
+      "bounceRate": 0.7
+    },
+    {
+      "date": "2025-01-02",
+      "views": 7784,
+      "clicks": 239,
+      "conversions": 16,
+      "revenue": 3097.34,
+      "bounceRate": 0.52
+    },
+    {
+      "date": "2025-01-03",
+      "views": 4876,
+      "clicks": 144,
+      "conversions": 17,
+      "revenue": 4459.3,
+      "bounceRate": 0.31
+    },
+    {
+      "date": "2025-01-04",
+      "views": 3298,
+      "clicks": 80,
+      "conversions": 11,
+      "revenue": 741.7,
+      "bounceRate": 0.62
+    },
+    {
+      "date": "2025-01-05",
+      "views": 2886,
+      "clicks": 103,
+      "conversions": 7,
+      "revenue": 2065.95,
+      "bounceRate": 0.39
+    }
+  ]
+}

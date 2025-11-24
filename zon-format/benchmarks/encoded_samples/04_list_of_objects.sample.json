@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Widget",
+      "price": 9.99,
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "name": "Gadget",
+      "price": 19.99,
+      "inStock": false
+    },
+    {
+      "id": 3,
+      "name": "Doohickey",
+      "price": 14.99,
+      "inStock": true
+    }
+  ]
+}

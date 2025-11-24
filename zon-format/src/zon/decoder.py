@@ -32,6 +32,12 @@ class ZonDecoder:
         if not lines:
             return {}
         
+        # Special case: Root-level ZON list (irregular schema)
+        # If entire input is a single line starting with [, it's a ZON list
+        if len(lines) == 1 and lines[0].strip().startswith('['):
+            return self._parse_zon_node(lines[0])
+        
+        #  Main decode loop
         metadata = {}
         tables = {}
         current_table = None
@@ -132,23 +138,8 @@ class ZonDecoder:
         row_idx = table['row_index']
         
         for i, (col, tok) in enumerate(zip(table['cols'], tokens)):
-            val = None
-            
-            if tok == GAS_TOKEN:
-                # Auto-increment: use previous + 1
-                if prev_vals[col] is not None and isinstance(prev_vals[col], (int, float)):
-                    val = prev_vals[col] + 1
-                else:
-                    val = row_idx + 1
-            
-            elif tok == LIQUID_TOKEN:
-                # Repeat: use previous value
-                val = prev_vals[col]
-            
-            else:
-                # Explicit value
-                val = self._parse_value(tok)
-            
+            # Explicit value
+            val = self._parse_value(tok)
             row[col] = val
             prev_vals[col] = val
         
@@ -169,133 +160,178 @@ class ZonDecoder:
 
     def _parse_zon_node(self, text: str) -> Any:
         """
-        Parse a ZON-style nested structure: {k:v,k:v} or [v,v].
-        Recursive descent parser.
+        Recursive parser for YAML-like ZON nested format.
+        - Dict: {key:val,key:val}
+        - List: [val,val]
         """
         text = text.strip()
         if not text:
             return None
             
-        # Simple values
-        if text == 'T': return True
-        if text == 'F': return False
-        if text == 'null': return None
-        if text.isdigit(): return int(text)
+        # Dict: {k:v,k:v}
+        if text.startswith('{') and text.endswith('}'):
+            content = text[1:-1].strip()
+            if not content:
+                return {}
+                
+            obj = {}
+            # Split by comma, respecting nesting
+            pairs = self._split_by_delimiter(content, ',')
+            
+            for pair in pairs:
+                if ':' not in pair:
+                    continue
+                    
+                # Find first unquoted colon
+                colon_pos = self._find_delimiter(pair, ':')
+                if colon_pos == -1:
+                    continue
+                    
+                key_str = pair[:colon_pos].strip()
+                val_str = pair[colon_pos+1:].strip()
+                
+                key = self._parse_primitive(key_str)
+                val = self._parse_zon_node(val_str)
+                obj[key] = val
+                
+            return obj
+            
+        # List: [v,v]
+        if text.startswith('[') and text.endswith(']'):
+            content = text[1:-1].strip()
+            if not content:
+                return []
+                
+            items = self._split_by_delimiter(content, ',')
+            return [self._parse_zon_node(item) for item in items]
+            
+        # Leaf node (primitive)
+        return self._parse_primitive(text)
+    
+    def _find_delimiter(self, text: str, delim: str) -> int:
+        """Find first occurrence of delimiter outside quotes."""
+        in_quote = False
+        quote_char = None
+        depth = 0
+        
+        for i, char in enumerate(text):
+            if char in ['"', "'"]:
+                if not in_quote:
+                    in_quote = True
+                    quote_char = char
+                elif char == quote_char:
+                    in_quote = False
+                    quote_char = None
+            elif not in_quote:
+                if char in ['{', '[']:
+                    depth += 1
+                elif char in ['}', ']']:
+                    depth -= 1
+                elif char == delim and depth == 0:
+                    return i
+        return -1
+    
+    def _split_by_delimiter(self, text: str, delim: str) -> list:
+        """Split text by delimiter, respecting quotes and nesting."""
+        parts = []
+        current = []
+        in_quote = False
+        quote_char = None
+        depth = 0
+        
+        for char in text:
+            if char in ['"', "'"]:
+                if not in_quote:
+                    in_quote = True
+                    quote_char = char
+                elif char == quote_char:
+                    in_quote = False
+                    quote_char = None
+                current.append(char)
+            elif not in_quote:
+                if char in ['{', '[']:
+                    depth += 1
+                    current.append(char)
+                elif char in ['}', ']']:
+                    depth -= 1
+                    current.append(char)
+                elif char == delim and depth == 0:
+                    parts.append("".join(current))
+                    current = []
+                else:
+                    current.append(char)
+            else:
+                current.append(char)
+                
+        if current:
+            parts.append("".join(current))
+            
+        return parts
+
+    def _parse_primitive(self, val: str) -> Any:
+        """
+        Parse a primitive value (T/F/null/number/string) without checking for ZON structure.
+        This prevents infinite recursion.
+        Supports multiple languages and cases for booleans/null.
+        """
+        val = val.strip()
+        
+        # Case-insensitive boolean and null handling (multi-language support)
+        val_lower = val.lower()
+        
+        # Booleans - support T/F (ZON compact) and various language formats
+        if val_lower in ['t', 'true']:
+            return True
+        if val_lower in ['f', 'false']:
+            return False
+        
+        # Null - support various programming languages
+        if val_lower in ['null', 'none', 'nil']:
+            return None
+        
+        # Quoted string (JSON style)
+        if val.startswith('"'):
+            try:
+                return json.loads(val)
+            except json.JSONDecodeError:
+                pass
+            
+        # Try number
         try:
-            return float(text)
+            if '.' in val:
+                return float(val)
+            return int(val)
         except ValueError:
             pass
             
-        # Quoted string (JSON style)
-        if text.startswith('"'):
-            try:
-                return json.loads(text)
-            except json.JSONDecodeError:
-                return text # Fallback
-        
-        # List: [item1,item2]
-        if text.startswith('[') and text.endswith(']'):
-            content = text[1:-1]
-            if not content.strip():
-                return []
-            
-            items = []
-            depth = 0
-            current_item = []
-            in_quote = False
-            
-            for char in content:
-                if char == '"' and (not current_item or current_item[-1] != '\\'):
-                    in_quote = not in_quote
-                
-                if not in_quote:
-                    if char in '[{':
-                        depth += 1
-                    elif char in ']}':
-                        depth -= 1
-                    elif char == ',' and depth == 0:
-                        items.append(self._parse_zon_node("".join(current_item)))
-                        current_item = []
-                        continue
-                
-                current_item.append(char)
-            
-            if current_item:
-                items.append(self._parse_zon_node("".join(current_item)))
-            return items
-
-        # Dict: {k:v,k:v}
-        if text.startswith('{') and text.endswith('}'):
-            content = text[1:-1]
-            if not content.strip():
-                return {}
-                
-            items = {}
-            depth = 0
-            current_part = []
-            current_key = None
-            in_quote = False
-            
-            for char in content:
-                if char == '"' and (not current_part or current_part[-1] != '\\'):
-                    in_quote = not in_quote
-                
-                if not in_quote:
-                    if char in '[{':
-                        depth += 1
-                    elif char in ']}':
-                        depth -= 1
-                    elif char == ':' and depth == 0 and current_key is None:
-                        # Found key separator
-                        key_str = "".join(current_part).strip()
-                        # Unquote key if needed
-                        if key_str.startswith('"'):
-                            try:
-                                current_key = json.loads(key_str)
-                            except:
-                                current_key = key_str
-                        else:
-                            current_key = key_str
-                        current_part = []
-                        continue
-                    elif char == ',' and depth == 0:
-                        # Found item separator
-                        if current_key is not None:
-                            val_str = "".join(current_part)
-                            items[current_key] = self._parse_zon_node(val_str)
-                            current_key = None
-                            current_part = []
-                        continue
-                
-                current_part.append(char)
-            
-            # Last item
-            if current_key is not None:
-                val_str = "".join(current_part)
-                items[current_key] = self._parse_zon_node(val_str)
-                
-            return items
-
-        # Unquoted string
-        return text
+        # String
+        return val
 
     def _parse_value(self, val: str) -> Any:
         """
-        Parse a single value from a ZON cell.
+        Parse a cell value. Handles primitives and delegates complex types.
         """
         val = val.strip()
-        if not val:
-            return None
+        
+        # Booleans
         if val == 'T':
             return True
         if val == 'F':
             return False
+        
+        # Null
         if val == 'null':
             return None
         
-        # Check for ZON-style nested structures
-        # These will be unquoted here because the CSV parser already handled the outer quotes
-        if (val.startswith('{') and val.endswith('}')) or (val.startswith('[') and val.endswith(']')):
+        # Quoted string (JSON style) - must check BEFORE delimiter check
+        if val.startswith('"'):
+            try:
+                return json.loads(val)
+            except json.JSONDecodeError:
+                pass
+        
+        # Check for ZON-style nested structures (braced)
+        if val.startswith('{') or val.startswith('['):
             return self._parse_zon_node(val)
             
         # Try number

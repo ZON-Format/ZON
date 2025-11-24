@@ -1,0 +1,15 @@
+{
+  "fruits": [
+    "apple",
+    "banana",
+    "cherry"
+  ],
+  "numbers": [
+    1,
+    2,
+    3,
+    5,
+    8,
+    13
+  ]
+}

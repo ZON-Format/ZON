@@ -97,10 +97,10 @@ val1,val2,val3
 
 | Token | Meaning | Example |
 |-------|---------|---------|
-| `_` | Auto-increment | `1,_,_` → `1,2,3` |
-| `^` | Repeat previous | `red,^,blue` → `red,red,blue` |
 | `T` | Boolean true | `T` instead of `true` |
 | `F` | Boolean false | `F` instead of `false` |
+
+> **Note**: ZON v1.0.1 prioritizes **explicit data**. Compression tokens like `^` (repeat) and `_` (auto-increment) are disabled to ensure every row contains its full, actual data.
 
 ### Smart Quoting
 
@@ -199,6 +199,18 @@ context:Trip
 - **Repetitive values**: Uses `^` token
 - **Booleans**: `T`/`F` (1 byte vs 4-5 bytes)
 - **No quotes**: Unless value contains `,` or control chars
+
+## Using with LLMs
+
+ZON is designed to be token-efficient for LLMs. When feeding ZON data to an LLM, you can use this system prompt to ensure perfect understanding:
+
+> "Data is in ZON format. It is a CSV-like format where `T`/`F` are booleans and nested objects use `{key:val}` syntax."
+
+**Why Explicit Data?**
+ZON v1.0.1 writes every value explicitly (no "ditto" marks). This ensures that:
+1. **IDs are never obscured**: Unique identifiers are always present.
+2. **Context is preserved**: LLMs don't need to "look back" to resolve values.
+3. **Structure is exact**: Nested objects are kept together, preserving the exact sequence of your data.
 
 ## CLI Tool
 

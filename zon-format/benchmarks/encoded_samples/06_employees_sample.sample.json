@@ -1,0 +1,31 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Adam Bryan",
+      "email": "melissa34@example.net",
+      "department": "Engineering",
+      "salary": 99607,
+      "yearsExperience": 24,
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Jake Sawyer",
+      "email": "anna29@example.net",
+      "department": "Sales",
+      "salary": 84143,
+      "yearsExperience": 12,
+      "active": false
+    },
+    {
+      "id": 3,
+      "name": "Oscar Quinn",
+      "email": "krichards@example.org",
+      "department": "Marketing",
+      "salary": 80421,
+      "yearsExperience": 19,
+      "active": true
+    }
+  ]
+}

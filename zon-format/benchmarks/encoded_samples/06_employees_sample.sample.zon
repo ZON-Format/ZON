@@ -1,0 +1,4 @@
+@employees(3):active,department,email,id,name,salary,yearsExperience
+T,Engineering,melissa34@example.net,1,Adam Bryan,99607,24
+F,Sales,anna29@example.net,2,Jake Sawyer,84143,12
+T,Marketing,krichards@example.org,3,Oscar Quinn,80421,19

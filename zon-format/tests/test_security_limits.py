@@ -81,7 +81,7 @@ class TestSecurityLimits(unittest.TestCase):
     def test_combined_limits_normal_data(self):
         """Should work with normal data within all limits."""
         zon_data = '''
-metadata:"{version:1.0.4,env:prod}"
+metadata:"{version:1.0.3,env:prod}"
 users:@(3):id,name
 1,Alice
 2,Bob
@@ -90,7 +90,7 @@ tags:"[nodejs,typescript,llm]"
 '''
         result = zon.decode(zon_data)
         self.assertEqual(len(result['users']), 3)
-        self.assertEqual(result['metadata']['version'], '1.0.4')
+        self.assertEqual(result['metadata']['version'], '1.0.3')
         self.assertEqual(len(result['tags']), 3)
 
 

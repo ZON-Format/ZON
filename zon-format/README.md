@@ -372,4 +372,4 @@ See [LICENSE](LICENSE) for details.
 
 **Made with ❤️ for the LLM community**
 
-*ZON v1.0.4 - Token efficiency that scales with complexity*
+*ZON v1.0.3 - Token efficiency that scales with complexity*

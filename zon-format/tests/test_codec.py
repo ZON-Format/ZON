@@ -8,7 +8,7 @@ class TestCodec(unittest.TestCase):
         data = [{"id": i} for i in range(1, 21)]
         encoded = zon.encode(data)
         
-        # v1.0.4 uses compact anonymous format @count:cols for pure lists
+        # v1.0.3 uses compact anonymous format @count:cols for pure lists
         self.assertIn("@20:id", encoded)
         
         decoded = zon.decode(encoded)
@@ -21,7 +21,7 @@ class TestCodec(unittest.TestCase):
         data = [{"status": "active"} for _ in range(5)]
         encoded = zon.encode(data)
         
-        # v1.0.4 compact format
+        # v1.0.3 compact format
         self.assertIn("@5:status", encoded)
         
         # Decode and verify
@@ -57,7 +57,7 @@ class TestCodec(unittest.TestCase):
         data = [{"id": i} for i in range(1, 15)]
         encoded = zon.encode(data)
 
-        # v1.0.4 compact format
+        # v1.0.3 compact format
         self.assertIn("@14:id", encoded)
 
         decoded = zon.decode(encoded)
@@ -68,7 +68,7 @@ class TestCodec(unittest.TestCase):
         data = [{"val": None}, {"val": 1}, {"val": None}]
         encoded = zon.encode(data)
         
-        # v1.0.4 uses lowercase "null"
+        # v1.0.3 uses lowercase "null"
         self.assertIn("null", encoded)
         
         # Decode and verify
@@ -80,7 +80,7 @@ class TestCodec(unittest.TestCase):
         data = [{"id": i, "status": "ok"} for i in range(1, 51)]
         encoded = zon.encode(data)
 
-        # v1.0.4 compact format
+        # v1.0.3 compact format
         self.assertIn("@50:id,status", encoded)
 
         # Decode and verify
@@ -94,7 +94,7 @@ class TestCodec(unittest.TestCase):
         
         encoded = zon.encode(data)
 
-        # v1.0.4 compact format
+        # v1.0.3 compact format
         self.assertIn("@4:dept", encoded)
 
         # Decode and verify
@@ -122,7 +122,7 @@ class TestCodec(unittest.TestCase):
         
         # No legacy protocol header
         self.assertNotIn("#Z:1.0", encoded)
-        # v1.0.4 compact format
+        # v1.0.3 compact format
         self.assertIn("@1:id,name", encoded)
         self.assertIn("1,Alice", encoded)
         
@@ -135,7 +135,7 @@ class TestCodec(unittest.TestCase):
         data = [{"id": f"ORD-{i:03d}"} for i in range(1, 51)]
         encoded = zon.encode(data)
 
-        # v1.0.4 compact format
+        # v1.0.3 compact format
         self.assertIn("@50:id", encoded)
         self.assertIn("ORD-001", encoded)
         

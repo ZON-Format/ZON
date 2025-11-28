@@ -1,5 +1,5 @@
 """
-ZON Encoder v1.0.4 - Compact Hybrid Format
+ZON Encoder v1.0.3 - Compact Hybrid Format
 
 Breaking changes from v1.0.2:
 - Compact header syntax (@count: instead of @data(count):)
@@ -29,7 +29,7 @@ class ZonEncoder:
 
     def encode(self, data: Any) -> str:
         """
-        Encode data to ZON v1.0.4 ClearText format.
+        Encode data to ZON v1.0.3 ClearText format.
         
         Args:
             data: Input data (list or dict)
@@ -131,7 +131,7 @@ class ZonEncoder:
 
     def _write_table(self, stream: List[Dict], key: str) -> List[str]:
         """
-        Write table in v1.0.4 compact format with adaptive encoding.
+        Write table in v1.0.3 compact format with adaptive encoding.
         """
         if not stream or len(stream) == 0:
             return []
@@ -160,11 +160,11 @@ class ZonEncoder:
 
     def _write_standard_table(self, flat_stream: List[Dict], cols: List[str], row_count: int, key: str) -> List[str]:
         """
-        Write standard compact table (v1.0.4 format).
+        Write standard compact table (v1.0.3 format).
         """
         lines: List[str] = []
 
-        # Detect sequential columns to omit (DISABLED in v1.0.4 for LLM accuracy)
+        # Detect sequential columns to omit (DISABLED in v1.0.3 for LLM accuracy)
         omitted_cols = self._analyze_sequential_columns(flat_stream, cols)
 
         # Build compact header: key:@(count)[omitted]: columns or @count[omitted]: columns
@@ -204,7 +204,7 @@ class ZonEncoder:
         key: str
     ) -> List[str]:
         """
-        Write sparse table for semi-uniform data (v1.0.4).
+        Write sparse table for semi-uniform data (v1.0.3).
         """
         lines: List[str] = []
 
@@ -261,7 +261,7 @@ class ZonEncoder:
         """
         Detect sequential columns (1, 2, 3, ..., N) for omission.
         
-        NOTE: Disabled in v1.0.4 to improve LLM retrieval accuracy.
+        NOTE: Disabled in v1.0.3 to improve LLM retrieval accuracy.
         Implicit columns like [id] were being missed by LLMs.
         Now all columns are explicit.
         """
@@ -451,7 +451,7 @@ class ZonEncoder:
     def _format_value(self, val: Any) -> str:
         """
         Format a value with minimal quoting.
-        v1.0.4 Optimization: Smart date detection and relaxed string quoting
+        v1.0.3 Optimization: Smart date detection and relaxed string quoting
         """
         if val is None:
             return "null"
@@ -511,7 +511,7 @@ class ZonEncoder:
             # unless they are meant to be strings (which is handled by string path)
             return self._format_zon_node(val)
 
-        # String formatting with v1.0.4 optimizations
+        # String formatting with v1.0.3 optimizations
         s = str(val)
 
         # CRITICAL FIX: Always JSON-stringify strings with newlines to prevent line breaks in ZON
@@ -557,7 +557,7 @@ class ZonEncoder:
     def _needs_type_protection(self, s: str) -> bool:
         """
         Determine if string needs type protection (quoting to preserve as string).
-        v1.0.4: More precise - only protect actual numbers, not complex patterns.
+        v1.0.3: More precise - only protect actual numbers, not complex patterns.
         """
         s_lower = s.lower()
         
@@ -593,7 +593,7 @@ class ZonEncoder:
         # Examples that should NOT be quoted:
         # - "192.168.1.1" (IP address - dots distinguish from number)
         # - "u123" (alphanumeric ID - letter prefix)
-        # - "v1.0.4" (version string)
+        # - "v1.0.3" (version string)
         # - "2025-01-01" (date - handled by _is_iso_date above)
         
         # If it starts/ends with digit but has non-numeric chars, check carefully
@@ -681,11 +681,11 @@ class ZonEncoder:
 
 def encode(data: Any, anchor_interval: int = DEFAULT_ANCHOR_INTERVAL) -> str:
     """
-    Convenience function to encode data to ZON v1.0.4 format.
+    Convenience function to encode data to ZON v1.0.3 format.
     
     Args:
         data: Input data
-        anchor_interval: Interval for anchor rows (legacy, unused in v1.0.4)
+        anchor_interval: Interval for anchor rows (legacy, unused in v1.0.3)
         
     Returns:
         ZON-encoded string in ClearText format

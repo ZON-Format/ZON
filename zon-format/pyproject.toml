@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "zon-format"
-version = "1.0.4"
-description = "Zero Overhead Notation v1.0.4 - Human-readable data format with 30%+ compression over JSON"
+version = "1.0.3"
+description = "Zero Overhead Notation v1.0.3 - Human-readable data format with 30%+ compression over JSON"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {text = "Apache-2.0"}

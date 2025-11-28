@@ -23,7 +23,7 @@ if not os.path.exists(EXAMPLES_DIR):
 # Simple datasets
 simple_key_value = {
     "name": "ZON Format",
-    "version": "1.0.4",
+    "version": "1.0.3",
     "active": True,
     "score": 98.5,
     "description": None

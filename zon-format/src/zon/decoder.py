@@ -1,5 +1,5 @@
 """
-ZON Decoder v1.0.4 - Compact Hybrid Format
+ZON Decoder v1.0.3 - Compact Hybrid Format
 
 Supports both v1.x and v2.0.0 formats:
 - v2.0: Compact headers (@count:), sequential ID reconstruction, sparse tables
@@ -34,7 +34,7 @@ class ZonDecoder:
 
     def decode(self, zon_str: str) -> Any:
         """
-        Decode ZON v1.0.4 ClearText format to original data structure.
+        Decode ZON v1.0.3 ClearText format to original data structure.
         
         Args:
             zon_str: ZON-encoded string
@@ -644,7 +644,7 @@ class ZonDecoder:
 
 def decode(data: str, strict: bool = True) -> Any:
     """
-    Convenience function to decode ZON v1.0.4 format to original data.
+    Convenience function to decode ZON v1.0.3 format to original data.
     
     Args:
         data: ZON-encoded string

@@ -8,7 +8,7 @@ version = "1.0.3"
 description = "Zero Overhead Notation v1.0.3 - Human-readable data format with 30%+ compression over JSON"
 readme = "README.md"
 requires-python = ">=3.8"
-license = {text = "Apache-2.0"}
+license = {text = "MIT"}
 authors = [
     {name = "Roni Bhakta", email = "ronibhakta1@gmail.com"}
 ]
@@ -41,7 +41,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/ZON-Format/ZON"
+Homepage = "https://zonformat.org"
 Documentation = "https://github.com/ZON-Format/ZON/blob/main/README.md"
 Repository = "https://github.com/ZON-Format/ZON"
 Issues = "https://github.com/ZON-Format/ZON/issues"

@@ -4,7 +4,7 @@
 [![PyPI downloads](https://img.shields.io/pypi/dm/zon-format?color=red)](https://pypi.org/project/zon-format/)
 [![PyPI version](https://img.shields.io/pypi/v/zon-format.svg)](https://pypi.org/project/zon-format/)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Tests](https://img.shields.io/badge/tests-94%2F94%20passing-brightgreen.svg)](#quality--testing)
+[![Tests](https://img.shields.io/badge/tests-121%2F121%20passing-brightgreen.svg)](#quality--testing)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 # ZON → JSON is dead. TOON was cute. ZON just won. (Now in Python)
@@ -45,153 +45,12 @@ pip install zon-format
 
 ## Why ZON?
 
-### Yes, we actually ran the numbers (Dec 2025, fresh data)
-| Model               | Dataset                  | ZON tokens | TOON   | JSON   | ZON vs TOON | ZON vs JSON |
-|---------------------|--------------------------|------------|--------|--------|-------------|-------------|
-| GPT-5-nano          | Unified                  | **19,995**     | 20,988 | 28,041 | **-5.0%**       | **-28.6%**      |
-| GPT-4o (o200k)      | 50-level nested          | **147,267**|225,510|285,131| **-34.7%**      | **-48.3%**      |
-| Claude 3.5 Sonnet   | Mixed agent data         | **149,281**|197,463|274,149| **-24.4%**      | **-45.5%**      |
-| Llama 3.1 405B      | Everything               | **234,623**|315,608|407,488| **-25.7%**      | **-42.4%**      |
-
 AI is becoming cheaper and more accessible, but larger context windows allow for larger data inputs as well. **LLM tokens still cost money** – and standard JSON is verbose and token-expensive:
 
 > "Dropped ZON into my LangChain agent loop and my monthly bill dropped $400 overnight"
 > — every Python dev who tried it this week
 
 **ZON is the only format that wins (or ties for first) on every single LLM.**
-
-```json
-{
-  "context": {
-    "task": "Our favorite hikes together",
-    "location": "Boulder",
-    "season": "spring_2025"
-  },
-  "friends": ["ana", "luis", "sam"],
-  "hikes": [
-    {
-      "id": 1,
-      "name": "Blue Lake Trail",
-      "distanceKm": 7.5,
-      "elevationGain": 320,
-      "companion": "ana",
-      "wasSunny": true
-    },
-    {
-      "id": 2,
-      "name": "Ridge Overlook",
-      "distanceKm": 9.2,
-      "elevationGain": 540,
-      "companion": "luis",
-      "wasSunny": false
-    },
-    {
-      "id": 3,
-      "name": "Wildflower Loop",
-      "distanceKm": 5.1,
-      "elevationGain": 180,
-      "companion": "sam",
-      "wasSunny": true
-    }
-  ]
-}
-```
-
-<details>
-<summary>TOON already conveys the same information with <strong>fewer tokens</strong>.</summary>
-
-```yaml
-context:
-  task: Our favorite hikes together
-  location: Boulder
-  season: spring_2025
-friends[3]: ana,luis,sam
-hikes[3]{id,name,distanceKm,elevationGain,companion,wasSunny}:
-  1,Blue Lake Trail,7.5,320,ana,true
-  2,Ridge Overlook,9.2,540,luis,false
-  3,Wildflower Loop,5.1,180,sam,true
-```
-
-</details>
-
-ZON conveys the same information with **even fewer tokens** than TOON – using compact table format with explicit headers:
-
-```
-context.task:Our favorite hikes together
-context.location:Boulder
-context.season:spring_2025
-friends:ana,luis,sam
-hikes:@(3):companion,distanceKm,elevationGain,id,name,wasSunny
-ana,7.5,320,1,Blue Lake Trail,T
-luis,9.2,540,2,Ridge Overlook,F
-sam,5.1,180,3,Wildflower Loop,T
-```
-
-### 🛡️ Validation + 📉 Compression
-
-Building reliable LLM apps requires two things:
-1.  **Safety:** You need to validate outputs (like you do with Zod/Pydantic).
-2.  **Efficiency:** You need to compress inputs to save money.
-
-ZON is the only library that gives you **both in one package**.
-
-| Feature | Traditional Validation (e.g. Pydantic) | ZON |
-| :--- | :--- | :--- |
-| **Type Safety** | ✅ Yes | ✅ Yes |
-| **Runtime Validation** | ✅ Yes | ✅ Yes |
-| **Input Compression** | ❌ No | ✅ **Yes (Saves ~50%)** |
-| **Prompt Generation** | ❌ Plugins needed | ✅ **Built-in** |
-| **Bundle Size** | ~Large | ⚡ **~5kb** |
-
-**The Sweet Spot:** Use ZON to **save money on Input Tokens** while keeping the strict safety you expect.
-
----
-
-## Key Features
-
-- 🎯 **100% LLM Accuracy**: Achieves perfect retrieval (24/24 questions) with self-explanatory structure – no hints needed
-
-### 3. Smart Flattening (Dot Notation)
-ZON automatically flattens top-level nested objects to reduce indentation.
-**JSON:**
-```json
-{
-  "config": {
-    "database": {
-      "host": "localhost"
-    }
-  }
-}
-```
-**ZON:**
-```
-config.database{host:localhost}
-```
-
-### 4. Colon-less Structure
-For nested objects and arrays, ZON omits the redundant colon, creating a cleaner, block-like structure.
-**JSON:**
-```json
-{
-  "user": {
-    "name": "Alice",
-    "roles": ["admin", "dev"]
-  }
-}
-```
-**ZON:**
-```
-user{name:Alice,roles[admin,dev]}
-```
-(Note: `user{...}` instead of `user:{...}`)
-- 💾 **Most Token-Efficient**: 4-15% fewer tokens than TOON across all tokenizers
-- 🎯 **JSON Data Model**: Encodes the same objects, arrays, and primitives as JSON with deterministic, lossless round-trips
-- 📐 **Minimal Syntax**: Explicit headers (`@(N)` for count, column list) eliminate ambiguity for LLMs
-- 🧺 **Tabular Arrays**: Uniform arrays collapse into tables that declare fields once and stream row values
-- 🔢 **Canonical Numbers**: No scientific notation (1000000, not 1e6), NaN/Infinity → null
-- 🌳 **Deep Nesting**: Handles complex nested structures efficiently (91% compression on 50-level deep objects)
-- 🔒 **Security Limits**: Automatic DOS prevention (100MB docs, 1M arrays, 100K keys)
-- ✅ **Production Ready**: 94/94 tests pass, 27/27 datasets verified, zero data loss
 
 ---
 
@@ -393,6 +252,140 @@ Llama 3 (Meta):
 **Key Insight:** ZON is the only format that wins or nearly wins across all models & datasets.
 
 ---
+
+```json
+{
+  "context": {
+    "task": "Our favorite hikes together",
+    "location": "Boulder",
+    "season": "spring_2025"
+  },
+  "friends": ["ana", "luis", "sam"],
+  "hikes": [
+    {
+      "id": 1,
+      "name": "Blue Lake Trail",
+      "distanceKm": 7.5,
+      "elevationGain": 320,
+      "companion": "ana",
+      "wasSunny": true
+    },
+    {
+      "id": 2,
+      "name": "Ridge Overlook",
+      "distanceKm": 9.2,
+      "elevationGain": 540,
+      "companion": "luis",
+      "wasSunny": false
+    },
+    {
+      "id": 3,
+      "name": "Wildflower Loop",
+      "distanceKm": 5.1,
+      "elevationGain": 180,
+      "companion": "sam",
+      "wasSunny": true
+    }
+  ]
+}
+```
+
+<details>
+<summary>TOON already conveys the same information with <strong>fewer tokens</strong>.</summary>
+
+```yaml
+context:
+  task: Our favorite hikes together
+  location: Boulder
+  season: spring_2025
+friends[3]: ana,luis,sam
+hikes[3]{id,name,distanceKm,elevationGain,companion,wasSunny}:
+  1,Blue Lake Trail,7.5,320,ana,true
+  2,Ridge Overlook,9.2,540,luis,false
+  3,Wildflower Loop,5.1,180,sam,true
+```
+
+</details>
+
+ZON conveys the same information with **even fewer tokens** than TOON – using compact table format with explicit headers:
+
+```
+context.task:Our favorite hikes together
+context.location:Boulder
+context.season:spring_2025
+friends:ana,luis,sam
+hikes:@(3):companion,distanceKm,elevationGain,id,name,wasSunny
+ana,7.5,320,1,Blue Lake Trail,T
+luis,9.2,540,2,Ridge Overlook,F
+sam,5.1,180,3,Wildflower Loop,T
+```
+
+### 🛡️ Validation + 📉 Compression
+
+Building reliable LLM apps requires two things:
+1.  **Safety:** You need to validate outputs (like you do with Zod/Pydantic).
+2.  **Efficiency:** You need to compress inputs to save money.
+
+ZON is the only library that gives you **both in one package**.
+
+| Feature | Traditional Validation (e.g. Pydantic) | ZON |
+| :--- | :--- | :--- |
+| **Type Safety** | ✅ Yes | ✅ Yes |
+| **Runtime Validation** | ✅ Yes | ✅ Yes |
+| **Input Compression** | ❌ No | ✅ **Yes (Saves ~50%)** |
+| **Prompt Generation** | ❌ Plugins needed | ✅ **Built-in** |
+| **Bundle Size** | ~Large | ⚡ **~5kb** |
+
+**The Sweet Spot:** Use ZON to **save money on Input Tokens** while keeping the strict safety you expect.
+
+---
+
+## Key Features
+
+- 🎯 **100% LLM Accuracy**: Achieves perfect retrieval (24/24 questions) with self-explanatory structure – no hints needed
+
+### 3. Smart Flattening (Dot Notation)
+ZON automatically flattens top-level nested objects to reduce indentation.
+**JSON:**
+```json
+{
+  "config": {
+    "database": {
+      "host": "localhost"
+    }
+  }
+}
+```
+**ZON:**
+```
+config.database{host:localhost}
+```
+
+### 4. Colon-less Structure
+For nested objects and arrays, ZON omits the redundant colon, creating a cleaner, block-like structure.
+**JSON:**
+```json
+{
+  "user": {
+    "name": "Alice",
+    "roles": ["admin", "dev"]
+  }
+}
+```
+**ZON:**
+```
+user{name:Alice,roles[admin,dev]}
+```
+(Note: `user{...}` instead of `user:{...}`)
+- 💾 **Most Token-Efficient**: 4-15% fewer tokens than TOON across all tokenizers
+- 🎯 **JSON Data Model**: Encodes the same objects, arrays, and primitives as JSON with deterministic, lossless round-trips
+- 📐 **Minimal Syntax**: Explicit headers (`@(N)` for count, column list) eliminate ambiguity for LLMs
+- 🧺 **Tabular Arrays**: Uniform arrays collapse into tables that declare fields once and stream row values
+- 🔢 **Canonical Numbers**: No scientific notation (1000000, not 1e6), NaN/Infinity → null
+- 🌳 **Deep Nesting**: Handles complex nested structures efficiently (91% compression on 50-level deep objects)
+- 🔒 **Security Limits**: Automatic DOS prevention (100MB docs, 1M arrays, 100K keys)
+- ✅ **Production Ready**: 94/94 tests pass, 27/27 datasets verified, zero data loss
+
 
 ## Security & Data Types
 

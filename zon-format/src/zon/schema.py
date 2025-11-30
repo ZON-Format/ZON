@@ -7,6 +7,7 @@ Provides runtime schema validation for LLM outputs.
 from typing import Any, Dict, List, Optional, Union, TypeVar, Generic
 from dataclasses import dataclass
 from .decoder import decode
+from .exceptions import ZonDecodeError
 
 T = TypeVar('T')
 
@@ -230,6 +231,20 @@ class ZonObjectSchema(ZonSchema):
         
         result = {}
         for key, field_schema in self._shape.items():
+            # Check if field is missing (not present in data)
+            if key not in data:
+                # For non-optional schemas, missing fields fail validation
+                if isinstance(field_schema, ZonOptionalSchema):
+                    result[key] = None
+                    continue
+                else:
+                    path_str = '.'.join(str(p) for p in (path + [key])) or 'root'
+                    return ZonResult(
+                        success=False,
+                        error=f"Missing required field '{key}' at {path_str}",
+                        issues=[ZonIssue(path=path + [key], message=f"Missing required field: {key}", code='missing_field')]
+                    )
+            
             field_result = field_schema.parse(data.get(key), path + [key])
             
             if not field_result.success:
@@ -306,7 +321,13 @@ def validate(input_data: Any, schema: ZonSchema) -> ZonResult:
     if isinstance(input_data, str):
         try:
             data = decode(input_data)
-        except Exception as e:
+        except ZonDecodeError as e:
+            return ZonResult(
+                success=False,
+                error=f"ZON Parse Error: {str(e)}",
+                issues=[ZonIssue(path=[], message=str(e), code='custom')]
+            )
+        except (ValueError, TypeError) as e:
             return ZonResult(
                 success=False,
                 error=f"ZON Parse Error: {str(e)}",

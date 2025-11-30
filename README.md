@@ -4,7 +4,7 @@
 [![PyPI downloads](https://img.shields.io/pypi/dm/zon-format?color=red)](https://pypi.org/project/zon-format/)
 [![PyPI version](https://img.shields.io/pypi/v/zon-format.svg)](https://pypi.org/project/zon-format/)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Tests](https://img.shields.io/badge/tests-94%2F94%20passing-brightgreen.svg)](#quality--testing)
+[![Tests](https://img.shields.io/badge/tests-121%2F121%20passing-brightgreen.svg)](#quality--testing)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 # ZON → JSON is dead. TOON was cute. ZON just won. (Now in Python)

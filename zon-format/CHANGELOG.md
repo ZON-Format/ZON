@@ -1,9 +1,39 @@
 # Changelog
 
+## [1.1.0] - 2024-12-01
+
+### Added
+- **Delta Encoding**: Efficient encoding for numeric sequences (e.g., `id:delta`).
+- **Dictionary Compression**: Compression for repetitive string columns.
+- **LLM Optimization**: `encode_llm` for token-efficient prompts.
+- **Advanced Schema Validation**:
+    - Regex patterns (`.regex()`)
+    - UUID validation (`.uuid()`)
+    - DateTime validation (`.datetime()`, `.date()`, `.time()`)
+    - Literal values (`.literal()`)
+    - Union types (`.union()`)
+    - Default values (`.default()`)
+    - Custom refinements (`.refine()`)
+- **CLI**: Full implementation of `convert`, `validate`, `stats`, and `format` commands.
+
+### Changed
+- **Decoder**: `decode` method now accepts `type_coercion` and `strict` keyword arguments.
+- **Performance**: Improved table parsing and sparse field handling.
+
+### Fixed
+- **CLI**: Fixed relative import issues and command execution.
+- **Schema**: Fixed missing validation methods (`min`, `max`, `email`, etc.).
+
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.5] - 2025-12-01
+
+### Fixed
+- **Package Exports**: Fixed `AttributeError` by properly exporting `encode` and `decode` functions in `zon/__init__.py`.
 
 ## [1.0.4] - 2025-11-30
 
@@ -80,6 +110,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CLI tool for encoding/decoding
 - Comprehensive test suite
 
+[1.0.5]: https://github.com/ZON-Format/ZON/releases/tag/v1.0.5
 [1.0.4]: https://github.com/ZON-Format/ZON/releases/tag/v1.0.4
 [1.0.3]: https://github.com/ZON-Format/ZON/releases/tag/v1.0.3
 [1.0.2]: https://github.com/ZON-Format/ZON/releases/tag/v1.0.2

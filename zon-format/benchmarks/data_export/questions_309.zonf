@@ -1,0 +1,311 @@
+type[5]:aggregation,field,filtering,structure,validation
+@309:type,a,q
+1,SYS-CORE-001,What is the system systemId?
+1,2.5.0,What is the system version?
+1,"1245600",What is the system uptime?
+1,us-east-1,What is the system location?
+1,production,What is the first tag in metadata?
+0,"3",How many tags are in metadata?
+1,admin,What is the role of user Alice Admin?
+1,"true",Is user Alice Admin active?
+1,"154",What is the login count for Alice Admin?
+1,"1",What is the ID of Alice Admin?
+1,dev,What is the role of user Bob Builder?
+1,"true",Is user Bob Builder active?
+1,"89",What is the login count for Bob Builder?
+1,"2",What is the ID of Bob Builder?
+1,qa,What is the role of user Charlie Check?
+1,"false",Is user Charlie Check active?
+1,"42",What is the login count for Charlie Check?
+1,"3",What is the ID of Charlie Check?
+1,ops,What is the role of user Dave Deploy?
+1,"true",Is user Dave Deploy active?
+1,"210",What is the login count for Dave Deploy?
+1,"4",What is the ID of Dave Deploy?
+1,guest,What is the role of user Eve External?
+1,"true",Is user Eve External active?
+1,"5",What is the login count for Eve External?
+1,"5",What is the ID of Eve External?
+2,"1",How many users have role 'admin'?
+2,"4",How many users do NOT have role 'admin'?
+2,"1",How many users have role 'dev'?
+2,"4",How many users do NOT have role 'dev'?
+2,"1",How many users have role 'qa'?
+2,"4",How many users do NOT have role 'qa'?
+2,"1",How many users have role 'ops'?
+2,"4",How many users do NOT have role 'ops'?
+2,"1",How many users have role 'guest'?
+2,"4",How many users do NOT have role 'guest'?
+2,"4",How many users are active?
+2,"1",How many users are inactive?
+2,"1",How many active users have role 'admin'?
+2,"1",How many active users have role 'dev'?
+2,"0",How many active users have role 'qa'?
+2,"1",How many active users have role 'ops'?
+2,"1",How many active users have role 'guest'?
+0,"500",What is the total login count for all users?
+0,"100",What is the average login count?
+1,db-primary.internal,What is the database host?
+1,"5432",What is the database port?
+1,"30000",What is the database timeout?
+0,"2",How many database replicas are there?
+1,"10",What is the priority of replica 1?
+1,db-read-1.internal,What is the host of replica 1?
+1,"5",What is the priority of replica 2?
+1,db-read-2.internal,What is the host of replica 2?
+1,"true",Is cache enabled?
+1,redis,What is the cache provider?
+1,"3600",What is the cache TTL?
+0,"3",How many cache nodes are there?
+1,"true",Is darkMode enabled?
+1,"false",Is betaAccess enabled?
+1,"true",Is analytics enabled?
+1,INFO,What is the level of log 101?
+1,kernel,What is the source of log 101?
+1,System startup,What is the message of log 101?
+1,INFO,What is the level of log 102?
+1,db-pool,What is the source of log 102?
+1,Database connected,What is the message of log 102?
+1,WARN,What is the level of log 103?
+1,monitor,What is the source of log 103?
+1,High memory usage,What is the message of log 103?
+1,ERROR,What is the level of log 104?
+1,api-gateway,What is the source of log 104?
+1,Connection timeout,What is the message of log 104?
+1,INFO,What is the level of log 105?
+1,backup-service,What is the source of log 105?
+1,Scheduled backup started,What is the message of log 105?
+1,INFO,What is the level of log 106?
+1,backup-service,What is the source of log 106?
+1,Scheduled backup completed,What is the message of log 106?
+2,"4",How many logs are 'INFO' level?
+2,"2",How many logs are NOT 'INFO' level?
+2,"1",How many logs are 'WARN' level?
+2,"5",How many logs are NOT 'WARN' level?
+2,"1",How many logs are 'ERROR' level?
+2,"5",How many logs are NOT 'ERROR' level?
+2,"1",How many logs are from source 'kernel'?
+2,"1",How many logs are from source 'db-pool'?
+2,"1",How many logs are from source 'monitor'?
+2,"1",How many logs are from source 'api-gateway'?
+2,"2",How many logs are from source 'backup-service'?
+3,"true",Does the dataset contain 'users'?
+3,"true",Does 'config' contain 'database'?
+3,"false",Does 'config' contain 'invalidKey'?
+3,"true",Is 'logs' an array?
+4,"true",Are all user IDs unique?
+4,"true",Do all logs have a timestamp?
+1,"99.99",What is the price of Wireless Headphones?
+1,"true",Is Wireless Headphones in stock?
+1,"249.5",What is the price of Ergonomic Chair?
+1,"false",Is Ergonomic Chair in stock?
+1,"59.99",What is the price of Gaming Mouse?
+1,"true",Is Gaming Mouse in stock?
+2,"2",How many products are in category 'Electronics'?
+2,"2",How many products are in stock?
+1,tech_guru,Who is the author of feed item f1?
+1,"120",How many likes did feed item f1 get?
+1,dev_jane,Who is the author of feed item f2?
+1,"30",How many likes did feed item f2 get?
+2,"1",How many feed items are posts?
+1,"null",What is the 'middleName' of user Alice Admin?
+1,"null",What is the 'secretKey' in config?
+2,"0",How many users are both active AND inactive?
+2,"0",How many logs have level 'INFO' AND level 'ERROR' simultaneously?
+2,"0",How many users have role 'ADMIN' (uppercase)?
+1,"false",Is the database port '5432' (string)?
+1,"false",Is user Alice Admin inactive?
+2,"true",Does user Alice Admin have login count > 100?
+2,"false",Does user Alice Admin have login count < 50?
+1,"false",Is user Bob Builder inactive?
+2,"false",Does user Bob Builder have login count > 100?
+2,"false",Does user Bob Builder have login count < 50?
+1,"true",Is user Charlie Check inactive?
+2,"false",Does user Charlie Check have login count > 100?
+2,"true",Does user Charlie Check have login count < 50?
+1,"false",Is user Dave Deploy inactive?
+2,"true",Does user Dave Deploy have login count > 100?
+2,"false",Does user Dave Deploy have login count < 50?
+1,"false",Is user Eve External inactive?
+2,"false",Does user Eve External have login count > 100?
+2,"true",Does user Eve External have login count < 50?
+1,"12",What is the latency of log 102?
+1,"85",What is the usage of log 103?
+1,"300",What is the duration of log 106?
+1,"1","[Variation 0] What is the id of user Alice Admin?"
+1,Bob Builder,"[Variation 1] What is the name of user Bob Builder?"
+1,qa,"[Variation 2] What is the role of user Charlie Check?"
+1,"true","[Variation 3] What is the active of user Dave Deploy?"
+1,"5","[Variation 4] What is the id of user Eve External?"
+1,Alice Admin,"[Variation 5] What is the name of user Alice Admin?"
+1,dev,"[Variation 6] What is the role of user Bob Builder?"
+1,"false","[Variation 7] What is the active of user Charlie Check?"
+1,"4","[Variation 8] What is the id of user Dave Deploy?"
+1,Eve External,"[Variation 9] What is the name of user Eve External?"
+1,admin,"[Variation 10] What is the role of user Alice Admin?"
+1,"true","[Variation 11] What is the active of user Bob Builder?"
+1,"3","[Variation 12] What is the id of user Charlie Check?"
+1,Dave Deploy,"[Variation 13] What is the name of user Dave Deploy?"
+1,guest,"[Variation 14] What is the role of user Eve External?"
+1,"true","[Variation 15] What is the active of user Alice Admin?"
+1,"2","[Variation 16] What is the id of user Bob Builder?"
+1,Charlie Check,"[Variation 17] What is the name of user Charlie Check?"
+1,ops,"[Variation 18] What is the role of user Dave Deploy?"
+1,"true","[Variation 19] What is the active of user Eve External?"
+1,"1","[Variation 20] What is the id of user Alice Admin?"
+1,Bob Builder,"[Variation 21] What is the name of user Bob Builder?"
+1,qa,"[Variation 22] What is the role of user Charlie Check?"
+1,"true","[Variation 23] What is the active of user Dave Deploy?"
+1,"5","[Variation 24] What is the id of user Eve External?"
+1,Alice Admin,"[Variation 25] What is the name of user Alice Admin?"
+1,dev,"[Variation 26] What is the role of user Bob Builder?"
+1,"false","[Variation 27] What is the active of user Charlie Check?"
+1,"4","[Variation 28] What is the id of user Dave Deploy?"
+1,Eve External,"[Variation 29] What is the name of user Eve External?"
+1,admin,"[Variation 30] What is the role of user Alice Admin?"
+1,"true","[Variation 31] What is the active of user Bob Builder?"
+1,"3","[Variation 32] What is the id of user Charlie Check?"
+1,Dave Deploy,"[Variation 33] What is the name of user Dave Deploy?"
+1,guest,"[Variation 34] What is the role of user Eve External?"
+1,"true","[Variation 35] What is the active of user Alice Admin?"
+1,"2","[Variation 36] What is the id of user Bob Builder?"
+1,Charlie Check,"[Variation 37] What is the name of user Charlie Check?"
+1,ops,"[Variation 38] What is the role of user Dave Deploy?"
+1,"true","[Variation 39] What is the active of user Eve External?"
+1,"1","[Variation 40] What is the id of user Alice Admin?"
+1,Bob Builder,"[Variation 41] What is the name of user Bob Builder?"
+1,qa,"[Variation 42] What is the role of user Charlie Check?"
+1,"true","[Variation 43] What is the active of user Dave Deploy?"
+1,"5","[Variation 44] What is the id of user Eve External?"
+1,Alice Admin,"[Variation 45] What is the name of user Alice Admin?"
+1,dev,"[Variation 46] What is the role of user Bob Builder?"
+1,"false","[Variation 47] What is the active of user Charlie Check?"
+1,"4","[Variation 48] What is the id of user Dave Deploy?"
+1,Eve External,"[Variation 49] What is the name of user Eve External?"
+1,admin,"[Variation 50] What is the role of user Alice Admin?"
+1,"true","[Variation 51] What is the active of user Bob Builder?"
+1,"3","[Variation 52] What is the id of user Charlie Check?"
+1,Dave Deploy,"[Variation 53] What is the name of user Dave Deploy?"
+1,guest,"[Variation 54] What is the role of user Eve External?"
+1,"true","[Variation 55] What is the active of user Alice Admin?"
+1,"2","[Variation 56] What is the id of user Bob Builder?"
+1,Charlie Check,"[Variation 57] What is the name of user Charlie Check?"
+1,ops,"[Variation 58] What is the role of user Dave Deploy?"
+1,"true","[Variation 59] What is the active of user Eve External?"
+1,"1","[Variation 60] What is the id of user Alice Admin?"
+1,Bob Builder,"[Variation 61] What is the name of user Bob Builder?"
+1,qa,"[Variation 62] What is the role of user Charlie Check?"
+1,"true","[Variation 63] What is the active of user Dave Deploy?"
+1,"5","[Variation 64] What is the id of user Eve External?"
+1,Alice Admin,"[Variation 65] What is the name of user Alice Admin?"
+1,dev,"[Variation 66] What is the role of user Bob Builder?"
+1,"false","[Variation 67] What is the active of user Charlie Check?"
+1,"4","[Variation 68] What is the id of user Dave Deploy?"
+1,Eve External,"[Variation 69] What is the name of user Eve External?"
+1,admin,"[Variation 70] What is the role of user Alice Admin?"
+1,"true","[Variation 71] What is the active of user Bob Builder?"
+1,"3","[Variation 72] What is the id of user Charlie Check?"
+1,Dave Deploy,"[Variation 73] What is the name of user Dave Deploy?"
+1,guest,"[Variation 74] What is the role of user Eve External?"
+1,"true","[Variation 75] What is the active of user Alice Admin?"
+1,"2","[Variation 76] What is the id of user Bob Builder?"
+1,Charlie Check,"[Variation 77] What is the name of user Charlie Check?"
+1,ops,"[Variation 78] What is the role of user Dave Deploy?"
+1,"true","[Variation 79] What is the active of user Eve External?"
+1,"1","[Variation 80] What is the id of user Alice Admin?"
+1,Bob Builder,"[Variation 81] What is the name of user Bob Builder?"
+1,qa,"[Variation 82] What is the role of user Charlie Check?"
+1,"true","[Variation 83] What is the active of user Dave Deploy?"
+1,"5","[Variation 84] What is the id of user Eve External?"
+1,Alice Admin,"[Variation 85] What is the name of user Alice Admin?"
+1,dev,"[Variation 86] What is the role of user Bob Builder?"
+1,"false","[Variation 87] What is the active of user Charlie Check?"
+1,"4","[Variation 88] What is the id of user Dave Deploy?"
+1,Eve External,"[Variation 89] What is the name of user Eve External?"
+1,admin,"[Variation 90] What is the role of user Alice Admin?"
+1,"true","[Variation 91] What is the active of user Bob Builder?"
+1,"3","[Variation 92] What is the id of user Charlie Check?"
+1,Dave Deploy,"[Variation 93] What is the name of user Dave Deploy?"
+1,guest,"[Variation 94] What is the role of user Eve External?"
+1,"true","[Variation 95] What is the active of user Alice Admin?"
+1,"2","[Variation 96] What is the id of user Bob Builder?"
+1,Charlie Check,"[Variation 97] What is the name of user Charlie Check?"
+1,ops,"[Variation 98] What is the role of user Dave Deploy?"
+1,"true","[Variation 99] What is the active of user Eve External?"
+1,"1","[Variation 100] What is the id of user Alice Admin?"
+1,Bob Builder,"[Variation 101] What is the name of user Bob Builder?"
+1,qa,"[Variation 102] What is the role of user Charlie Check?"
+1,"true","[Variation 103] What is the active of user Dave Deploy?"
+1,"5","[Variation 104] What is the id of user Eve External?"
+1,Alice Admin,"[Variation 105] What is the name of user Alice Admin?"
+1,dev,"[Variation 106] What is the role of user Bob Builder?"
+1,"false","[Variation 107] What is the active of user Charlie Check?"
+1,"4","[Variation 108] What is the id of user Dave Deploy?"
+1,Eve External,"[Variation 109] What is the name of user Eve External?"
+1,admin,"[Variation 110] What is the role of user Alice Admin?"
+1,"true","[Variation 111] What is the active of user Bob Builder?"
+1,"3","[Variation 112] What is the id of user Charlie Check?"
+1,Dave Deploy,"[Variation 113] What is the name of user Dave Deploy?"
+1,guest,"[Variation 114] What is the role of user Eve External?"
+1,"true","[Variation 115] What is the active of user Alice Admin?"
+1,"2","[Variation 116] What is the id of user Bob Builder?"
+1,Charlie Check,"[Variation 117] What is the name of user Charlie Check?"
+1,ops,"[Variation 118] What is the role of user Dave Deploy?"
+1,"true","[Variation 119] What is the active of user Eve External?"
+1,"1","[Variation 120] What is the id of user Alice Admin?"
+1,Bob Builder,"[Variation 121] What is the name of user Bob Builder?"
+1,qa,"[Variation 122] What is the role of user Charlie Check?"
+1,"true","[Variation 123] What is the active of user Dave Deploy?"
+1,"5","[Variation 124] What is the id of user Eve External?"
+1,Alice Admin,"[Variation 125] What is the name of user Alice Admin?"
+1,dev,"[Variation 126] What is the role of user Bob Builder?"
+1,"false","[Variation 127] What is the active of user Charlie Check?"
+1,"4","[Variation 128] What is the id of user Dave Deploy?"
+1,Eve External,"[Variation 129] What is the name of user Eve External?"
+1,admin,"[Variation 130] What is the role of user Alice Admin?"
+1,"true","[Variation 131] What is the active of user Bob Builder?"
+1,"3","[Variation 132] What is the id of user Charlie Check?"
+1,Dave Deploy,"[Variation 133] What is the name of user Dave Deploy?"
+1,guest,"[Variation 134] What is the role of user Eve External?"
+1,"true","[Variation 135] What is the active of user Alice Admin?"
+1,"2","[Variation 136] What is the id of user Bob Builder?"
+1,Charlie Check,"[Variation 137] What is the name of user Charlie Check?"
+1,ops,"[Variation 138] What is the role of user Dave Deploy?"
+1,"true","[Variation 139] What is the active of user Eve External?"
+1,"1","[Variation 140] What is the id of user Alice Admin?"
+1,Bob Builder,"[Variation 141] What is the name of user Bob Builder?"
+1,qa,"[Variation 142] What is the role of user Charlie Check?"
+1,"true","[Variation 143] What is the active of user Dave Deploy?"
+1,"5","[Variation 144] What is the id of user Eve External?"
+1,Alice Admin,"[Variation 145] What is the name of user Alice Admin?"
+1,dev,"[Variation 146] What is the role of user Bob Builder?"
+1,"false","[Variation 147] What is the active of user Charlie Check?"
+1,"4","[Variation 148] What is the id of user Dave Deploy?"
+1,Eve External,"[Variation 149] What is the name of user Eve External?"
+1,admin,"[Variation 150] What is the role of user Alice Admin?"
+1,"true","[Variation 151] What is the active of user Bob Builder?"
+1,"3","[Variation 152] What is the id of user Charlie Check?"
+1,Dave Deploy,"[Variation 153] What is the name of user Dave Deploy?"
+1,guest,"[Variation 154] What is the role of user Eve External?"
+1,"true","[Variation 155] What is the active of user Alice Admin?"
+1,"2","[Variation 156] What is the id of user Bob Builder?"
+1,Charlie Check,"[Variation 157] What is the name of user Charlie Check?"
+1,ops,"[Variation 158] What is the role of user Dave Deploy?"
+1,"true","[Variation 159] What is the active of user Eve External?"
+1,"1","[Variation 160] What is the id of user Alice Admin?"
+1,Bob Builder,"[Variation 161] What is the name of user Bob Builder?"
+1,qa,"[Variation 162] What is the role of user Charlie Check?"
+1,"true","[Variation 163] What is the active of user Dave Deploy?"
+1,"5","[Variation 164] What is the id of user Eve External?"
+1,Alice Admin,"[Variation 165] What is the name of user Alice Admin?"
+1,dev,"[Variation 166] What is the role of user Bob Builder?"
+1,"false","[Variation 167] What is the active of user Charlie Check?"
+1,"4","[Variation 168] What is the id of user Dave Deploy?"
+1,Eve External,"[Variation 169] What is the name of user Eve External?"
+1,admin,"[Variation 170] What is the role of user Alice Admin?"
+1,"true","[Variation 171] What is the active of user Bob Builder?"
+1,"3","[Variation 172] What is the id of user Charlie Check?"
+1,Dave Deploy,"[Variation 173] What is the name of user Dave Deploy?"
+1,guest,"[Variation 174] What is the role of user Eve External?"
+1,"true","[Variation 175] What is the active of user Alice Admin?"
+1,"2","[Variation 176] What is the id of user Bob Builder?"

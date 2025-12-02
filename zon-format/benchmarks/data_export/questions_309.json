@@ -1,0 +1,1547 @@
+[
+  {
+    "q": "What is the system systemId?",
+    "a": "SYS-CORE-001",
+    "type": "field"
+  },
+  {
+    "q": "What is the system version?",
+    "a": "2.5.0",
+    "type": "field"
+  },
+  {
+    "q": "What is the system uptime?",
+    "a": "1245600",
+    "type": "field"
+  },
+  {
+    "q": "What is the system location?",
+    "a": "us-east-1",
+    "type": "field"
+  },
+  {
+    "q": "What is the first tag in metadata?",
+    "a": "production",
+    "type": "field"
+  },
+  {
+    "q": "How many tags are in metadata?",
+    "a": "3",
+    "type": "aggregation"
+  },
+  {
+    "q": "What is the role of user Alice Admin?",
+    "a": "admin",
+    "type": "field"
+  },
+  {
+    "q": "Is user Alice Admin active?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "What is the login count for Alice Admin?",
+    "a": "154",
+    "type": "field"
+  },
+  {
+    "q": "What is the ID of Alice Admin?",
+    "a": "1",
+    "type": "field"
+  },
+  {
+    "q": "What is the role of user Bob Builder?",
+    "a": "dev",
+    "type": "field"
+  },
+  {
+    "q": "Is user Bob Builder active?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "What is the login count for Bob Builder?",
+    "a": "89",
+    "type": "field"
+  },
+  {
+    "q": "What is the ID of Bob Builder?",
+    "a": "2",
+    "type": "field"
+  },
+  {
+    "q": "What is the role of user Charlie Check?",
+    "a": "qa",
+    "type": "field"
+  },
+  {
+    "q": "Is user Charlie Check active?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "What is the login count for Charlie Check?",
+    "a": "42",
+    "type": "field"
+  },
+  {
+    "q": "What is the ID of Charlie Check?",
+    "a": "3",
+    "type": "field"
+  },
+  {
+    "q": "What is the role of user Dave Deploy?",
+    "a": "ops",
+    "type": "field"
+  },
+  {
+    "q": "Is user Dave Deploy active?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "What is the login count for Dave Deploy?",
+    "a": "210",
+    "type": "field"
+  },
+  {
+    "q": "What is the ID of Dave Deploy?",
+    "a": "4",
+    "type": "field"
+  },
+  {
+    "q": "What is the role of user Eve External?",
+    "a": "guest",
+    "type": "field"
+  },
+  {
+    "q": "Is user Eve External active?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "What is the login count for Eve External?",
+    "a": "5",
+    "type": "field"
+  },
+  {
+    "q": "What is the ID of Eve External?",
+    "a": "5",
+    "type": "field"
+  },
+  {
+    "q": "How many users have role 'admin'?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many users do NOT have role 'admin'?",
+    "a": "4",
+    "type": "filtering"
+  },
+  {
+    "q": "How many users have role 'dev'?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many users do NOT have role 'dev'?",
+    "a": "4",
+    "type": "filtering"
+  },
+  {
+    "q": "How many users have role 'qa'?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many users do NOT have role 'qa'?",
+    "a": "4",
+    "type": "filtering"
+  },
+  {
+    "q": "How many users have role 'ops'?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many users do NOT have role 'ops'?",
+    "a": "4",
+    "type": "filtering"
+  },
+  {
+    "q": "How many users have role 'guest'?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many users do NOT have role 'guest'?",
+    "a": "4",
+    "type": "filtering"
+  },
+  {
+    "q": "How many users are active?",
+    "a": "4",
+    "type": "filtering"
+  },
+  {
+    "q": "How many users are inactive?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many active users have role 'admin'?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many active users have role 'dev'?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many active users have role 'qa'?",
+    "a": "0",
+    "type": "filtering"
+  },
+  {
+    "q": "How many active users have role 'ops'?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many active users have role 'guest'?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "What is the total login count for all users?",
+    "a": "500",
+    "type": "aggregation"
+  },
+  {
+    "q": "What is the average login count?",
+    "a": "100",
+    "type": "aggregation"
+  },
+  {
+    "q": "What is the database host?",
+    "a": "db-primary.internal",
+    "type": "field"
+  },
+  {
+    "q": "What is the database port?",
+    "a": "5432",
+    "type": "field"
+  },
+  {
+    "q": "What is the database timeout?",
+    "a": "30000",
+    "type": "field"
+  },
+  {
+    "q": "How many database replicas are there?",
+    "a": "2",
+    "type": "aggregation"
+  },
+  {
+    "q": "What is the priority of replica 1?",
+    "a": "10",
+    "type": "field"
+  },
+  {
+    "q": "What is the host of replica 1?",
+    "a": "db-read-1.internal",
+    "type": "field"
+  },
+  {
+    "q": "What is the priority of replica 2?",
+    "a": "5",
+    "type": "field"
+  },
+  {
+    "q": "What is the host of replica 2?",
+    "a": "db-read-2.internal",
+    "type": "field"
+  },
+  {
+    "q": "Is cache enabled?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "What is the cache provider?",
+    "a": "redis",
+    "type": "field"
+  },
+  {
+    "q": "What is the cache TTL?",
+    "a": "3600",
+    "type": "field"
+  },
+  {
+    "q": "How many cache nodes are there?",
+    "a": "3",
+    "type": "aggregation"
+  },
+  {
+    "q": "Is darkMode enabled?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "Is betaAccess enabled?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "Is analytics enabled?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "What is the level of log 101?",
+    "a": "INFO",
+    "type": "field"
+  },
+  {
+    "q": "What is the source of log 101?",
+    "a": "kernel",
+    "type": "field"
+  },
+  {
+    "q": "What is the message of log 101?",
+    "a": "System startup",
+    "type": "field"
+  },
+  {
+    "q": "What is the level of log 102?",
+    "a": "INFO",
+    "type": "field"
+  },
+  {
+    "q": "What is the source of log 102?",
+    "a": "db-pool",
+    "type": "field"
+  },
+  {
+    "q": "What is the message of log 102?",
+    "a": "Database connected",
+    "type": "field"
+  },
+  {
+    "q": "What is the level of log 103?",
+    "a": "WARN",
+    "type": "field"
+  },
+  {
+    "q": "What is the source of log 103?",
+    "a": "monitor",
+    "type": "field"
+  },
+  {
+    "q": "What is the message of log 103?",
+    "a": "High memory usage",
+    "type": "field"
+  },
+  {
+    "q": "What is the level of log 104?",
+    "a": "ERROR",
+    "type": "field"
+  },
+  {
+    "q": "What is the source of log 104?",
+    "a": "api-gateway",
+    "type": "field"
+  },
+  {
+    "q": "What is the message of log 104?",
+    "a": "Connection timeout",
+    "type": "field"
+  },
+  {
+    "q": "What is the level of log 105?",
+    "a": "INFO",
+    "type": "field"
+  },
+  {
+    "q": "What is the source of log 105?",
+    "a": "backup-service",
+    "type": "field"
+  },
+  {
+    "q": "What is the message of log 105?",
+    "a": "Scheduled backup started",
+    "type": "field"
+  },
+  {
+    "q": "What is the level of log 106?",
+    "a": "INFO",
+    "type": "field"
+  },
+  {
+    "q": "What is the source of log 106?",
+    "a": "backup-service",
+    "type": "field"
+  },
+  {
+    "q": "What is the message of log 106?",
+    "a": "Scheduled backup completed",
+    "type": "field"
+  },
+  {
+    "q": "How many logs are 'INFO' level?",
+    "a": "4",
+    "type": "filtering"
+  },
+  {
+    "q": "How many logs are NOT 'INFO' level?",
+    "a": "2",
+    "type": "filtering"
+  },
+  {
+    "q": "How many logs are 'WARN' level?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many logs are NOT 'WARN' level?",
+    "a": "5",
+    "type": "filtering"
+  },
+  {
+    "q": "How many logs are 'ERROR' level?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many logs are NOT 'ERROR' level?",
+    "a": "5",
+    "type": "filtering"
+  },
+  {
+    "q": "How many logs are from source 'kernel'?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many logs are from source 'db-pool'?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many logs are from source 'monitor'?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many logs are from source 'api-gateway'?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "How many logs are from source 'backup-service'?",
+    "a": "2",
+    "type": "filtering"
+  },
+  {
+    "q": "Does the dataset contain 'users'?",
+    "a": "true",
+    "type": "structure"
+  },
+  {
+    "q": "Does 'config' contain 'database'?",
+    "a": "true",
+    "type": "structure"
+  },
+  {
+    "q": "Does 'config' contain 'invalidKey'?",
+    "a": "false",
+    "type": "structure"
+  },
+  {
+    "q": "Is 'logs' an array?",
+    "a": "true",
+    "type": "structure"
+  },
+  {
+    "q": "Are all user IDs unique?",
+    "a": "true",
+    "type": "validation"
+  },
+  {
+    "q": "Do all logs have a timestamp?",
+    "a": "true",
+    "type": "validation"
+  },
+  {
+    "q": "What is the price of Wireless Headphones?",
+    "a": "99.99",
+    "type": "field"
+  },
+  {
+    "q": "Is Wireless Headphones in stock?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "What is the price of Ergonomic Chair?",
+    "a": "249.5",
+    "type": "field"
+  },
+  {
+    "q": "Is Ergonomic Chair in stock?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "What is the price of Gaming Mouse?",
+    "a": "59.99",
+    "type": "field"
+  },
+  {
+    "q": "Is Gaming Mouse in stock?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "How many products are in category 'Electronics'?",
+    "a": "2",
+    "type": "filtering"
+  },
+  {
+    "q": "How many products are in stock?",
+    "a": "2",
+    "type": "filtering"
+  },
+  {
+    "q": "Who is the author of feed item f1?",
+    "a": "tech_guru",
+    "type": "field"
+  },
+  {
+    "q": "How many likes did feed item f1 get?",
+    "a": "120",
+    "type": "field"
+  },
+  {
+    "q": "Who is the author of feed item f2?",
+    "a": "dev_jane",
+    "type": "field"
+  },
+  {
+    "q": "How many likes did feed item f2 get?",
+    "a": "30",
+    "type": "field"
+  },
+  {
+    "q": "How many feed items are posts?",
+    "a": "1",
+    "type": "filtering"
+  },
+  {
+    "q": "What is the 'middleName' of user Alice Admin?",
+    "a": "null",
+    "type": "field"
+  },
+  {
+    "q": "What is the 'secretKey' in config?",
+    "a": "null",
+    "type": "field"
+  },
+  {
+    "q": "How many users are both active AND inactive?",
+    "a": "0",
+    "type": "filtering"
+  },
+  {
+    "q": "How many logs have level 'INFO' AND level 'ERROR' simultaneously?",
+    "a": "0",
+    "type": "filtering"
+  },
+  {
+    "q": "How many users have role 'ADMIN' (uppercase)?",
+    "a": "0",
+    "type": "filtering"
+  },
+  {
+    "q": "Is the database port '5432' (string)?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "Is user Alice Admin inactive?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "Does user Alice Admin have login count > 100?",
+    "a": "true",
+    "type": "filtering"
+  },
+  {
+    "q": "Does user Alice Admin have login count < 50?",
+    "a": "false",
+    "type": "filtering"
+  },
+  {
+    "q": "Is user Bob Builder inactive?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "Does user Bob Builder have login count > 100?",
+    "a": "false",
+    "type": "filtering"
+  },
+  {
+    "q": "Does user Bob Builder have login count < 50?",
+    "a": "false",
+    "type": "filtering"
+  },
+  {
+    "q": "Is user Charlie Check inactive?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "Does user Charlie Check have login count > 100?",
+    "a": "false",
+    "type": "filtering"
+  },
+  {
+    "q": "Does user Charlie Check have login count < 50?",
+    "a": "true",
+    "type": "filtering"
+  },
+  {
+    "q": "Is user Dave Deploy inactive?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "Does user Dave Deploy have login count > 100?",
+    "a": "true",
+    "type": "filtering"
+  },
+  {
+    "q": "Does user Dave Deploy have login count < 50?",
+    "a": "false",
+    "type": "filtering"
+  },
+  {
+    "q": "Is user Eve External inactive?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "Does user Eve External have login count > 100?",
+    "a": "false",
+    "type": "filtering"
+  },
+  {
+    "q": "Does user Eve External have login count < 50?",
+    "a": "true",
+    "type": "filtering"
+  },
+  {
+    "q": "What is the latency of log 102?",
+    "a": "12",
+    "type": "field"
+  },
+  {
+    "q": "What is the usage of log 103?",
+    "a": "85",
+    "type": "field"
+  },
+  {
+    "q": "What is the duration of log 106?",
+    "a": "300",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 0] What is the id of user Alice Admin?",
+    "a": "1",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 1] What is the name of user Bob Builder?",
+    "a": "Bob Builder",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 2] What is the role of user Charlie Check?",
+    "a": "qa",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 3] What is the active of user Dave Deploy?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 4] What is the id of user Eve External?",
+    "a": "5",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 5] What is the name of user Alice Admin?",
+    "a": "Alice Admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 6] What is the role of user Bob Builder?",
+    "a": "dev",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 7] What is the active of user Charlie Check?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 8] What is the id of user Dave Deploy?",
+    "a": "4",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 9] What is the name of user Eve External?",
+    "a": "Eve External",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 10] What is the role of user Alice Admin?",
+    "a": "admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 11] What is the active of user Bob Builder?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 12] What is the id of user Charlie Check?",
+    "a": "3",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 13] What is the name of user Dave Deploy?",
+    "a": "Dave Deploy",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 14] What is the role of user Eve External?",
+    "a": "guest",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 15] What is the active of user Alice Admin?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 16] What is the id of user Bob Builder?",
+    "a": "2",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 17] What is the name of user Charlie Check?",
+    "a": "Charlie Check",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 18] What is the role of user Dave Deploy?",
+    "a": "ops",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 19] What is the active of user Eve External?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 20] What is the id of user Alice Admin?",
+    "a": "1",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 21] What is the name of user Bob Builder?",
+    "a": "Bob Builder",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 22] What is the role of user Charlie Check?",
+    "a": "qa",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 23] What is the active of user Dave Deploy?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 24] What is the id of user Eve External?",
+    "a": "5",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 25] What is the name of user Alice Admin?",
+    "a": "Alice Admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 26] What is the role of user Bob Builder?",
+    "a": "dev",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 27] What is the active of user Charlie Check?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 28] What is the id of user Dave Deploy?",
+    "a": "4",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 29] What is the name of user Eve External?",
+    "a": "Eve External",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 30] What is the role of user Alice Admin?",
+    "a": "admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 31] What is the active of user Bob Builder?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 32] What is the id of user Charlie Check?",
+    "a": "3",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 33] What is the name of user Dave Deploy?",
+    "a": "Dave Deploy",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 34] What is the role of user Eve External?",
+    "a": "guest",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 35] What is the active of user Alice Admin?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 36] What is the id of user Bob Builder?",
+    "a": "2",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 37] What is the name of user Charlie Check?",
+    "a": "Charlie Check",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 38] What is the role of user Dave Deploy?",
+    "a": "ops",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 39] What is the active of user Eve External?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 40] What is the id of user Alice Admin?",
+    "a": "1",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 41] What is the name of user Bob Builder?",
+    "a": "Bob Builder",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 42] What is the role of user Charlie Check?",
+    "a": "qa",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 43] What is the active of user Dave Deploy?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 44] What is the id of user Eve External?",
+    "a": "5",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 45] What is the name of user Alice Admin?",
+    "a": "Alice Admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 46] What is the role of user Bob Builder?",
+    "a": "dev",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 47] What is the active of user Charlie Check?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 48] What is the id of user Dave Deploy?",
+    "a": "4",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 49] What is the name of user Eve External?",
+    "a": "Eve External",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 50] What is the role of user Alice Admin?",
+    "a": "admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 51] What is the active of user Bob Builder?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 52] What is the id of user Charlie Check?",
+    "a": "3",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 53] What is the name of user Dave Deploy?",
+    "a": "Dave Deploy",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 54] What is the role of user Eve External?",
+    "a": "guest",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 55] What is the active of user Alice Admin?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 56] What is the id of user Bob Builder?",
+    "a": "2",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 57] What is the name of user Charlie Check?",
+    "a": "Charlie Check",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 58] What is the role of user Dave Deploy?",
+    "a": "ops",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 59] What is the active of user Eve External?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 60] What is the id of user Alice Admin?",
+    "a": "1",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 61] What is the name of user Bob Builder?",
+    "a": "Bob Builder",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 62] What is the role of user Charlie Check?",
+    "a": "qa",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 63] What is the active of user Dave Deploy?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 64] What is the id of user Eve External?",
+    "a": "5",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 65] What is the name of user Alice Admin?",
+    "a": "Alice Admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 66] What is the role of user Bob Builder?",
+    "a": "dev",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 67] What is the active of user Charlie Check?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 68] What is the id of user Dave Deploy?",
+    "a": "4",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 69] What is the name of user Eve External?",
+    "a": "Eve External",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 70] What is the role of user Alice Admin?",
+    "a": "admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 71] What is the active of user Bob Builder?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 72] What is the id of user Charlie Check?",
+    "a": "3",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 73] What is the name of user Dave Deploy?",
+    "a": "Dave Deploy",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 74] What is the role of user Eve External?",
+    "a": "guest",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 75] What is the active of user Alice Admin?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 76] What is the id of user Bob Builder?",
+    "a": "2",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 77] What is the name of user Charlie Check?",
+    "a": "Charlie Check",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 78] What is the role of user Dave Deploy?",
+    "a": "ops",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 79] What is the active of user Eve External?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 80] What is the id of user Alice Admin?",
+    "a": "1",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 81] What is the name of user Bob Builder?",
+    "a": "Bob Builder",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 82] What is the role of user Charlie Check?",
+    "a": "qa",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 83] What is the active of user Dave Deploy?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 84] What is the id of user Eve External?",
+    "a": "5",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 85] What is the name of user Alice Admin?",
+    "a": "Alice Admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 86] What is the role of user Bob Builder?",
+    "a": "dev",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 87] What is the active of user Charlie Check?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 88] What is the id of user Dave Deploy?",
+    "a": "4",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 89] What is the name of user Eve External?",
+    "a": "Eve External",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 90] What is the role of user Alice Admin?",
+    "a": "admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 91] What is the active of user Bob Builder?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 92] What is the id of user Charlie Check?",
+    "a": "3",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 93] What is the name of user Dave Deploy?",
+    "a": "Dave Deploy",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 94] What is the role of user Eve External?",
+    "a": "guest",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 95] What is the active of user Alice Admin?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 96] What is the id of user Bob Builder?",
+    "a": "2",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 97] What is the name of user Charlie Check?",
+    "a": "Charlie Check",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 98] What is the role of user Dave Deploy?",
+    "a": "ops",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 99] What is the active of user Eve External?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 100] What is the id of user Alice Admin?",
+    "a": "1",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 101] What is the name of user Bob Builder?",
+    "a": "Bob Builder",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 102] What is the role of user Charlie Check?",
+    "a": "qa",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 103] What is the active of user Dave Deploy?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 104] What is the id of user Eve External?",
+    "a": "5",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 105] What is the name of user Alice Admin?",
+    "a": "Alice Admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 106] What is the role of user Bob Builder?",
+    "a": "dev",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 107] What is the active of user Charlie Check?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 108] What is the id of user Dave Deploy?",
+    "a": "4",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 109] What is the name of user Eve External?",
+    "a": "Eve External",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 110] What is the role of user Alice Admin?",
+    "a": "admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 111] What is the active of user Bob Builder?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 112] What is the id of user Charlie Check?",
+    "a": "3",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 113] What is the name of user Dave Deploy?",
+    "a": "Dave Deploy",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 114] What is the role of user Eve External?",
+    "a": "guest",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 115] What is the active of user Alice Admin?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 116] What is the id of user Bob Builder?",
+    "a": "2",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 117] What is the name of user Charlie Check?",
+    "a": "Charlie Check",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 118] What is the role of user Dave Deploy?",
+    "a": "ops",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 119] What is the active of user Eve External?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 120] What is the id of user Alice Admin?",
+    "a": "1",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 121] What is the name of user Bob Builder?",
+    "a": "Bob Builder",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 122] What is the role of user Charlie Check?",
+    "a": "qa",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 123] What is the active of user Dave Deploy?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 124] What is the id of user Eve External?",
+    "a": "5",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 125] What is the name of user Alice Admin?",
+    "a": "Alice Admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 126] What is the role of user Bob Builder?",
+    "a": "dev",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 127] What is the active of user Charlie Check?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 128] What is the id of user Dave Deploy?",
+    "a": "4",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 129] What is the name of user Eve External?",
+    "a": "Eve External",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 130] What is the role of user Alice Admin?",
+    "a": "admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 131] What is the active of user Bob Builder?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 132] What is the id of user Charlie Check?",
+    "a": "3",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 133] What is the name of user Dave Deploy?",
+    "a": "Dave Deploy",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 134] What is the role of user Eve External?",
+    "a": "guest",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 135] What is the active of user Alice Admin?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 136] What is the id of user Bob Builder?",
+    "a": "2",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 137] What is the name of user Charlie Check?",
+    "a": "Charlie Check",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 138] What is the role of user Dave Deploy?",
+    "a": "ops",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 139] What is the active of user Eve External?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 140] What is the id of user Alice Admin?",
+    "a": "1",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 141] What is the name of user Bob Builder?",
+    "a": "Bob Builder",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 142] What is the role of user Charlie Check?",
+    "a": "qa",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 143] What is the active of user Dave Deploy?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 144] What is the id of user Eve External?",
+    "a": "5",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 145] What is the name of user Alice Admin?",
+    "a": "Alice Admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 146] What is the role of user Bob Builder?",
+    "a": "dev",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 147] What is the active of user Charlie Check?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 148] What is the id of user Dave Deploy?",
+    "a": "4",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 149] What is the name of user Eve External?",
+    "a": "Eve External",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 150] What is the role of user Alice Admin?",
+    "a": "admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 151] What is the active of user Bob Builder?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 152] What is the id of user Charlie Check?",
+    "a": "3",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 153] What is the name of user Dave Deploy?",
+    "a": "Dave Deploy",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 154] What is the role of user Eve External?",
+    "a": "guest",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 155] What is the active of user Alice Admin?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 156] What is the id of user Bob Builder?",
+    "a": "2",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 157] What is the name of user Charlie Check?",
+    "a": "Charlie Check",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 158] What is the role of user Dave Deploy?",
+    "a": "ops",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 159] What is the active of user Eve External?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 160] What is the id of user Alice Admin?",
+    "a": "1",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 161] What is the name of user Bob Builder?",
+    "a": "Bob Builder",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 162] What is the role of user Charlie Check?",
+    "a": "qa",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 163] What is the active of user Dave Deploy?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 164] What is the id of user Eve External?",
+    "a": "5",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 165] What is the name of user Alice Admin?",
+    "a": "Alice Admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 166] What is the role of user Bob Builder?",
+    "a": "dev",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 167] What is the active of user Charlie Check?",
+    "a": "false",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 168] What is the id of user Dave Deploy?",
+    "a": "4",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 169] What is the name of user Eve External?",
+    "a": "Eve External",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 170] What is the role of user Alice Admin?",
+    "a": "admin",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 171] What is the active of user Bob Builder?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 172] What is the id of user Charlie Check?",
+    "a": "3",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 173] What is the name of user Dave Deploy?",
+    "a": "Dave Deploy",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 174] What is the role of user Eve External?",
+    "a": "guest",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 175] What is the active of user Alice Admin?",
+    "a": "true",
+    "type": "field"
+  },
+  {
+    "q": "[Variation 176] What is the id of user Bob Builder?",
+    "a": "2",
+    "type": "field"
+  }
+]

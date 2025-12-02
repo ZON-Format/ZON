@@ -1,447 +1,358 @@
-# ZON API Reference
+# API Reference
 
-Copyright (c) 2025 ZON-FORMAT (Roni Bhakta)
+**Version:** 1.1.0
 
-Complete API documentation for `zon-format` v1.0.4 (Python).
+## Core Functions
 
-## Installation
-
-```bash
-pip install zon-format
-```
-
----
-
-## Encoding Functions
-
-### `encode(data: Any) -> str`
+### `encode(data, **options) -> str`
 
 Encodes Python data to ZON format.
 
 **Parameters:**
-- `data` (`Any`) - Python data to encode (dicts, lists, primitives)
+- `data` (any): Python object to encode
+- `**options`: Optional encoding options
+  - `enable_type_coercion` (bool): Enable automatic type coercion
 
-**Returns:** `str` - ZON-formatted string
+**Returns:** ZON-formatted string
 
 **Example:**
 ```python
-import zon
+from zon import encode
 
 data = {
-    "users": [
-        {"id": 1, "name": "Alice", "active": True},
-        {"id": 2, "name": "Bob", "active": False}
+    'users': [
+        {'id': 1, 'name': 'Alice'},
+        {'id': 2, 'name': 'Bob'}
     ]
 }
 
-encoded = zon.encode(data)
-print(encoded)
+zon_str = encode(data)
+print(zon_str)
+# users:@(2):id,name
+# 1,Alice
+# 2,Bob
 ```
-
-**Output:**
-```zon
-users:@(2):active,id,name
-T,1,Alice
-F,2,Bob
-```
-
-**Supported Types:**
-- ✅ Dicts (nested or flat)
-- ✅ Lists (uniform, mixed, primitives)
-- ✅ Strings
-- ✅ Numbers (integers, floats)
-- ✅ Booleans (`T`/`F`)
-- ✅ None (`null`)
-
-**Encoding Behavior:**
-- **Uniform lists** → Table format (`@(N):columns`)
-- **Nested dicts** → Quoted notation (`"{key:value}"`)
-- **Primitive lists** → Inline format (`"[a,b,c]"`)
-- **Booleans** → `T`/`F` (single character)
-- **None** → `null`
 
 ---
 
-## Decoding Functions
+### `decode(zon_str, **options) -> any`
 
-### `decode(zon_str: str, strict: bool = True) -> Any`
+Decodes ZON format back to Python data.
 
-Decodes a ZON format string back to the original Python data structure.
+**Parameters:**
+- `zon_str` (str): ZON-formatted string
+- `**options`: Optional decoding options
+  - `strict` (bool): Validate table structure (default: `True`)
+  - `enable_type_coercion` (bool): Enable type coercion
 
-### Parameters
+**Returns:** Original Python data structure
 
-- **`zon_str`** (`str`): The ZON-formatted string to decode
-- **`strict`** (`bool`, default: `True`): Enable strict validation
-
-### Strict Mode
-
-**Enabled by default** - Validates table structure during decoding.
-
-**Error Codes:**
-- `E001`: Row count mismatch (expected vs actual rows)
-- `E002`: Field count mismatch (expected vs actual fields)
-
-**Examples:**
-
+**Example:**
 ```python
-import zon
-from zon import ZonDecodeError
+from zon import decode
 
-# Strict mode (default) - throws on validation errors
-zon_data = """
+zon_str = """
 users:@(2):id,name
 1,Alice
+2,Bob
 """
 
-try:
-    data = zon.decode(zon_data)
-except ZonDecodeError as e:
-    print(e.code)     # "E001"
-    print(e.message)  # "[E001] Row count mismatch..."
-    print(e.context)  # "Table: users"
-
-# Non-strict mode - allows mismatches
-data = zon.decode(zon_data, strict=False)
-# Successfully decodes with 1 row instead of declared 2
+data = decode(zon_str)
+print(data)
+# {'users': [{'id': 1, 'name': 'Alice'}, {'id': 2, 'name': 'Bob'}]}
 ```
 
-**Output:**
-```python
-{
-    "users": [
-        {"id": 1, "name": "Alice", "active": True},
-        {"id": 2, "name": "Bob", "active": False}
-    ]
-}
-```
-
-**Decoding Guarantees:**
-- ✅ **Lossless**: Perfect reconstruction of original data
-- ✅ **Type preservation**: Numbers, booleans, None, strings
-- ✅ **100% accuracy**: No data loss or corruption
-
----
-
-## Schema Validation API
-
-ZON provides a runtime schema validation library for LLM guardrails.
-
-### `zon` Builder
-
-Fluent API for defining schemas.
-
-```python
-from zon import zon
-```
-
-#### Methods
-
-- **`zon.string()`**: Matches any string.
-- **`zon.number()`**: Matches any number (no NaN/Infinity).
-- **`zon.boolean()`**: Matches `True` or `False`.
-- **`zon.enum(values: list)`**: Matches one of the provided string values.
-- **`zon.array(schema: ZonSchema)`**: Matches a list where every element matches `schema`.
-- **`zon.object(shape: dict)`**: Matches a dict with the specified shape.
-
-#### Modifiers
-
-- **`.optional()`**: Marks a field as optional (can be `None` or missing).
-- **`.describe(text: str)`**: Adds a description for prompt generation.
-
-### `validate(input, schema) -> ZonResult`
-
-Validates input against a schema. Accepts either a raw ZON string (which it decodes) or a pre-decoded Python object.
-
-**Returns:** `ZonResult`
-```python
-class ZonResult:
-    success: bool
-    data: Any  # Present if success=True
-    error: str  # Present if success=False
-    issues: list  # List of validation issues
-```
-
-**Example:**
-
-```python
-from zon import zon, validate
-
-UserSchema = zon.object({
-    'name': zon.string(),
-    'role': zon.enum(['admin', 'user'])
-})
-
-result = validate(llm_output, UserSchema)
-if result.success:
-    # result.data is the validated data
-    print(result.data)
-```
-
----
-
-## Error Handling
-
-### `ZonDecodeError`
-
-Thrown when decoding fails or strict mode validation errors occur.
-
-**Properties:**
-- `message` (`str`): Error description
-- `code` (`str`, optional): Error code (e.g., "E001", "E002")
-- `line` (`int`, optional): Line number where error occurred
-- `column` (`int`, optional): Column position
-- `context` (`str`, optional): Relevant context snippet
-
-**Example:**
-
+**Error Handling:**
 ```python
 from zon import decode, ZonDecodeError
 
 try:
     data = decode(invalid_zon)
 except ZonDecodeError as e:
-    print(e.code)      # "E001"
-    print(e.line)      # 5
-    print(e.context)   # "Table: users"
-    print(str(e))      # "[E001] Row count mismatch... (line 5)"
-```
-
-### Common Error Codes
-
-| Code | Description | Example |
-|------|-------------|----------|
-| `E001` | Row count mismatch | Declared `@(3)` but only 2 rows provided |
-| `E002` | Field count mismatch | Declared 3 columns but row has 2 values |
-| `E301` | Document size exceeds 100MB | Prevents memory exhaustion |
-| `E302` | Line length exceeds 1MB | Prevents buffer overflow |
-| `E303` | Array length exceeds 1M items | Prevents excessive iteration |
-| `E304` | Object key count exceeds 100K | Prevents hash collision |
-
-**Security Limits:**
-
-All security limits (E301-E304) are automatically enforced to prevent DOS attacks. No configuration needed.
-
-**Disable strict mode** to allow row/field count mismatches (E001-E002):
-
-```python
-data = zon.decode(zon_string, strict=False)
+    print(e.code)    # "E001" or "E002"
+    print(e.message) # Detailed error message
 ```
 
 ---
 
-## Complete Examples
+## Advanced Functions
 
-### Example 1: Simple Object
+### `split(data, token_limit, overlap=0.1) -> List[str]`
 
+Splits large data into chunks based on token limit.
+
+**Parameters:**
+- `data` (any): Data to split
+- `token_limit` (int): Maximum tokens per chunk
+- `overlap` (float): Overlap ratio between chunks (0.0-1.0)
+
+**Returns:** List of ZON-encoded chunks
+
+**Example:**
 ```python
-data = {
-    "name": "ZON Format",
-    "version": "1.0.4",
-    "active": True,
-    "score": 98.5
-}
+from zon import split
 
-encoded = zon.encode(data)
-# active:T
-# name:ZON Format
-# score:98.5
-# version:"1.0.4"
+large_data = {'items': [{'id': i} for i in range(10000)]}
+chunks = split(large_data, token_limit=1000, overlap=0.1)
 
-decoded = zon.decode(encoded)
-# {"name": "ZON Format", "version": "1.0.4", "active": True, "score": 98.5}
-```
-
-### Example 2: Uniform Table
-
-```python
-data = {
-    "employees": [
-        {"id": 1, "name": "Alice", "dept": "Eng", "salary": 85000},
-        {"id": 2, "name": "Bob", "dept": "Sales", "salary": 72000},
-        {"id": 3, "name": "Carol", "dept": "HR", "salary": 65000}
-    ]
-}
-
-encoded = zon.encode(data)
-# employees:@(3):dept,id,name,salary
-# Eng,1,Alice,85000
-# Sales,2,Bob,72000
-# HR,3,Carol,65000
-
-decoded = zon.decode(encoded)
-# Identical to original!
-```
-
-### Example 3: Mixed Structure
-
-```python
-data = {
-    "metadata": {"version": "1.0", "env": "prod"},
-    "users": [
-        {"id": 1, "name": "Alice"},
-        {"id": 2, "name": "Bob"}
-    ],
-    "tags": ["python", "llm", "zon"]
-}
-
-encoded = zon.encode(data)
-# metadata:"{version:1.0,env:prod}"
-# users:@(2):id,name
-# 1,Alice
-# 2,Bob
-# tags:"[python,llm,zon]"
-
-decoded = zon.decode(encoded)
-# Identical to original!
-```
-
-### Example 4: Nested Objects
-
-```python
-data = {
-    "config": {
-        "database": {
-            "host": "localhost",
-            "port": 5432,
-            "ssl": True
-        },
-        "cache": {
-            "ttl": 3600,
-            "enabled": False
-        }
-    }
-}
-
-encoded = zon.encode(data)
-# config:"{database:{host:localhost,port:5432,ssl:T},cache:{ttl:3600,enabled:F}}"
-
-decoded = zon.decode(encoded)
-# Identical to original!
+print(f"Created {len(chunks)} chunks")
+# Created 45 chunks
 ```
 
 ---
 
-## Round-Trip Compatibility
+### `validate(zon_str, schema) -> ValidationResult`
 
-ZON **guarantees lossless round-trips**:
+Validates ZON data against a schema.
+
+**Parameters:**
+- `zon_str` (str): ZON data to validate
+- `schema`: Schema definition
+
+**Returns:** `ValidationResult` with `success`, and optionally `error` and `issues`
+
+**Example:**
+```python
+from zon import validate, zon
+
+# Define schema
+UserSchema = zon.object({
+    'name': zon.string(),
+    'age': zon.number(),
+    'role': zon.enum(['admin', 'user'])
+})
+
+# Validate
+result = validate(llm_output, UserSchema)
+
+if result.success:
+    print("Valid!")
+else:
+    print(f"Error: {result.error}")
+    print(f"Issues: {result.issues}")
+```
+
+---
+
+## Classes
+
+### `ZonEncoder`
+
+Advanced encoder with configuration options.
+
+**Constructor:**
+```python
+from zon import ZonEncoder
+
+encoder = ZonEncoder(
+    anchor_interval=None,           # Anchor interval for large tables
+    enable_dictionary=True,          # Enable dictionary compression
+    enable_type_coercion=False       # Enable type coercion
+)
+```
+
+**Methods:**
+
+#### `encode(data) -> str`
 
 ```python
-import zon
-
-def test_round_trip(data):
-    encoded = zon.encode(data)
-    decoded = zon.decode(encoded)
-    return data == decoded
-
-# All these pass:
-test_round_trip({"name": "test", "value": 123})  # ✅
-test_round_trip([1, 2, 3, 4, 5])                  # ✅
-test_round_trip([{"id": 1}, {"id": 2}])          # ✅
-test_round_trip(None)                             # ✅
-test_round_trip("hello")                          # ✅
+data = {'users': [{'id': 1, 'name': 'Alice'}]}
+zon_str = encoder.encode(data)
 ```
-
-**Verified:**
-- ✅ 28/28 unit tests pass
-- ✅ 27/27 datasets verified (9 examples + 18 comprehensive)
-- ✅ Zero data loss across all test cases
 
 ---
 
-## Performance Characteristics
+### `ZonDecoder`
 
-### Encoding Speed
-- **Small data (<1KB)**: <1ms
-- **Medium data (1-10KB)**: 1-5ms
-- **Large data (10-100KB)**: 5-50ms
+Advanced decoder with configuration options.
 
-### Token Efficiency
+**Constructor:**
+```python
+from zon import ZonDecoder
 
-**Structure**: Mixed uniform tables + nested objects  
-**Questions**: 309 total (field retrieval, aggregation, filtering, structure awareness)
-
-#### Efficiency Ranking (Accuracy per 10K Tokens)
-
-Each format ranked by efficiency (accuracy percentage per 10,000 tokens):
-
-```
-ZON            ████████████████████ 1430.6 acc%/10K │  99.0% acc │ 692 tokens 👑
-CSV            ███████████████████░ 1386.5 acc%/10K │  99.0% acc │ 714 tokens
-JSON compact   ████████████████░░░░ 1143.4 acc%/10K │  91.7% acc │ 802 tokens
-TOON           ████████████████░░░░ 1132.7 acc%/10K │  99.0% acc │ 874 tokens
-JSON           ██████████░░░░░░░░░░  744.6 acc%/10K │  96.8% acc │ 1,300 tokens
+decoder = ZonDecoder(
+    strict=True,                     # Validate table structure
+    enable_type_coercion=False       # Enable type coercion
+)
 ```
 
-*Efficiency score = (Accuracy % ÷ Tokens) × 10,000. Higher is better.*
+**Methods:**
 
-> [!TIP]
-> ZON achieves **99.0% accuracy** while using **20.8% fewer tokens** than TOON and **13.7% fewer** than Minified JSON.
-
-#### Per-Model Comparison
-
-Accuracy on the unified dataset with gpt-5-nano:
-
-```
-gpt-5-nano (Azure OpenAI)
-→ ZON            ████████████████████  99.0% (306/309) │ 692 tokens
-  TOON           ████████████████████  99.0% (306/309) │ 874 tokens
-  CSV            ████████████████████  99.0% (306/309) │ 714 tokens
-  JSON           ███████████████████░  96.8% (299/309) │ 1,300 tokens
-  JSON compact   ██████████████████░░  91.7% (283/309) │ 802 tokens
-```
-
-**ZON is optimized for:**
-- ✅ Uniform lists of objects (tables)
-- ✅ Mixed structures (metadata + data)
-- ✅ LLM context windows
-- ✅ Token-sensitive applications
-
----
-
-## Choosing ZON
-
-### Use ZON When:
-- ✅ Sending data to LLMs
-- ✅ Token count matters
-- ✅ Data has uniform list structures
-- ✅ You need human-readable format
-- ✅ Perfect round-trip required
-
-### Consider Alternatives When:
-- ❌ Binary formats acceptable (use Protocol Buffers, MessagePack)
-- ❌ Primarily deeply nested trees (JSON might be simpler)
-- ❌ No LLM usage (stick with JSON)
-- ❌ Need streaming/partial decode (not yet supported)
-
----
-
-## Migration Guide
-
-### From JSON
+#### `decode(zon_str) -> any`
 
 ```python
-# Before (JSON)
-import json
-json_string = json.dumps(data)
-parsed = json.loads(json_string)
-
-# After (ZON)
-import zon
-zon_string = zon.encode(data)
-parsed = zon.decode(zon_string)
+zon_str = "users:@(1):id,name\\n1,Alice"
+data = decoder.decode(zon_str)
 ```
 
-**Benefits:**
-- 28-43% fewer tokens
-- Same data model
-- Lossless conversion
+---
+
+### `ZonStreamEncoder`
+
+Stream encoder for large datasets.
+
+**Constructor:**
+```python
+from zon import ZonStreamEncoder
+
+encoder = ZonStreamEncoder()
+```
+
+**Methods:**
+
+#### `write(data) -> str`
+
+Incrementally encodes data.
+
+```python
+import sys
+
+encoder = ZonStreamEncoder()
+
+for chunk in large_dataset:
+    zon_chunk = encoder.write(chunk)
+    sys.stdout.write(zon_chunk)
+```
+
+---
+
+### `ZonStreamDecoder`
+
+Stream decoder for large datasets.
+
+**Constructor:**
+```python
+from zon import ZonStreamDecoder
+
+decoder = ZonStreamDecoder()
+```
+
+**Methods:**
+
+#### `feed(chunk: str) -> List[any]`
+
+```python
+decoder = ZonStreamDecoder()
+
+with open('large_file.zonf') as f:
+    for line in f:
+        objects = decoder.feed(line)
+        for obj in objects:
+            process(obj)
+```
+
+---
+
+## Schema Types
+
+### `zon.string()`
+
+String type.
+
+```python
+name = zon.string().describe("User's full name")
+```
+
+### `zon.number()`
+
+Number type (int or float).
+
+```python
+age = zon.number().min(0).max(120)
+```
+
+### `zon.boolean()`
+
+Boolean type.
+
+```python
+active = zon.boolean().default(True)
+```
+
+### `zon.array(type)`
+
+Array of a specific type.
+
+```python
+tags = zon.array(zon.string())
+```
+
+### `zon.object(fields)`
+
+Object with specific fields.
+
+```python
+user = zon.object({
+    'name': zon.string(),
+    'age': zon.number()
+})
+```
+
+### `zon.enum(values)`
+
+Enumeration of allowed values.
+
+```python
+role = zon.enum(['admin', 'user', 'guest'])
+```
+
+---
+
+## Exceptions
+
+### `ZonEncodeError`
+
+Raised when encoding fails.
+
+```python
+from zon import ZonEncodeError
+
+try:
+    encode(circular_reference)
+except ZonEncodeError as e:
+    print(f"Encoding failed: {e}")
+```
+
+### `ZonDecodeError`
+
+Raised when decoding fails.
+
+**Properties:**
+- `code` (str): Error code (E001, E002, etc.)
+- `message` (str): Detailed error message
+
+```python
+from zon import ZonDecodeError
+
+try:
+    decode(invalid_zon)
+except ZonDecodeError as e:
+    if e.code == 'E001':
+        print("Row count mismatch")
+    elif e.code == 'E002':
+        print("Field count mismatch")
+```
+
+---
+
+## Utility Functions
+
+### `count_tokens(text) -> int`
+
+Count tokens in text (uses tiktoken).
+
+```python
+from zon import count_tokens
+
+zon_str = encode(data)
+tokens = count_tokens(zon_str)
+print(f"ZON: {tokens} tokens")
+```
 
 ---
 
 ## See Also
 
-- [Syntax Cheatsheet](./syntax-cheatsheet.md) - Quick reference
-- [Format Specification](./SPEC.md) - Formal grammar
-- [LLM Best Practices](./llm-best-practices.md) - Usage guide
-- [GitHub Repository](https://github.com/ZON-Format/ZON)
-- [PyPI Package](https://pypi.org/project/zon-format/)
+- [Advanced Features](advanced-features.md) - Delta encoding, dictionaries, etc.
+- [Streaming Guide](streaming-guide.md) - Stream processing
+- [Schema Validation](schema-validation.md) - Validation details

@@ -1,0 +1,1005 @@
+meta.source[3]:api,mobile,web
+payload.data.action[1]:click
+payload.data.target[10]:btn_1,btn_10,btn_2,btn_3,btn_4,btn_5,btn_6,btn_7,btn_8,btn_9
+payload.user.profile.preferences.theme[1]:dark
+@1000:meta.source,payload.data.action,payload.data.target,payload.user.profile.preferences.theme,id,meta.context.ip,meta.context.user_agent,meta.timestamp,payload.data.coordinates.x,payload.data.coordinates.y,payload.user.id,payload.user.profile.preferences.notifications.email,payload.user.profile.preferences.notifications.push,payload.user.profile.preferences.notifications.sms,payload.user.profile.username
+2,0,0,0,evt_0,89.30.105.19,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.1)",1670000000,1835,334,1000,T,F,T,harperjennifer
+1,0,0,0,evt_1,126.128.29.100,null,1670000001,405,509,1001,T,F,F,krose
+0,0,1,0,evt_2,34.192.190.225,"Mozilla/5.0 (compatible; MSIE 8.0; Windows 95; Trident/3.1)",1670000002,1497,432,1002,T,F,F,kprice
+0,0,1,0,evt_3,177.68.223.145,null,1670000003,225,819,1003,T,F,F,matthewoneal
+2,0,6,0,evt_4,134.213.231.13,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_0 like Mac OS X; li-NL) AppleWebKit/533.40.7 (KHTML, like Gecko) Version/4.0.5 Mobile/8B116 Safari/6533.40.7",1670000004,1712,776,1004,T,F,F,williamsalexander
+0,0,5,0,evt_5,180.51.183.54,null,1670000005,1383,148,1005,T,F,T,courtney54
+2,0,6,0,evt_6,51.181.155.146,"Mozilla/5.0 (iPhone; CPU iPhone OS 15_8_2 like Mac OS X) AppleWebKit/534.2 (KHTML, like Gecko) CriOS/34.0.833.0 Mobile/94G015 Safari/534.2",1670000006,650,933,1006,T,F,F,bernardchristine
+2,0,5,0,evt_7,111.6.17.193,null,1670000007,3,406,1007,T,F,F,llopez
+1,0,6,0,evt_8,7.23.15.85,"Mozilla/5.0 (compatible; MSIE 8.0; Windows 95; Trident/5.1)",1670000008,1534,61,1008,T,F,F,joy26
+1,0,6,0,evt_9,15.166.83.229,null,1670000009,1915,12,1009,T,F,F,brownchristopher
+1,0,7,0,evt_10,26.236.66.125,"Mozilla/5.0 (Linux; Android 4.4.3) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/37.0.814.0 Safari/532.0",1670000010,1915,1051,1010,T,F,T,jerry25
+1,0,0,0,evt_11,49.90.66.243,null,1670000011,1048,235,1011,T,F,F,aaron73
+2,0,9,0,evt_12,193.87.67.224,"Mozilla/5.0 (iPad; CPU iPad OS 4_2_1 like Mac OS X) AppleWebKit/532.2 (KHTML, like Gecko) FxiOS/12.0k7597.0 Mobile/82A229 Safari/532.2",1670000012,1157,193,1012,T,F,F,claytongarrison
+1,0,5,0,evt_13,115.105.227.194,null,1670000013,1716,209,1013,T,F,F,randallwendy
+0,0,6,0,evt_14,165.29.35.107,"Mozilla/5.0 (Windows 98; hne-IN; rv:1.9.2.20) Gecko/5655-12-02 15:58:37.428238 Firefox/3.8",1670000014,1508,891,1014,T,F,F,cduffy
+2,0,1,0,evt_15,40.199.3.68,null,1670000015,707,853,1015,T,F,T,sonia18
+2,0,6,0,evt_16,109.149.138.79,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_1 like Mac OS X; nan-TW) AppleWebKit/535.32.6 (KHTML, like Gecko) Version/4.0.5 Mobile/8B117 Safari/6535.32.6",1670000016,1102,7,1016,T,F,F,patrick63
+0,0,9,0,evt_17,199.193.132.123,null,1670000017,689,39,1017,T,F,F,kfranco
+2,0,7,0,evt_18,120.154.155.242,"Mozilla/5.0 (compatible; MSIE 9.0; Windows 98; Win 9x 4.90; Trident/3.1)",1670000018,1092,187,1018,T,F,F,luiswong
+1,0,9,0,evt_19,82.111.147.130,null,1670000019,545,680,1019,T,F,F,paulnelson
+0,0,5,0,evt_20,79.70.221.212,"Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/55.0.836.0 Safari/534.2",1670000020,15,994,1020,T,F,T,nicolemoon
+2,0,0,0,evt_21,71.139.213.222,null,1670000021,790,590,1021,T,F,F,kcain
+0,0,3,0,evt_22,44.85.114.106,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 11.0; Trident/5.1)",1670000022,1241,177,1022,T,F,F,amanda55
+2,0,4,0,evt_23,21.225.64.191,null,1670000023,1068,553,1023,T,F,F,njohnson
+0,0,7,0,evt_24,143.114.23.89,"Opera/9.69.(X11; Linux x86_64; mni-IN) Presto/2.9.181 Version/10.00",1670000024,22,790,1024,T,F,F,brittanymendez
+0,0,7,0,evt_25,8.25.8.41,null,1670000025,1730,580,1025,T,F,T,stevenfrey
+2,0,0,0,evt_26,60.79.170.112,"Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 6.1; Trident/5.0)",1670000026,1888,193,1026,T,F,F,latashamartin
+2,0,2,0,evt_27,98.89.29.251,null,1670000027,477,309,1027,T,F,F,cunninghamjanet
+2,0,4,0,evt_28,134.173.117.247,"Mozilla/5.0 (Linux; Android 2.2) AppleWebKit/533.2 (KHTML, like Gecko) Chrome/35.0.860.0 Safari/533.2",1670000028,406,379,1028,T,F,F,brianna61
+1,0,6,0,evt_29,81.55.239.90,null,1670000029,151,486,1029,T,F,F,kwilliams
+2,0,7,0,evt_30,103.13.113.21,"Mozilla/5.0 (Windows NT 11.0) AppleWebKit/534.1 (KHTML, like Gecko) Chrome/19.0.800.0 Safari/534.1",1670000030,731,160,1030,T,F,T,gardnervictoria
+1,0,4,0,evt_31,3.244.225.238,null,1670000031,538,963,1031,T,F,F,coliver
+0,0,4,0,evt_32,151.51.186.80,"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/532.2 (KHTML, like Gecko) Chrome/33.0.872.0 Safari/532.2",1670000032,865,252,1032,T,F,F,angelawarner
+2,0,7,0,evt_33,214.201.89.254,null,1670000033,1659,908,1033,T,F,F,todd51
+0,0,5,0,evt_34,131.121.200.32,"Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.0 (KHTML, like Gecko) Chrome/59.0.810.0 Safari/536.0",1670000034,950,500,1034,T,F,F,sarawright
+1,0,6,0,evt_35,118.25.166.20,null,1670000035,1643,1057,1035,T,F,T,adamsrachel
+1,0,1,0,evt_36,46.109.225.49,"Mozilla/5.0 (Windows; U; Windows 95) AppleWebKit/534.18.6 (KHTML, like Gecko) Version/4.0.1 Safari/534.18.6",1670000036,1882,805,1036,T,F,F,leecollier
+1,0,9,0,evt_37,141.108.163.28,null,1670000037,1291,185,1037,T,F,F,sadams
+2,0,6,0,evt_38,112.13.154.222,"Opera/9.20.(X11; Linux x86_64; lo-LA) Presto/2.9.189 Version/11.00",1670000038,1742,235,1038,T,F,F,amanda25
+1,0,5,0,evt_39,168.175.201.53,null,1670000039,1052,556,1039,T,F,F,robert28
+0,0,3,0,evt_40,152.208.80.96,"Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/531.20.1 (KHTML, like Gecko) Version/4.0 Safari/531.20.1",1670000040,1034,879,1040,T,F,T,pwolfe
+1,0,5,0,evt_41,174.4.43.117,null,1670000041,178,793,1041,T,F,F,taylormaria
+1,0,5,0,evt_42,60.152.89.222,"Mozilla/5.0 (Android 3.2.3; Mobile; rv:14.0) Gecko/14.0 Firefox/14.0",1670000042,1614,834,1042,T,F,F,sara54
+2,0,9,0,evt_43,188.34.8.25,null,1670000043,1092,658,1043,T,F,F,qmartin
+1,0,5,0,evt_44,115.76.39.251,"Opera/9.31.(X11; Linux i686; bg-BG) Presto/2.9.168 Version/12.00",1670000044,326,685,1044,T,F,F,vpierce
+0,0,3,0,evt_45,128.97.135.91,null,1670000045,490,325,1045,T,F,T,samuel97
+1,0,2,0,evt_46,28.116.207.97,"Mozilla/5.0 (Linux; Android 6.0.1) AppleWebKit/532.2 (KHTML, like Gecko) Chrome/43.0.895.0 Safari/532.2",1670000046,736,389,1046,T,F,F,abartlett
+2,0,7,0,evt_47,176.13.89.190,null,1670000047,1197,292,1047,T,F,F,kaitlyndiaz
+1,0,0,0,evt_48,57.174.63.165,"Opera/8.23.(Windows NT 6.1; az-IN) Presto/2.9.178 Version/10.00",1670000048,907,735,1048,T,F,F,timothy31
+0,0,2,0,evt_49,11.43.124.182,null,1670000049,1060,55,1049,T,F,F,turnertravis
+1,0,8,0,evt_50,214.45.248.228,"Mozilla/5.0 (compatible; MSIE 9.0; Windows 95; Trident/5.1)",1670000050,173,327,1050,T,F,T,katherineking
+1,0,1,0,evt_51,56.221.176.151,null,1670000051,394,608,1051,T,F,F,kellyrachel
+2,0,5,0,evt_52,177.164.185.205,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/5.1)",1670000052,1653,258,1052,T,F,F,kross
+0,0,8,0,evt_53,12.58.75.254,null,1670000053,1791,319,1053,T,F,F,jack98
+2,0,6,0,evt_54,1.183.115.13,"Mozilla/5.0 (Android 4.1.1; Mobile; rv:12.0) Gecko/12.0 Firefox/12.0",1670000054,152,43,1054,T,F,F,wbarrett
+2,0,1,0,evt_55,211.113.58.186,null,1670000055,262,106,1055,T,F,T,icooper
+2,0,9,0,evt_56,7.7.172.171,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2; rv:1.9.4.20) Gecko/6151-11-13 12:00:11.816040 Firefox/3.6.17",1670000056,378,702,1056,T,F,F,tcontreras
+0,0,1,0,evt_57,18.88.37.53,null,1670000057,661,168,1057,T,F,F,gutierrezsusan
+2,0,2,0,evt_58,62.129.119.217,"Opera/9.32.(X11; Linux x86_64; mg-MG) Presto/2.9.166 Version/11.00",1670000058,1437,605,1058,T,F,F,gparker
+1,0,3,0,evt_59,148.218.110.45,null,1670000059,902,628,1059,T,F,F,cody99
+1,0,7,0,evt_60,196.50.178.64,"Opera/9.23.(X11; Linux x86_64; kl-GL) Presto/2.9.166 Version/12.00",1670000060,1734,522,1060,T,F,T,matthew32
+1,0,3,0,evt_61,74.166.226.98,null,1670000061,263,176,1061,T,F,F,fsnyder
+0,0,7,0,evt_62,13.220.215.166,"Mozilla/5.0 (Linux; Android 2.3) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/63.0.817.0 Safari/535.1",1670000062,1118,789,1062,T,F,F,tamara64
+1,0,7,0,evt_63,204.100.208.241,null,1670000063,1463,792,1063,T,F,F,selliott
+2,0,0,0,evt_64,27.228.226.42,"Opera/8.30.(X11; Linux i686; oc-FR) Presto/2.9.165 Version/10.00",1670000064,1424,514,1064,T,F,F,ewelch
+0,0,5,0,evt_65,65.136.187.113,null,1670000065,515,16,1065,T,F,T,russell92
+2,0,7,0,evt_66,210.93.92.191,"Opera/9.66.(Windows NT 6.0; pa-IN) Presto/2.9.187 Version/10.00",1670000066,1587,895,1066,T,F,F,brittany96
+1,0,3,0,evt_67,57.55.223.240,null,1670000067,88,88,1067,T,F,F,donald44
+0,0,6,0,evt_68,99.41.50.121,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_1 like Mac OS X; fr-CA) AppleWebKit/535.37.1 (KHTML, like Gecko) Version/4.0.5 Mobile/8B118 Safari/6535.37.1",1670000068,1103,869,1068,T,F,F,rmcintosh
+1,0,8,0,evt_69,111.195.218.164,null,1670000069,418,468,1069,T,F,F,gerald20
+0,0,5,0,evt_70,23.134.96.241,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 11.0; Trident/3.1)",1670000070,1249,790,1070,T,F,T,marissa94
+0,0,5,0,evt_71,180.240.235.156,null,1670000071,195,836,1071,T,F,F,hamiltonmichelle
+0,0,2,0,evt_72,145.155.191.37,"Mozilla/5.0 (compatible; MSIE 7.0; Windows CE; Trident/5.1)",1670000072,694,228,1072,T,F,F,hartmanjonathan
+0,0,3,0,evt_73,112.222.160.11,null,1670000073,1523,805,1073,T,F,F,adavidson
+0,0,2,0,evt_74,170.89.205.81,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.2; Trident/5.0)",1670000074,526,265,1074,T,F,F,brandy14
+1,0,3,0,evt_75,142.187.122.124,null,1670000075,96,236,1075,T,F,T,gregory39
+1,0,5,0,evt_76,138.100.108.160,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_3 like Mac OS X; nan-TW) AppleWebKit/533.47.4 (KHTML, like Gecko) Version/4.0.5 Mobile/8B114 Safari/6533.47.4",1670000076,430,865,1076,T,F,F,kmccann
+0,0,1,0,evt_77,66.234.71.122,null,1670000077,1336,110,1077,T,F,F,omalone
+1,0,6,0,evt_78,109.14.91.82,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_9_2 rv:3.0; xh-ZA) AppleWebKit/535.27.4 (KHTML, like Gecko) Version/5.1 Safari/535.27.4",1670000078,1154,351,1078,T,F,F,brobinson
+0,0,4,0,evt_79,123.5.210.91,null,1670000079,623,961,1079,T,F,F,estesjonathan
+2,0,6,0,evt_80,85.113.212.164,"Mozilla/5.0 (iPad; CPU iPad OS 17_1_1 like Mac OS X) AppleWebKit/532.2 (KHTML, like Gecko) FxiOS/13.2w8180.0 Mobile/41F456 Safari/532.2",1670000080,1048,764,1080,T,F,T,benjaminpitts
+2,0,9,0,evt_81,96.116.184.183,null,1670000081,1039,101,1081,T,F,F,ambermiller
+1,0,0,0,evt_82,216.197.213.74,"Mozilla/5.0 (Linux; Android 2.2) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/28.0.829.0 Safari/531.2",1670000082,46,88,1082,T,F,F,andrew26
+2,0,5,0,evt_83,136.145.218.69,null,1670000083,1606,823,1083,T,F,F,vcampbell
+0,0,5,0,evt_84,172.204.172.102,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.0 (KHTML, like Gecko) Chrome/20.0.842.0 Safari/535.0",1670000084,534,632,1084,T,F,F,jacob67
+2,0,8,0,evt_85,123.106.33.134,null,1670000085,808,428,1085,T,F,T,oanthony
+2,0,3,0,evt_86,61.197.183.156,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.2; Trident/5.1)",1670000086,519,87,1086,T,F,F,bryan30
+0,0,3,0,evt_87,53.108.84.105,null,1670000087,663,904,1087,T,F,F,brittneyphillips
+0,0,7,0,evt_88,152.22.158.51,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)",1670000088,1088,99,1088,T,F,F,nicholsbrian
+0,0,0,0,evt_89,106.33.148.162,null,1670000089,397,137,1089,T,F,F,swalker
+0,0,1,0,evt_90,52.150.250.228,"Opera/9.34.(X11; Linux i686; ts-ZA) Presto/2.9.169 Version/12.00",1670000090,1070,582,1090,T,F,T,npatel
+1,0,9,0,evt_91,164.56.100.151,null,1670000091,25,335,1091,T,F,F,chadkelly
+1,0,0,0,evt_92,197.233.131.102,"Mozilla/5.0 (Linux; Android 3.2.3) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/45.0.879.0 Safari/531.2",1670000092,167,157,1092,T,F,F,misty01
+2,0,0,0,evt_93,13.189.217.145,null,1670000093,829,234,1093,T,F,F,elizabethfisher
+0,0,5,0,evt_94,168.200.64.96,"Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 5.2; Trident/3.1)",1670000094,700,255,1094,T,F,F,john01
+1,0,0,0,evt_95,123.180.0.169,null,1670000095,1690,432,1095,T,F,T,gonzalezbrianna
+2,0,2,0,evt_96,118.101.80.188,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_2; rv:1.9.4.20) Gecko/6122-05-30 04:45:39.651535 Firefox/3.6.1",1670000096,1778,1051,1096,T,F,F,pcook
+1,0,7,0,evt_97,28.136.110.95,null,1670000097,1623,351,1097,T,F,F,xdiaz
+2,0,1,0,evt_98,80.245.162.56,"Mozilla/5.0 (Windows NT 5.2; id-ID; rv:1.9.0.20) Gecko/7863-04-15 17:10:51.920166 Firefox/6.0",1670000098,115,1015,1098,T,F,F,rodriguezcindy
+0,0,0,0,evt_99,9.230.129.138,null,1670000099,903,643,1099,T,F,F,xmurphy
+0,0,6,0,evt_100,169.208.135.87,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_9_1) AppleWebKit/536.1 (KHTML, like Gecko) Chrome/52.0.846.0 Safari/536.1",1670000100,1905,380,1100,T,F,T,vsmith
+0,0,0,0,evt_101,129.77.103.177,null,1670000101,1009,602,1101,T,F,F,brenda02
+1,0,0,0,evt_102,99.224.247.162,"Mozilla/5.0 (iPhone; CPU iPhone OS 14_2_1 like Mac OS X) AppleWebKit/534.0 (KHTML, like Gecko) FxiOS/13.6x5055.0 Mobile/55A814 Safari/534.0",1670000102,908,207,1102,T,F,F,greentricia
+0,0,9,0,evt_103,205.221.94.59,null,1670000103,1079,539,1103,T,F,F,james62
+2,0,6,0,evt_104,65.235.130.94,"Mozilla/5.0 (Windows; U; Windows NT 11.0) AppleWebKit/533.36.4 (KHTML, like Gecko) Version/5.0.2 Safari/533.36.4",1670000104,170,303,1104,T,F,F,michellebanks
+0,0,7,0,evt_105,6.4.80.95,null,1670000105,1773,282,1105,T,F,T,diazjulie
+2,0,8,0,evt_106,187.28.75.125,"Mozilla/5.0 (Windows; U; Windows 98; Win 9x 4.90) AppleWebKit/531.18.4 (KHTML, like Gecko) Version/4.1 Safari/531.18.4",1670000106,727,709,1106,T,F,F,jenkinsbryan
+1,0,1,0,evt_107,109.182.125.251,null,1670000107,975,601,1107,T,F,F,frazierrichard
+1,0,3,0,evt_108,220.223.24.42,"Mozilla/5.0 (X11; Linux i686; rv:1.9.6.20) Gecko/2308-07-18 08:47:52.284176 Firefox/11.0",1670000108,167,494,1108,T,F,F,klawrence
+2,0,5,0,evt_109,10.17.213.28,null,1670000109,718,109,1109,T,F,F,deborah86
+2,0,4,0,evt_110,219.118.92.153,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_11_1) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/14.0.849.0 Safari/534.2",1670000110,574,846,1110,T,F,T,vcooley
+0,0,3,0,evt_111,191.122.252.253,null,1670000111,1005,762,1111,T,F,F,andrewmartinez
+2,0,9,0,evt_112,209.176.56.17,"Opera/9.88.(X11; Linux x86_64; lo-LA) Presto/2.9.162 Version/11.00",1670000112,1112,32,1112,T,F,F,thomasjennifer
+2,0,2,0,evt_113,19.233.222.255,null,1670000113,1449,884,1113,T,F,F,khudson
+1,0,0,0,evt_114,44.248.155.28,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_6_4 rv:4.0; eo-US) AppleWebKit/532.21.1 (KHTML, like Gecko) Version/5.0.2 Safari/532.21.1",1670000114,842,565,1114,T,F,F,sjones
+2,0,1,0,evt_115,195.13.211.97,null,1670000115,1746,271,1115,T,F,T,michaelmarsh
+0,0,1,0,evt_116,6.137.208.26,"Mozilla/5.0 (Windows NT 6.0; mr-IN; rv:1.9.1.20) Gecko/5141-03-15 21:01:16.828781 Firefox/3.6.16",1670000116,1244,236,1116,T,F,F,cookcarrie
+0,0,1,0,evt_117,176.102.150.66,null,1670000117,1153,787,1117,T,F,F,johnsonjacqueline
+0,0,6,0,evt_118,49.204.40.13,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_3 like Mac OS X; lb-LU) AppleWebKit/534.9.4 (KHTML, like Gecko) Version/4.0.5 Mobile/8B117 Safari/6534.9.4",1670000118,1895,153,1118,T,F,F,elizabethwallace
+2,0,5,0,evt_119,55.22.139.68,null,1670000119,95,433,1119,T,F,F,natalie85
+2,0,5,0,evt_120,4.69.9.36,"Opera/8.72.(X11; Linux x86_64; or-IN) Presto/2.9.165 Version/11.00",1670000120,1403,489,1120,T,F,T,thomas11
+0,0,8,0,evt_121,56.138.125.224,null,1670000121,10,852,1121,T,F,F,sheila76
+2,0,9,0,evt_122,47.102.28.38,"Mozilla/5.0 (iPhone; CPU iPhone OS 17_1_2 like Mac OS X) AppleWebKit/535.1 (KHTML, like Gecko) FxiOS/9.7f1514.0 Mobile/47S074 Safari/535.1",1670000122,325,759,1122,T,F,F,russellwanda
+0,0,1,0,evt_123,143.158.217.222,null,1670000123,1617,6,1123,T,F,F,dillonjeffery
+2,0,1,0,evt_124,148.191.62.140,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_7_6; rv:1.9.2.20) Gecko/8274-08-31 19:13:15.889557 Firefox/3.8",1670000124,862,306,1124,T,F,F,anajones
+2,0,4,0,evt_125,63.176.73.110,null,1670000125,1289,456,1125,T,F,T,kevans
+0,0,1,0,evt_126,73.39.255.84,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/3.1)",1670000126,1899,78,1126,T,F,F,gerald45
+1,0,4,0,evt_127,91.51.144.166,null,1670000127,783,290,1127,T,F,F,sophia34
+2,0,2,0,evt_128,62.155.13.126,"Mozilla/5.0 (iPhone; CPU iPhone OS 17_2 like Mac OS X) AppleWebKit/535.0 (KHTML, like Gecko) CriOS/28.0.844.0 Mobile/15U591 Safari/535.0",1670000128,135,789,1128,T,F,F,rachel56
+0,0,5,0,evt_129,124.116.85.218,null,1670000129,733,372,1129,T,F,F,michaelsteven
+2,0,1,0,evt_130,209.132.160.181,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_7_1 rv:3.0; it-IT) AppleWebKit/532.30.6 (KHTML, like Gecko) Version/5.0.5 Safari/532.30.6",1670000130,444,904,1130,T,F,T,eileenlowery
+1,0,5,0,evt_131,216.207.114.149,null,1670000131,997,746,1131,T,F,F,seanhernandez
+1,0,0,0,evt_132,140.93.206.231,"Mozilla/5.0 (Android 8.1.0; Mobile; rv:49.0) Gecko/49.0 Firefox/49.0",1670000132,1472,654,1132,T,F,F,reesewilliam
+0,0,5,0,evt_133,52.60.82.254,null,1670000133,333,551,1133,T,F,F,erica48
+2,0,6,0,evt_134,52.62.69.194,"Opera/9.87.(Windows CE; br-FR) Presto/2.9.177 Version/11.00",1670000134,1861,1003,1134,T,F,F,andreawilliams
+2,0,8,0,evt_135,82.167.248.194,null,1670000135,214,307,1135,T,F,T,morganjohnson
+1,0,3,0,evt_136,137.35.155.59,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/533.0 (KHTML, like Gecko) Chrome/38.0.865.0 Safari/533.0",1670000136,1700,465,1136,T,F,F,elyons
+0,0,4,0,evt_137,179.33.16.157,null,1670000137,860,88,1137,T,F,F,ysmith
+1,0,0,0,evt_138,220.234.93.181,"Mozilla/5.0 (Windows; U; Windows NT 6.0) AppleWebKit/535.29.6 (KHTML, like Gecko) Version/4.0 Safari/535.29.6",1670000138,1542,279,1138,T,F,F,dmaxwell
+1,0,3,0,evt_139,22.113.68.110,null,1670000139,831,577,1139,T,F,F,harriswhitney
+1,0,2,0,evt_140,54.11.148.139,"Mozilla/5.0 (X11; Linux i686; rv:1.9.6.20) Gecko/4220-11-04 18:03:00.306046 Firefox/3.6.13",1670000140,606,880,1140,T,F,T,jennifer89
+0,0,7,0,evt_141,144.94.227.210,null,1670000141,409,934,1141,T,F,F,brittanyanderson
+0,0,5,0,evt_142,184.20.38.78,"Opera/8.67.(Windows NT 5.01; yo-NG) Presto/2.9.165 Version/10.00",1670000142,997,14,1142,T,F,F,michaelrice
+0,0,0,0,evt_143,185.110.217.34,null,1670000143,1496,125,1143,T,F,F,davidperry
+2,0,6,0,evt_144,19.40.73.142,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_8) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/48.0.887.0 Safari/532.1",1670000144,361,179,1144,T,F,F,kendraescobar
+1,0,2,0,evt_145,164.95.88.148,null,1670000145,786,285,1145,T,F,T,robert54
+2,0,2,0,evt_146,133.253.104.69,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_11_6) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/51.0.838.0 Safari/531.2",1670000146,377,365,1146,T,F,F,townsendcaroline
+1,0,9,0,evt_147,73.142.0.129,null,1670000147,1450,378,1147,T,F,F,angelicamoore
+2,0,5,0,evt_148,138.124.213.134,"Opera/8.54.(X11; Linux x86_64; kk-KZ) Presto/2.9.169 Version/11.00",1670000148,667,285,1148,T,F,F,cochranmathew
+2,0,0,0,evt_149,191.229.230.64,null,1670000149,753,450,1149,T,F,F,norrisdaniel
+0,0,7,0,evt_150,47.199.51.108,"Mozilla/5.0 (X11; Linux i686; rv:1.9.7.20) Gecko/4442-07-28 02:13:05.629532 Firefox/7.0",1670000150,579,805,1150,T,F,T,thompsonrodney
+2,0,9,0,evt_151,129.62.196.245,null,1670000151,1528,438,1151,T,F,F,timothytrevino
+0,0,0,0,evt_152,124.102.109.122,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2 rv:5.0; hne-IN) AppleWebKit/535.43.6 (KHTML, like Gecko) Version/4.0 Safari/535.43.6",1670000152,930,676,1152,T,F,F,fmorris
+0,0,1,0,evt_153,173.104.79.122,null,1670000153,256,925,1153,T,F,F,charles33
+1,0,5,0,evt_154,70.41.184.112,"Mozilla/5.0 (compatible; MSIE 6.0; Windows CE; Trident/5.1)",1670000154,1874,314,1154,T,F,F,zgutierrez
+2,0,7,0,evt_155,54.104.204.107,null,1670000155,1256,650,1155,T,F,T,ddavenport
+1,0,5,0,evt_156,66.39.137.225,"Mozilla/5.0 (Windows; U; Windows NT 6.2) AppleWebKit/532.28.5 (KHTML, like Gecko) Version/4.0.3 Safari/532.28.5",1670000156,140,531,1156,T,F,F,lindsay37
+0,0,4,0,evt_157,130.155.244.109,null,1670000157,693,103,1157,T,F,F,kellywilliams
+2,0,2,0,evt_158,102.7.11.5,"Opera/9.85.(X11; Linux x86_64; ug-CN) Presto/2.9.189 Version/10.00",1670000158,920,665,1158,T,F,F,qmartinez
+2,0,0,0,evt_159,160.138.111.229,null,1670000159,218,392,1159,T,F,F,kathleenmckinney
+0,0,8,0,evt_160,217.192.179.97,"Mozilla/5.0 (iPhone; CPU iPhone OS 15_8_2 like Mac OS X) AppleWebKit/531.2 (KHTML, like Gecko) FxiOS/14.5k2209.0 Mobile/36E410 Safari/531.2",1670000160,1133,800,1160,T,F,T,bwagner
+0,0,8,0,evt_161,218.163.12.139,null,1670000161,1795,156,1161,T,F,F,brownjill
+1,0,9,0,evt_162,77.35.43.41,"Mozilla/5.0 (Windows NT 5.01; unm-US; rv:1.9.0.20) Gecko/7919-04-29 14:10:49.020355 Firefox/4.0",1670000162,133,505,1162,T,F,F,donnawilson
+1,0,4,0,evt_163,58.42.47.42,null,1670000163,924,996,1163,T,F,F,robbinskelli
+2,0,6,0,evt_164,15.215.144.138,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_11_5) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/29.0.870.0 Safari/531.0",1670000164,573,845,1164,T,F,F,davisryan
+2,0,5,0,evt_165,3.143.59.40,null,1670000165,1197,236,1165,T,F,T,fmoore
+0,0,5,0,evt_166,137.56.216.50,"Mozilla/5.0 (iPad; CPU iPad OS 7_1_2 like Mac OS X) AppleWebKit/531.0 (KHTML, like Gecko) CriOS/61.0.818.0 Mobile/40C437 Safari/531.0",1670000166,193,907,1166,T,F,F,joshuahanson
+1,0,4,0,evt_167,219.202.228.20,null,1670000167,1876,1072,1167,T,F,F,kyle88
+0,0,4,0,evt_168,159.138.172.159,"Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 5.2; Trident/3.0)",1670000168,555,145,1168,T,F,F,rdickerson
+1,0,2,0,evt_169,29.150.64.83,null,1670000169,1567,613,1169,T,F,F,waynesimmons
+2,0,6,0,evt_170,201.158.27.134,"Mozilla/5.0 (Windows; U; Windows NT 6.0) AppleWebKit/535.32.5 (KHTML, like Gecko) Version/4.0.3 Safari/535.32.5",1670000170,79,636,1170,T,F,T,theresahall
+0,0,2,0,evt_171,217.210.141.241,null,1670000171,1564,629,1171,T,F,F,jose40
+1,0,8,0,evt_172,68.42.86.128,"Mozilla/5.0 (X11; Linux i686; rv:1.9.7.20) Gecko/2415-06-22 04:20:37.375326 Firefox/12.0",1670000172,655,30,1172,T,F,F,mitchellmichael
+0,0,8,0,evt_173,152.5.211.212,null,1670000173,1041,172,1173,T,F,F,stewartandrea
+2,0,5,0,evt_174,103.97.207.238,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_8_9 rv:5.0; yi-US) AppleWebKit/531.49.2 (KHTML, like Gecko) Version/5.1 Safari/531.49.2",1670000174,953,5,1174,T,F,F,hollywong
+0,0,0,0,evt_175,96.231.168.236,null,1670000175,207,905,1175,T,F,T,ianderson
+1,0,6,0,evt_176,135.22.48.126,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_1 like Mac OS X; zu-ZA) AppleWebKit/535.2.7 (KHTML, like Gecko) Version/4.0.5 Mobile/8B116 Safari/6535.2.7",1670000176,1449,469,1176,T,F,F,thill
+1,0,4,0,evt_177,107.250.52.69,null,1670000177,852,559,1177,T,F,F,hmiranda
+0,0,4,0,evt_178,181.82.179.127,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.2; Trident/4.1)",1670000178,1763,982,1178,T,F,F,jenkinsjohnathan
+0,0,5,0,evt_179,152.21.115.93,null,1670000179,151,1055,1179,T,F,F,andrewsnathan
+0,0,8,0,evt_180,4.237.215.16,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.01; Trident/3.0)",1670000180,153,46,1180,T,F,T,jennifergarcia
+1,0,7,0,evt_181,3.6.91.212,null,1670000181,260,254,1181,T,F,F,ddiaz
+0,0,2,0,evt_182,57.76.172.254,"Mozilla/5.0 (Windows; U; Windows NT 4.0) AppleWebKit/535.45.1 (KHTML, like Gecko) Version/4.0 Safari/535.45.1",1670000182,551,275,1182,T,F,F,mriggs
+0,0,2,0,evt_183,91.183.10.127,null,1670000183,590,937,1183,T,F,F,christineharris
+2,0,9,0,evt_184,209.30.0.233,"Opera/8.87.(X11; Linux x86_64; tt-RU) Presto/2.9.168 Version/12.00",1670000184,1022,814,1184,T,F,F,michael53
+0,0,8,0,evt_185,124.41.238.209,null,1670000185,986,1059,1185,T,F,T,amy08
+2,0,7,0,evt_186,204.69.183.120,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_1 like Mac OS X; mhr-RU) AppleWebKit/531.14.3 (KHTML, like Gecko) Version/4.0.5 Mobile/8B115 Safari/6531.14.3",1670000186,303,209,1186,T,F,F,chloe02
+0,0,5,0,evt_187,178.161.231.47,null,1670000187,424,1067,1187,T,F,F,brownsteven
+2,0,4,0,evt_188,152.52.126.32,"Mozilla/5.0 (X11; Linux x86_64; rv:1.9.7.20) Gecko/2087-09-04 01:07:52.029857 Firefox/3.6.13",1670000188,741,881,1188,T,F,F,laurafischer
+1,0,2,0,evt_189,162.218.222.196,null,1670000189,1016,1017,1189,T,F,F,michael18
+2,0,9,0,evt_190,186.222.117.211,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_10_7) AppleWebKit/533.1 (KHTML, like Gecko) Chrome/63.0.861.0 Safari/533.1",1670000190,1566,895,1190,T,F,T,csmith
+2,0,7,0,evt_191,92.65.200.108,null,1670000191,497,127,1191,T,F,F,santiagomark
+1,0,4,0,evt_192,84.255.200.191,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/4.0)",1670000192,1184,413,1192,T,F,F,bwilliams
+1,0,2,0,evt_193,182.70.238.98,null,1670000193,686,912,1193,T,F,F,jonesjulie
+2,0,0,0,evt_194,113.205.83.212,"Mozilla/5.0 (Android 3.2; Mobile; rv:40.0) Gecko/40.0 Firefox/40.0",1670000194,1477,37,1194,T,F,F,ashley59
+1,0,1,0,evt_195,52.198.198.3,null,1670000195,644,623,1195,T,F,T,gardnerandrew
+0,0,1,0,evt_196,45.53.178.232,"Mozilla/5.0 (X11; Linux x86_64; rv:1.9.6.20) Gecko/9319-06-25 17:44:48.986053 Firefox/3.8",1670000196,89,613,1196,T,F,F,john78
+0,0,3,0,evt_197,64.115.229.138,null,1670000197,658,618,1197,T,F,F,billy85
+0,0,5,0,evt_198,85.25.185.24,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_8_3; rv:1.9.5.20) Gecko/8065-03-30 19:12:01.963776 Firefox/10.0",1670000198,309,316,1198,T,F,F,imann
+2,0,1,0,evt_199,115.208.104.19,null,1670000199,1366,554,1199,T,F,F,hlopez
+1,0,8,0,evt_200,181.218.28.132,"Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 10.0; Trident/4.0)",1670000200,133,642,1200,T,F,T,barrkatherine
+2,0,6,0,evt_201,192.139.225.160,null,1670000201,1062,918,1201,T,F,F,calvinyoung
+2,0,5,0,evt_202,122.24.52.54,"Mozilla/5.0 (iPad; CPU iPad OS 6_1_6 like Mac OS X) AppleWebKit/531.1 (KHTML, like Gecko) FxiOS/9.2h4545.0 Mobile/81Y238 Safari/531.1",1670000202,258,228,1202,T,F,F,marksshelly
+0,0,6,0,evt_203,85.78.45.216,null,1670000203,1595,127,1203,T,F,F,jennifer96
+0,0,9,0,evt_204,216.50.72.250,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_8_6) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/13.0.893.0 Safari/531.2",1670000204,1008,60,1204,T,F,F,wrightamy
+0,0,6,0,evt_205,158.201.243.242,null,1670000205,456,80,1205,T,F,T,brettvazquez
+1,0,0,0,evt_206,185.41.91.49,"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/533.1 (KHTML, like Gecko) Chrome/33.0.825.0 Safari/533.1",1670000206,1460,238,1206,T,F,F,kennethbird
+0,0,9,0,evt_207,27.76.23.242,null,1670000207,368,1057,1207,T,F,F,lopezscott
+0,0,9,0,evt_208,82.221.74.87,"Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/5.1)",1670000208,174,953,1208,T,F,F,daughertymichael
+2,0,2,0,evt_209,67.42.65.177,null,1670000209,387,1012,1209,T,F,F,shannonmorris
+1,0,6,0,evt_210,200.53.185.117,"Mozilla/5.0 (Windows 95) AppleWebKit/534.1 (KHTML, like Gecko) Chrome/39.0.868.0 Safari/534.1",1670000210,548,85,1210,T,F,T,robinsonmichelle
+1,0,2,0,evt_211,137.241.172.7,null,1670000211,1141,561,1211,T,F,F,morriselizabeth
+2,0,2,0,evt_212,159.132.254.137,"Mozilla/5.0 (Windows NT 6.2; gv-GB; rv:1.9.1.20) Gecko/9210-10-03 13:46:13.449341 Firefox/3.8",1670000212,595,842,1212,T,F,F,michaelorozco
+0,0,6,0,evt_213,155.40.41.139,null,1670000213,1439,393,1213,T,F,F,brian89
+1,0,6,0,evt_214,107.57.244.247,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_7_2 rv:3.0; ks-IN) AppleWebKit/532.37.5 (KHTML, like Gecko) Version/5.0.2 Safari/532.37.5",1670000214,1718,1043,1214,T,F,F,zdavies
+0,0,9,0,evt_215,2.7.251.246,null,1670000215,1621,434,1215,T,F,T,josephprice
+1,0,8,0,evt_216,108.143.30.109,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_6; rv:1.9.4.20) Gecko/5642-05-18 08:34:28.914215 Firefox/3.8",1670000216,384,705,1216,T,F,F,hoffmanjoshua
+0,0,4,0,evt_217,130.146.63.185,null,1670000217,1378,647,1217,T,F,F,yvetteburke
+2,0,4,0,evt_218,64.182.118.25,"Opera/8.65.(Windows NT 4.0; hi-IN) Presto/2.9.185 Version/10.00",1670000218,617,564,1218,T,F,F,jessica73
+1,0,5,0,evt_219,161.132.206.75,null,1670000219,1136,644,1219,T,F,F,khamilton
+0,0,8,0,evt_220,167.169.144.238,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_8_8) AppleWebKit/534.1 (KHTML, like Gecko) Chrome/13.0.888.0 Safari/534.1",1670000220,558,789,1220,T,F,T,avilabecky
+0,0,6,0,evt_221,212.242.251.107,null,1670000221,1833,100,1221,T,F,F,gcarr
+2,0,1,0,evt_222,110.137.235.9,"Opera/9.94.(Windows NT 6.2; tl-PH) Presto/2.9.181 Version/12.00",1670000222,1646,939,1222,T,F,F,crossbarbara
+1,0,8,0,evt_223,206.239.70.49,null,1670000223,1916,527,1223,T,F,F,joseph53
+0,0,4,0,evt_224,219.213.122.185,"Mozilla/5.0 (iPhone; CPU iPhone OS 4_3_5 like Mac OS X) AppleWebKit/536.2 (KHTML, like Gecko) CriOS/58.0.803.0 Mobile/57J107 Safari/536.2",1670000224,485,591,1224,T,F,F,jmoran
+1,0,2,0,evt_225,28.228.206.167,null,1670000225,1753,270,1225,T,F,T,alexander69
+1,0,7,0,evt_226,52.119.149.5,"Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 5.2; Trident/4.0)",1670000226,1520,486,1226,T,F,F,fritzrobert
+2,0,9,0,evt_227,108.255.192.220,null,1670000227,1343,900,1227,T,F,F,ecruz
+2,0,7,0,evt_228,132.82.241.72,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.2; Trident/4.1)",1670000228,622,1046,1228,T,F,F,john93
+2,0,4,0,evt_229,171.240.52.219,null,1670000229,1560,209,1229,T,F,F,sarachang
+2,0,8,0,evt_230,129.204.187.157,"Opera/9.28.(Windows NT 6.0; wal-ET) Presto/2.9.165 Version/11.00",1670000230,1816,653,1230,T,F,T,susan54
+0,0,6,0,evt_231,149.31.150.167,null,1670000231,1875,826,1231,T,F,F,christopher31
+2,0,6,0,evt_232,87.119.133.208,"Mozilla/5.0 (Windows 95) AppleWebKit/532.2 (KHTML, like Gecko) Chrome/58.0.847.0 Safari/532.2",1670000232,1859,815,1232,T,F,F,mmoore
+1,0,3,0,evt_233,138.32.206.25,null,1670000233,641,184,1233,T,F,F,webbbrian
+2,0,5,0,evt_234,13.171.74.11,"Opera/9.55.(X11; Linux i686; ka-GE) Presto/2.9.164 Version/12.00",1670000234,869,752,1234,T,F,F,htaylor
+2,0,4,0,evt_235,18.226.194.129,null,1670000235,1728,419,1235,T,F,T,youngshari
+1,0,5,0,evt_236,4.224.19.183,"Mozilla/5.0 (X11; Linux i686; rv:1.9.7.20) Gecko/2181-01-09 13:09:24.491750 Firefox/3.6.19",1670000236,1257,31,1236,T,F,F,julie66
+1,0,2,0,evt_237,128.226.180.210,null,1670000237,996,149,1237,T,F,F,taylorjulie
+0,0,7,0,evt_238,86.200.69.91,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_11_7 rv:4.0; bem-ZM) AppleWebKit/531.12.5 (KHTML, like Gecko) Version/4.0.1 Safari/531.12.5",1670000238,1832,253,1238,T,F,F,brocklee
+1,0,2,0,evt_239,184.91.178.51,null,1670000239,1661,117,1239,T,F,F,vanessa68
+1,0,2,0,evt_240,86.85.55.180,"Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 10.0; Trident/4.0)",1670000240,777,1026,1240,T,F,T,lorigraham
+2,0,1,0,evt_241,187.196.182.200,null,1670000241,25,721,1241,T,F,F,lawsonroberto
+0,0,7,0,evt_242,19.50.241.14,"Mozilla/5.0 (Android 2.3.3; Mobile; rv:21.0) Gecko/21.0 Firefox/21.0",1670000242,959,822,1242,T,F,F,gonzalezxavier
+2,0,1,0,evt_243,176.182.12.176,null,1670000243,257,306,1243,T,F,F,berickson
+0,0,6,0,evt_244,28.194.73.222,"Opera/8.46.(X11; Linux x86_64; ka-GE) Presto/2.9.178 Version/11.00",1670000244,974,630,1244,T,F,F,kswanson
+2,0,1,0,evt_245,204.213.150.207,null,1670000245,85,128,1245,T,F,T,kimberly44
+0,0,3,0,evt_246,133.229.218.197,"Mozilla/5.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; Trident/3.1)",1670000246,961,79,1246,T,F,F,kimmelissa
+2,0,3,0,evt_247,41.78.32.179,null,1670000247,1656,762,1247,T,F,F,deniseescobar
+0,0,6,0,evt_248,212.116.130.63,"Opera/8.96.(X11; Linux x86_64; hne-IN) Presto/2.9.177 Version/12.00",1670000248,1228,149,1248,T,F,F,clarkkimberly
+2,0,3,0,evt_249,184.135.255.252,null,1670000249,352,620,1249,T,F,F,erichill
+0,0,2,0,evt_250,129.95.199.217,"Mozilla/5.0 (iPhone; CPU iPhone OS 8_4_1 like Mac OS X) AppleWebKit/536.1 (KHTML, like Gecko) CriOS/30.0.876.0 Mobile/94I907 Safari/536.1",1670000250,724,155,1250,T,F,T,abender
+0,0,5,0,evt_251,198.238.103.189,null,1670000251,201,542,1251,T,F,F,bgood
+0,0,0,0,evt_252,98.177.216.134,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_7_6) AppleWebKit/533.1 (KHTML, like Gecko) Chrome/58.0.874.0 Safari/533.1",1670000252,1461,40,1252,T,F,F,donna03
+2,0,5,0,evt_253,92.150.93.195,null,1670000253,818,867,1253,T,F,F,karenlong
+2,0,2,0,evt_254,71.60.253.204,"Opera/9.61.(X11; Linux i686; gv-GB) Presto/2.9.178 Version/11.00",1670000254,54,113,1254,T,F,F,shirleyyork
+0,0,8,0,evt_255,136.106.94.36,null,1670000255,1615,591,1255,T,F,T,pparks
+1,0,5,0,evt_256,137.130.218.227,"Opera/8.24.(X11; Linux i686; cmn-TW) Presto/2.9.184 Version/12.00",1670000256,1345,372,1256,T,F,F,jamieprice
+2,0,5,0,evt_257,169.58.104.230,null,1670000257,1862,926,1257,T,F,F,julie21
+1,0,4,0,evt_258,209.31.192.64,"Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 11.0; Trident/4.1)",1670000258,1729,125,1258,T,F,F,lgallegos
+1,0,5,0,evt_259,205.147.220.75,null,1670000259,404,139,1259,T,F,F,stephanie02
+0,0,8,0,evt_260,73.145.192.141,"Mozilla/5.0 (Android 4.2; Mobile; rv:45.0) Gecko/45.0 Firefox/45.0",1670000260,183,1055,1260,T,F,T,danielevans
+0,0,6,0,evt_261,82.213.12.192,null,1670000261,1809,820,1261,T,F,F,wprice
+2,0,7,0,evt_262,95.127.131.76,"Mozilla/5.0 (iPhone; CPU iPhone OS 17_4_1 like Mac OS X) AppleWebKit/531.2 (KHTML, like Gecko) FxiOS/17.0m9040.0 Mobile/51H692 Safari/531.2",1670000262,1445,1009,1262,T,F,F,fbrooks
+1,0,6,0,evt_263,17.89.30.197,null,1670000263,272,719,1263,T,F,F,amiller
+0,0,6,0,evt_264,131.95.204.175,"Opera/9.85.(X11; Linux i686; the-NP) Presto/2.9.190 Version/11.00",1670000264,657,14,1264,T,F,F,timothy42
+0,0,3,0,evt_265,138.191.182.233,null,1670000265,926,308,1265,T,F,T,johnsonaustin
+0,0,9,0,evt_266,58.45.57.66,"Opera/8.90.(X11; Linux x86_64; mai-IN) Presto/2.9.176 Version/11.00",1670000266,212,899,1266,T,F,F,joe35
+2,0,5,0,evt_267,2.150.131.83,null,1670000267,345,895,1267,T,F,F,ebowman
+2,0,7,0,evt_268,119.213.175.28,"Opera/9.61.(Windows CE; the-NP) Presto/2.9.164 Version/10.00",1670000268,1195,163,1268,T,F,F,morganrobert
+0,0,9,0,evt_269,95.69.69.226,null,1670000269,1912,380,1269,T,F,F,nicolegraham
+0,0,8,0,evt_270,201.12.171.77,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_7_3; rv:1.9.2.20) Gecko/2354-11-08 15:37:23.728947 Firefox/3.8",1670000270,567,751,1270,T,F,T,edward83
+2,0,5,0,evt_271,139.195.40.32,null,1670000271,1003,405,1271,T,F,F,brandonmorton
+2,0,9,0,evt_272,123.163.35.184,"Opera/9.54.(Windows NT 5.2; sl-SI) Presto/2.9.170 Version/10.00",1670000272,821,188,1272,T,F,F,ryanchristina
+2,0,2,0,evt_273,30.26.127.48,null,1670000273,1181,952,1273,T,F,F,rbarton
+1,0,8,0,evt_274,35.191.34.235,"Mozilla/5.0 (iPad; CPU iPad OS 17_2 like Mac OS X) AppleWebKit/531.1 (KHTML, like Gecko) FxiOS/14.6j5149.0 Mobile/65Q380 Safari/531.1",1670000274,223,382,1274,T,F,F,robertsmith
+1,0,7,0,evt_275,146.251.62.201,null,1670000275,720,934,1275,T,F,T,malikallen
+1,0,8,0,evt_276,212.126.133.55,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.1 (KHTML, like Gecko) Chrome/56.0.831.0 Safari/536.1",1670000276,122,376,1276,T,F,F,jeffrey60
+1,0,3,0,evt_277,174.219.104.116,null,1670000277,69,203,1277,T,F,F,frice
+2,0,4,0,evt_278,199.33.141.209,"Mozilla/5.0 (Windows; U; Windows NT 6.0) AppleWebKit/535.46.5 (KHTML, like Gecko) Version/4.0.5 Safari/535.46.5",1670000278,1600,190,1278,T,F,F,andrewsdustin
+1,0,4,0,evt_279,88.62.163.100,null,1670000279,36,421,1279,T,F,F,butlerchristopher
+2,0,4,0,evt_280,189.52.65.148,"Mozilla/5.0 (Windows; U; Windows NT 11.0) AppleWebKit/535.2.5 (KHTML, like Gecko) Version/4.0.5 Safari/535.2.5",1670000280,499,381,1280,T,F,T,manndonald
+0,0,9,0,evt_281,41.78.37.99,null,1670000281,898,196,1281,T,F,F,alexisjones
+0,0,2,0,evt_282,184.71.188.28,"Mozilla/5.0 (iPhone; CPU iPhone OS 6_1_6 like Mac OS X) AppleWebKit/531.1 (KHTML, like Gecko) CriOS/57.0.804.0 Mobile/19S828 Safari/531.1",1670000282,1557,1063,1282,T,F,F,dawn44
+0,0,8,0,evt_283,178.79.143.154,null,1670000283,974,591,1283,T,F,F,brownbenjamin
+1,0,0,0,evt_284,64.194.156.129,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/533.1 (KHTML, like Gecko) Chrome/26.0.803.0 Safari/533.1",1670000284,1184,314,1284,T,F,F,csantiago
+0,0,9,0,evt_285,50.20.35.110,null,1670000285,1533,394,1285,T,F,T,theresa70
+0,0,8,0,evt_286,188.73.124.88,"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/533.0 (KHTML, like Gecko) Chrome/50.0.846.0 Safari/533.0",1670000286,1763,268,1286,T,F,F,ashley74
+1,0,8,0,evt_287,84.86.151.160,null,1670000287,369,343,1287,T,F,F,herbert72
+2,0,5,0,evt_288,141.152.252.12,"Mozilla/5.0 (iPad; CPU iPad OS 6_1_6 like Mac OS X) AppleWebKit/535.2 (KHTML, like Gecko) CriOS/26.0.883.0 Mobile/26R205 Safari/535.2",1670000288,520,231,1288,T,F,F,fmoore
+1,0,2,0,evt_289,130.244.251.47,null,1670000289,71,672,1289,T,F,F,cathyjones
+1,0,5,0,evt_290,223.221.202.234,"Mozilla/5.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; Trident/5.0)",1670000290,56,598,1290,T,F,T,esantiago
+1,0,2,0,evt_291,40.189.20.228,null,1670000291,1545,596,1291,T,F,F,hunter14
+0,0,1,0,evt_292,196.246.161.45,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_7_6 rv:2.0; ja-JP) AppleWebKit/534.17.6 (KHTML, like Gecko) Version/4.0.3 Safari/534.17.6",1670000292,1470,702,1292,T,F,F,tammybeltran
+2,0,0,0,evt_293,147.62.113.161,null,1670000293,952,704,1293,T,F,F,joseph92
+0,0,4,0,evt_294,165.227.133.119,"Opera/9.22.(X11; Linux x86_64; pt-PT) Presto/2.9.178 Version/12.00",1670000294,1495,818,1294,T,F,F,sawyerdavid
+0,0,4,0,evt_295,205.136.25.135,null,1670000295,1639,783,1295,T,F,T,jlozano
+1,0,0,0,evt_296,69.233.217.138,"Mozilla/5.0 (Android 5.1.1; Mobile; rv:48.0) Gecko/48.0 Firefox/48.0",1670000296,242,528,1296,T,F,F,luis26
+1,0,4,0,evt_297,129.218.202.48,null,1670000297,62,550,1297,T,F,F,ybrooks
+0,0,9,0,evt_298,158.81.140.126,"Mozilla/5.0 (Windows 95) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/60.0.853.0 Safari/531.0",1670000298,1465,75,1298,T,F,F,pamelastrickland
+0,0,9,0,evt_299,64.204.123.14,null,1670000299,997,1032,1299,T,F,F,daniel33
+1,0,7,0,evt_300,31.100.128.96,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.1)",1670000300,181,425,1300,T,F,T,jennifer62
+1,0,4,0,evt_301,105.225.191.189,null,1670000301,800,274,1301,T,F,F,michael89
+2,0,3,0,evt_302,9.44.165.158,"Mozilla/5.0 (X11; Linux i686; rv:1.9.5.20) Gecko/7390-05-05 12:13:37.024231 Firefox/10.0",1670000302,372,181,1302,T,F,F,marissabaker
+2,0,0,0,evt_303,165.18.9.200,null,1670000303,1609,957,1303,T,F,F,emartinez
+2,0,2,0,evt_304,221.88.3.175,"Opera/9.47.(Windows NT 5.01; uz-UZ) Presto/2.9.170 Version/12.00",1670000304,575,95,1304,T,F,F,oroberts
+2,0,0,0,evt_305,213.238.125.154,null,1670000305,974,386,1305,T,F,T,arielbryant
+1,0,2,0,evt_306,70.197.122.250,"Opera/9.37.(Windows NT 5.0; bs-BA) Presto/2.9.180 Version/11.00",1670000306,508,1055,1306,T,F,F,bradleylori
+0,0,3,0,evt_307,36.74.37.83,null,1670000307,1438,980,1307,T,F,F,alowe
+2,0,8,0,evt_308,103.218.66.17,"Mozilla/5.0 (Windows 98; Win 9x 4.90) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/20.0.875.0 Safari/531.0",1670000308,953,517,1308,T,F,F,jamesholmes
+1,0,6,0,evt_309,74.149.183.38,null,1670000309,1614,603,1309,T,F,F,dgalvan
+2,0,5,0,evt_310,68.61.160.95,"Opera/8.62.(Windows NT 6.0; lij-IT) Presto/2.9.183 Version/10.00",1670000310,810,355,1310,T,F,T,evantran
+2,0,2,0,evt_311,27.30.122.199,null,1670000311,1592,931,1311,T,F,F,thomasfox
+1,0,4,0,evt_312,19.158.88.212,"Opera/8.50.(Windows NT 4.0; id-ID) Presto/2.9.172 Version/10.00",1670000312,1014,1063,1312,T,F,F,andersonjennifer
+1,0,7,0,evt_313,169.247.81.166,null,1670000313,664,1033,1313,T,F,F,qhouse
+1,0,9,0,evt_314,148.90.152.216,"Opera/9.77.(Windows 98; Win 9x 4.90; mai-IN) Presto/2.9.188 Version/11.00",1670000314,1468,10,1314,T,F,F,ljimenez
+2,0,9,0,evt_315,156.155.103.13,null,1670000315,1559,950,1315,T,F,T,harrisjennifer
+0,0,0,0,evt_316,203.84.131.180,"Mozilla/5.0 (Android 3.2.4; Mobile; rv:44.0) Gecko/44.0 Firefox/44.0",1670000316,285,754,1316,T,F,F,navarrobrandon
+0,0,8,0,evt_317,63.146.208.95,null,1670000317,1285,109,1317,T,F,F,eddieray
+0,0,7,0,evt_318,221.191.131.24,"Opera/8.23.(Windows NT 6.2; sw-KE) Presto/2.9.169 Version/10.00",1670000318,14,493,1318,T,F,F,martinezlogan
+2,0,9,0,evt_319,96.163.123.227,null,1670000319,1426,271,1319,T,F,F,josephmoore
+0,0,2,0,evt_320,212.26.23.119,"Mozilla/5.0 (Windows NT 10.0; gd-GB; rv:1.9.1.20) Gecko/4695-03-02 08:28:58.068726 Firefox/3.6.9",1670000320,400,791,1320,T,F,T,carlos76
+1,0,3,0,evt_321,143.65.137.9,null,1670000321,81,968,1321,T,F,F,jessicachavez
+1,0,1,0,evt_322,174.147.2.237,"Mozilla/5.0 (Windows; U; Windows NT 6.1) AppleWebKit/531.28.1 (KHTML, like Gecko) Version/4.0.1 Safari/531.28.1",1670000322,1184,876,1322,T,F,F,fsmith
+1,0,3,0,evt_323,12.140.221.191,null,1670000323,1370,786,1323,T,F,F,jeffreydavis
+1,0,4,0,evt_324,53.90.213.166,"Mozilla/5.0 (Linux; Android 5.1.1) AppleWebKit/533.1 (KHTML, like Gecko) Chrome/41.0.887.0 Safari/533.1",1670000324,1140,443,1324,T,F,F,gina96
+0,0,4,0,evt_325,185.129.110.93,null,1670000325,878,766,1325,T,F,T,joyce84
+0,0,4,0,evt_326,57.26.122.119,"Opera/8.62.(X11; Linux x86_64; my-MM) Presto/2.9.174 Version/12.00",1670000326,1489,132,1326,T,F,F,tylerromero
+0,0,2,0,evt_327,57.199.205.61,null,1670000327,435,247,1327,T,F,F,paulavang
+2,0,0,0,evt_328,61.171.199.53,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_7_0; rv:1.9.6.20) Gecko/2523-10-07 04:36:28.679535 Firefox/3.6.13",1670000328,700,1000,1328,T,F,F,michaelmartinez
+0,0,6,0,evt_329,17.7.134.169,null,1670000329,321,309,1329,T,F,F,sean53
+0,0,3,0,evt_330,4.253.130.77,"Mozilla/5.0 (X11; Linux i686; rv:1.9.6.20) Gecko/8881-10-02 15:59:19.412994 Firefox/3.8",1670000330,1390,1019,1330,T,F,T,jose12
+2,0,0,0,evt_331,146.221.38.156,null,1670000331,1030,187,1331,T,F,F,burnettjames
+2,0,5,0,evt_332,140.223.206.138,"Opera/9.90.(Windows NT 4.0; ti-ER) Presto/2.9.164 Version/12.00",1670000332,614,210,1332,T,F,F,ladams
+0,0,7,0,evt_333,75.186.151.41,null,1670000333,136,437,1333,T,F,F,bruiz
+0,0,2,0,evt_334,155.106.85.210,"Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.0; Trident/4.1)",1670000334,1855,35,1334,T,F,F,lmartin
+0,0,6,0,evt_335,81.2.126.253,null,1670000335,33,490,1335,T,F,T,cookealan
+2,0,9,0,evt_336,186.8.109.177,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_0 like Mac OS X; tr-TR) AppleWebKit/531.10.2 (KHTML, like Gecko) Version/3.0.5 Mobile/8B112 Safari/6531.10.2",1670000336,1466,876,1336,T,F,F,shawnagates
+0,0,8,0,evt_337,85.48.130.0,null,1670000337,186,767,1337,T,F,F,kevingarcia
+0,0,7,0,evt_338,167.180.27.226,"Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 11.0; Trident/5.0)",1670000338,968,908,1338,T,F,F,garciadavid
+1,0,2,0,evt_339,37.52.57.154,null,1670000339,979,480,1339,T,F,F,itaylor
+1,0,9,0,evt_340,106.240.141.92,"Mozilla/5.0 (compatible; MSIE 6.0; Windows 98; Win 9x 4.90; Trident/3.0)",1670000340,765,16,1340,T,F,T,matthewparrish
+2,0,2,0,evt_341,131.249.87.26,null,1670000341,1862,97,1341,T,F,F,tonyroberts
+2,0,8,0,evt_342,35.18.177.217,"Mozilla/5.0 (Windows; U; Windows NT 5.1) AppleWebKit/531.46.3 (KHTML, like Gecko) Version/4.0.2 Safari/531.46.3",1670000342,16,404,1342,T,F,F,christopher55
+1,0,7,0,evt_343,135.242.30.114,null,1670000343,564,117,1343,T,F,F,bturner
+0,0,1,0,evt_344,157.199.254.96,"Mozilla/5.0 (iPad; CPU iPad OS 9_3_5 like Mac OS X) AppleWebKit/535.2 (KHTML, like Gecko) FxiOS/15.9l1482.0 Mobile/45S034 Safari/535.2",1670000344,1418,360,1344,T,F,F,salazaralex
+0,0,7,0,evt_345,48.200.127.132,null,1670000345,436,139,1345,T,F,T,jodilopez
+1,0,4,0,evt_346,220.214.255.218,"Mozilla/5.0 (Windows; U; Windows 98) AppleWebKit/532.9.6 (KHTML, like Gecko) Version/5.1 Safari/532.9.6",1670000346,17,1009,1346,T,F,F,flemingpaula
+0,0,6,0,evt_347,138.159.117.174,null,1670000347,199,970,1347,T,F,F,berryrichard
+1,0,8,0,evt_348,55.27.192.56,"Mozilla/5.0 (Windows CE) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/55.0.828.0 Safari/531.2",1670000348,1192,274,1348,T,F,F,meghan04
+2,0,1,0,evt_349,131.97.203.116,null,1670000349,1545,524,1349,T,F,F,dylan65
+0,0,1,0,evt_350,121.45.224.12,"Opera/9.51.(X11; Linux i686; cv-RU) Presto/2.9.161 Version/10.00",1670000350,804,924,1350,T,F,T,mcclainfrank
+1,0,2,0,evt_351,29.5.124.118,null,1670000351,1054,888,1351,T,F,F,travis11
+2,0,0,0,evt_352,37.90.93.92,"Mozilla/5.0 (iPad; CPU iPad OS 15_8_2 like Mac OS X) AppleWebKit/535.2 (KHTML, like Gecko) CriOS/28.0.850.0 Mobile/87R673 Safari/535.2",1670000352,959,664,1352,T,F,F,williamsmichelle
+1,0,5,0,evt_353,182.236.6.39,null,1670000353,394,515,1353,T,F,F,sloanmeghan
+2,0,8,0,evt_354,105.75.194.43,"Mozilla/5.0 (X11; Linux x86_64; rv:1.9.5.20) Gecko/5484-02-29 22:35:06.991928 Firefox/3.8",1670000354,1246,532,1354,T,F,F,coopercassandra
+1,0,1,0,evt_355,148.72.159.138,null,1670000355,567,44,1355,T,F,T,oburns
+0,0,3,0,evt_356,173.137.108.254,"Mozilla/5.0 (Linux; Android 4.4) AppleWebKit/536.2 (KHTML, like Gecko) Chrome/36.0.812.0 Safari/536.2",1670000356,129,754,1356,T,F,F,wwhite
+2,0,8,0,evt_357,169.36.101.6,null,1670000357,1615,537,1357,T,F,F,alisonwoods
+0,0,1,0,evt_358,221.177.97.171,"Mozilla/5.0 (compatible; MSIE 5.0; Windows 95; Trident/5.1)",1670000358,1819,109,1358,T,F,F,alexander65
+0,0,1,0,evt_359,24.18.233.47,null,1670000359,1695,589,1359,T,F,F,stanleycody
+2,0,6,0,evt_360,59.84.5.252,"Mozilla/5.0 (Android 4.1.2; Mobile; rv:27.0) Gecko/27.0 Firefox/27.0",1670000360,30,695,1360,T,F,T,heather53
+2,0,0,0,evt_361,108.40.222.101,null,1670000361,1056,899,1361,T,F,F,warren30
+2,0,9,0,evt_362,161.29.242.162,"Mozilla/5.0 (iPad; CPU iPad OS 16_7_6 like Mac OS X) AppleWebKit/534.2 (KHTML, like Gecko) FxiOS/16.8e2402.0 Mobile/25S491 Safari/534.2",1670000362,1665,686,1362,T,F,F,weberpeter
+0,0,1,0,evt_363,213.127.2.161,null,1670000363,172,343,1363,T,F,F,zdavis
+2,0,1,0,evt_364,120.35.176.45,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.2; Trident/3.0)",1670000364,1779,619,1364,T,F,F,irichards
+2,0,9,0,evt_365,198.156.134.85,null,1670000365,744,193,1365,T,F,T,martinchristopher
+2,0,8,0,evt_366,76.163.30.154,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0)",1670000366,832,314,1366,T,F,F,millssara
+0,0,0,0,evt_367,30.56.27.128,null,1670000367,1808,522,1367,T,F,F,ophillips
+1,0,6,0,evt_368,83.205.251.203,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_10_1 rv:2.0; shs-CA) AppleWebKit/534.10.4 (KHTML, like Gecko) Version/4.0.2 Safari/534.10.4",1670000368,246,753,1368,T,F,F,jsnyder
+2,0,4,0,evt_369,57.209.169.134,null,1670000369,809,529,1369,T,F,F,danielbates
+1,0,5,0,evt_370,220.73.235.30,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_5_2 rv:2.0; az-AZ) AppleWebKit/532.50.4 (KHTML, like Gecko) Version/5.0.4 Safari/532.50.4",1670000370,1407,139,1370,T,F,T,mruiz
+2,0,6,0,evt_371,6.186.121.205,null,1670000371,1896,650,1371,T,F,F,melissa27
+0,0,8,0,evt_372,70.143.16.226,"Opera/9.25.(X11; Linux x86_64; ff-SN) Presto/2.9.163 Version/12.00",1670000372,499,616,1372,T,F,F,joshua70
+2,0,6,0,evt_373,215.120.10.174,null,1670000373,882,681,1373,T,F,F,zruiz
+0,0,7,0,evt_374,87.0.229.67,"Opera/9.90.(X11; Linux i686; pa-PK) Presto/2.9.167 Version/12.00",1670000374,879,1076,1374,T,F,F,thomasangela
+2,0,2,0,evt_375,90.25.167.47,null,1670000375,1549,720,1375,T,F,T,samanthadavis
+0,0,8,0,evt_376,107.116.40.83,"Opera/9.29.(Windows 98; Win 9x 4.90; tk-TM) Presto/2.9.162 Version/11.00",1670000376,1543,227,1376,T,F,F,reynoldsmichael
+1,0,2,0,evt_377,41.198.149.239,null,1670000377,359,758,1377,T,F,F,kirk03
+0,0,1,0,evt_378,190.53.249.126,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; Trident/4.1)",1670000378,1786,595,1378,T,F,F,lisabailey
+0,0,3,0,evt_379,176.177.18.198,null,1670000379,834,600,1379,T,F,F,idonovan
+0,0,3,0,evt_380,55.155.251.214,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_6_6 rv:5.0; eu-FR) AppleWebKit/531.46.2 (KHTML, like Gecko) Version/4.1 Safari/531.46.2",1670000380,82,569,1380,T,F,T,jessica98
+1,0,7,0,evt_381,35.193.250.190,null,1670000381,855,239,1381,T,F,F,rachaelgeorge
+2,0,5,0,evt_382,57.18.99.55,"Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_8 like Mac OS X) AppleWebKit/534.2 (KHTML, like Gecko) CriOS/22.0.814.0 Mobile/97K354 Safari/534.2",1670000382,1724,9,1382,T,F,F,ngamble
+1,0,5,0,evt_383,125.100.190.185,null,1670000383,1175,952,1383,T,F,F,adam15
+1,0,4,0,evt_384,53.202.113.84,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_7; rv:1.9.3.20) Gecko/9438-08-01 18:32:30.642700 Firefox/3.6.4",1670000384,207,615,1384,T,F,F,james08
+2,0,0,0,evt_385,138.244.24.79,null,1670000385,1288,128,1385,T,F,T,kcannon
+1,0,5,0,evt_386,113.221.219.125,"Mozilla/5.0 (Windows NT 11.0; th-TH; rv:1.9.0.20) Gecko/5042-05-12 06:34:34.555634 Firefox/14.0",1670000386,678,141,1386,T,F,F,dwalters
+1,0,4,0,evt_387,144.40.217.208,null,1670000387,188,421,1387,T,F,F,mmiller
+2,0,9,0,evt_388,15.26.112.189,"Mozilla/5.0 (Windows 95) AppleWebKit/531.1 (KHTML, like Gecko) Chrome/24.0.828.0 Safari/531.1",1670000388,367,920,1388,T,F,F,riveraandrea
+1,0,3,0,evt_389,76.4.227.10,null,1670000389,585,965,1389,T,F,F,pattersondeborah
+1,0,2,0,evt_390,175.132.169.250,"Mozilla/5.0 (Linux; Android 2.3.7) AppleWebKit/536.2 (KHTML, like Gecko) Chrome/14.0.867.0 Safari/536.2",1670000390,333,518,1390,T,F,T,powellrobin
+2,0,2,0,evt_391,135.42.237.49,null,1670000391,744,357,1391,T,F,F,cruzanne
+0,0,4,0,evt_392,91.77.77.133,"Mozilla/5.0 (iPhone; CPU iPhone OS 8_4_1 like Mac OS X) AppleWebKit/531.0 (KHTML, like Gecko) FxiOS/10.0m8979.0 Mobile/09U238 Safari/531.0",1670000392,1123,243,1392,T,F,F,whitakerrachel
+1,0,2,0,evt_393,114.152.39.220,null,1670000393,963,592,1393,T,F,F,pbarker
+2,0,8,0,evt_394,179.107.29.205,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5; rv:1.9.5.20) Gecko/8895-02-25 21:37:32.552216 Firefox/13.0",1670000394,617,857,1394,T,F,F,lgonzales
+2,0,2,0,evt_395,202.156.240.242,null,1670000395,1579,946,1395,T,F,T,ellisrussell
+1,0,0,0,evt_396,163.76.92.47,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_3 like Mac OS X; bn-BD) AppleWebKit/532.4.2 (KHTML, like Gecko) Version/3.0.5 Mobile/8B113 Safari/6532.4.2",1670000396,1250,200,1396,T,F,F,pamelasmith
+1,0,7,0,evt_397,7.198.4.186,null,1670000397,833,332,1397,T,F,F,samantha95
+2,0,6,0,evt_398,129.196.50.8,"Mozilla/5.0 (Windows; U; Windows 95) AppleWebKit/532.8.4 (KHTML, like Gecko) Version/4.0 Safari/532.8.4",1670000398,1511,85,1398,T,F,F,samantha42
+0,0,7,0,evt_399,119.237.240.211,null,1670000399,1260,693,1399,T,F,F,dthompson
+2,0,0,0,evt_400,86.205.105.21,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/534.0 (KHTML, like Gecko) Chrome/50.0.897.0 Safari/534.0",1670000400,727,440,1400,T,F,T,ipayne
+2,0,8,0,evt_401,100.198.220.167,null,1670000401,1395,744,1401,T,F,F,ashleyavila
+2,0,6,0,evt_402,106.80.243.175,"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.1 (KHTML, like Gecko) Chrome/57.0.876.0 Safari/534.1",1670000402,123,230,1402,T,F,F,newmanerica
+1,0,2,0,evt_403,29.28.193.136,null,1670000403,123,50,1403,T,F,F,ricardogarcia
+0,0,2,0,evt_404,156.18.40.252,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_6_6 rv:4.0; pa-IN) AppleWebKit/534.24.3 (KHTML, like Gecko) Version/4.0 Safari/534.24.3",1670000404,1486,1,1404,T,F,F,thomas26
+1,0,3,0,evt_405,124.245.26.11,null,1670000405,1324,351,1405,T,F,T,juan68
+0,0,1,0,evt_406,171.76.10.84,"Mozilla/5.0 (Windows NT 4.0; cmn-TW; rv:1.9.0.20) Gecko/3610-08-23 07:39:11.788551 Firefox/3.8",1670000406,903,273,1406,T,F,F,patrickturner
+1,0,9,0,evt_407,137.50.41.193,null,1670000407,1078,707,1407,T,F,F,mcguireseth
+1,0,1,0,evt_408,68.99.170.241,"Mozilla/5.0 (iPad; CPU iPad OS 13_7 like Mac OS X) AppleWebKit/535.1 (KHTML, like Gecko) CriOS/47.0.895.0 Mobile/56A218 Safari/535.1",1670000408,1816,941,1408,T,F,F,danielmitchell
+0,0,0,0,evt_409,111.153.238.61,null,1670000409,775,196,1409,T,F,F,allisoncharles
+0,0,1,0,evt_410,117.187.138.162,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_8; rv:1.9.5.20) Gecko/6614-05-01 23:18:47.230743 Firefox/3.8",1670000410,1510,802,1410,T,F,T,hectorschultz
+1,0,7,0,evt_411,146.61.239.34,null,1670000411,1353,201,1411,T,F,F,lauren49
+0,0,1,0,evt_412,61.145.10.180,"Mozilla/5.0 (Windows NT 5.2) AppleWebKit/536.0 (KHTML, like Gecko) Chrome/56.0.845.0 Safari/536.0",1670000412,779,138,1412,T,F,F,jamie34
+1,0,5,0,evt_413,214.97.142.242,null,1670000413,1774,614,1413,T,F,F,millsmatthew
+0,0,1,0,evt_414,112.145.77.174,"Opera/8.79.(X11; Linux i686; ve-ZA) Presto/2.9.179 Version/12.00",1670000414,1724,297,1414,T,F,F,kelsey74
+1,0,1,0,evt_415,151.19.164.220,null,1670000415,19,170,1415,T,F,T,hmccarthy
+2,0,2,0,evt_416,92.162.27.142,"Opera/9.16.(Windows NT 11.0; ts-ZA) Presto/2.9.188 Version/11.00",1670000416,489,520,1416,T,F,F,freed
+0,0,6,0,evt_417,216.4.105.98,null,1670000417,840,204,1417,T,F,F,karen99
+0,0,4,0,evt_418,53.0.209.58,"Mozilla/5.0 (iPad; CPU iPad OS 7_1_2 like Mac OS X) AppleWebKit/533.0 (KHTML, like Gecko) FxiOS/12.4q9754.0 Mobile/09I855 Safari/533.0",1670000418,1424,920,1418,T,F,F,iross
+2,0,3,0,evt_419,214.164.65.226,null,1670000419,867,343,1419,T,F,F,xmitchell
+0,0,2,0,evt_420,212.220.205.94,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5 rv:6.0; si-LK) AppleWebKit/532.42.4 (KHTML, like Gecko) Version/5.1 Safari/532.42.4",1670000420,1482,1022,1420,T,F,T,thompsonshari
+2,0,8,0,evt_421,178.13.111.181,null,1670000421,746,874,1421,T,F,F,joshua98
+2,0,4,0,evt_422,93.241.88.182,"Opera/8.86.(X11; Linux i686; unm-US) Presto/2.9.175 Version/10.00",1670000422,87,869,1422,T,F,F,jillian98
+2,0,3,0,evt_423,205.235.78.42,null,1670000423,1434,69,1423,T,F,F,kimberlyphillips
+2,0,7,0,evt_424,122.112.115.11,"Opera/9.74.(Windows NT 5.0; brx-IN) Presto/2.9.165 Version/10.00",1670000424,42,757,1424,T,F,F,williamslisa
+1,0,1,0,evt_425,169.79.156.81,null,1670000425,566,1027,1425,T,F,T,masseyjason
+1,0,0,0,evt_426,19.139.66.69,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.0; Trident/3.1)",1670000426,601,594,1426,T,F,F,jimmy66
+2,0,5,0,evt_427,6.116.160.169,null,1670000427,238,644,1427,T,F,F,gibsonlawrence
+0,0,5,0,evt_428,111.206.206.202,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/58.0.896.0 Safari/535.1",1670000428,1101,415,1428,T,F,F,john18
+1,0,3,0,evt_429,27.160.37.116,null,1670000429,1344,819,1429,T,F,F,smithbrandon
+0,0,9,0,evt_430,82.169.29.219,"Opera/9.35.(Windows CE; mg-MG) Presto/2.9.182 Version/12.00",1670000430,645,498,1430,T,F,T,christopher48
+2,0,8,0,evt_431,181.203.25.197,null,1670000431,296,206,1431,T,F,F,millslogan
+0,0,3,0,evt_432,83.90.122.210,"Mozilla/5.0 (Windows NT 5.2) AppleWebKit/536.2 (KHTML, like Gecko) Chrome/44.0.828.0 Safari/536.2",1670000432,1226,439,1432,T,F,F,uberry
+1,0,3,0,evt_433,176.105.133.39,null,1670000433,765,389,1433,T,F,F,trowe
+2,0,2,0,evt_434,212.15.153.153,"Opera/8.21.(Windows NT 4.0; ja-JP) Presto/2.9.167 Version/10.00",1670000434,1049,21,1434,T,F,F,james36
+2,0,1,0,evt_435,203.140.156.143,null,1670000435,1825,773,1435,T,F,T,currytina
+0,0,9,0,evt_436,86.141.23.2,"Mozilla/5.0 (Linux; Android 4.4.1) AppleWebKit/534.0 (KHTML, like Gecko) Chrome/44.0.810.0 Safari/534.0",1670000436,1804,918,1436,T,F,F,thomasjeremy
+0,0,7,0,evt_437,191.68.33.220,null,1670000437,1257,402,1437,T,F,F,thorntonjoshua
+2,0,9,0,evt_438,96.51.78.184,"Opera/9.13.(Windows 95; wae-CH) Presto/2.9.176 Version/10.00",1670000438,13,444,1438,T,F,F,jameswhite
+2,0,3,0,evt_439,92.195.27.2,null,1670000439,926,895,1439,T,F,F,dustin27
+2,0,7,0,evt_440,49.24.58.199,"Mozilla/5.0 (X11; Linux i686) AppleWebKit/536.2 (KHTML, like Gecko) Chrome/58.0.809.0 Safari/536.2",1670000440,1451,593,1440,T,F,T,edwinwhite
+1,0,8,0,evt_441,66.141.7.180,null,1670000441,673,546,1441,T,F,F,knoxkatherine
+2,0,1,0,evt_442,18.202.206.39,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_9_6; rv:1.9.5.20) Gecko/6568-10-08 11:09:47.127869 Firefox/8.0",1670000442,1478,989,1442,T,F,F,gbradford
+1,0,3,0,evt_443,30.101.222.40,null,1670000443,1897,512,1443,T,F,F,jamie32
+0,0,8,0,evt_444,78.165.82.169,"Opera/9.86.(X11; Linux x86_64; pa-PK) Presto/2.9.188 Version/12.00",1670000444,1080,803,1444,T,F,F,jacksonnicole
+2,0,6,0,evt_445,153.159.33.0,null,1670000445,809,18,1445,T,F,T,brandicuevas
+2,0,7,0,evt_446,191.179.117.84,"Mozilla/5.0 (compatible; MSIE 5.0; Windows CE; Trident/5.1)",1670000446,1445,852,1446,T,F,F,hillnatalie
+1,0,1,0,evt_447,158.242.51.134,null,1670000447,1505,334,1447,T,F,F,kjohnson
+2,0,4,0,evt_448,107.204.254.85,"Mozilla/5.0 (Windows 95) AppleWebKit/531.1 (KHTML, like Gecko) Chrome/35.0.845.0 Safari/531.1",1670000448,695,679,1448,T,F,F,brianvelazquez
+1,0,2,0,evt_449,222.111.239.153,null,1670000449,1597,632,1449,T,F,F,gregoryroberts
+0,0,6,0,evt_450,111.137.131.215,"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/33.0.819.0 Safari/534.2",1670000450,1136,715,1450,T,F,T,treyes
+0,0,8,0,evt_451,99.212.25.42,null,1670000451,1024,504,1451,T,F,F,danielle15
+2,0,4,0,evt_452,55.71.239.85,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/5.0)",1670000452,1765,320,1452,T,F,F,christine11
+1,0,0,0,evt_453,215.94.211.73,null,1670000453,669,737,1453,T,F,F,mendozaryan
+0,0,2,0,evt_454,190.124.20.116,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/533.2 (KHTML, like Gecko) Chrome/61.0.804.0 Safari/533.2",1670000454,89,24,1454,T,F,F,jessica59
+0,0,3,0,evt_455,216.215.114.140,null,1670000455,1723,603,1455,T,F,T,nicholasramirez
+0,0,1,0,evt_456,33.33.251.195,"Mozilla/5.0 (compatible; MSIE 9.0; Windows 95; Trident/3.1)",1670000456,1664,749,1456,T,F,F,murphysharon
+1,0,7,0,evt_457,156.11.102.215,null,1670000457,352,630,1457,T,F,F,robinperkins
+0,0,0,0,evt_458,2.211.165.223,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; Trident/4.1)",1670000458,1807,916,1458,T,F,F,heather71
+0,0,1,0,evt_459,145.60.177.155,null,1670000459,1563,534,1459,T,F,F,sstrong
+2,0,2,0,evt_460,221.141.72.135,"Opera/8.47.(X11; Linux x86_64; lg-UG) Presto/2.9.187 Version/10.00",1670000460,647,417,1460,T,F,T,ahines
+0,0,8,0,evt_461,37.120.31.97,null,1670000461,1190,220,1461,T,F,F,hubbardwilliam
+2,0,9,0,evt_462,121.7.34.163,"Opera/8.10.(X11; Linux x86_64; gu-IN) Presto/2.9.168 Version/12.00",1670000462,1403,652,1462,T,F,F,martinemily
+0,0,7,0,evt_463,128.93.255.139,null,1670000463,1315,231,1463,T,F,F,smithvictoria
+2,0,0,0,evt_464,219.236.28.112,"Mozilla/5.0 (Windows 98) AppleWebKit/533.1 (KHTML, like Gecko) Chrome/46.0.818.0 Safari/533.1",1670000464,510,415,1464,T,F,F,dkelly
+1,0,6,0,evt_465,222.63.198.158,null,1670000465,532,118,1465,T,F,T,shirley08
+0,0,1,0,evt_466,172.69.150.64,"Mozilla/5.0 (iPhone; CPU iPhone OS 12_4_8 like Mac OS X) AppleWebKit/533.0 (KHTML, like Gecko) FxiOS/15.1p3160.0 Mobile/16O955 Safari/533.0",1670000466,1322,311,1466,T,F,F,tstark
+0,0,8,0,evt_467,49.7.56.80,null,1670000467,950,383,1467,T,F,F,ywilliams
+2,0,1,0,evt_468,177.57.182.15,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 4.0; Trident/3.0)",1670000468,1113,719,1468,T,F,F,elizabeth41
+1,0,5,0,evt_469,145.126.38.99,null,1670000469,1458,832,1469,T,F,F,julie62
+2,0,5,0,evt_470,96.253.168.99,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.2; Trident/3.1)",1670000470,720,304,1470,T,F,T,juliebutler
+1,0,9,0,evt_471,36.25.44.97,null,1670000471,335,1033,1471,T,F,F,ustanley
+1,0,2,0,evt_472,140.9.128.109,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.2; Trident/4.0)",1670000472,126,163,1472,T,F,F,marissa61
+2,0,7,0,evt_473,36.144.67.221,null,1670000473,159,699,1473,T,F,F,markadams
+2,0,4,0,evt_474,125.160.233.241,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/3.1)",1670000474,109,202,1474,T,F,F,gmartinez
+1,0,1,0,evt_475,208.104.19.197,null,1670000475,47,488,1475,T,F,T,lowejohn
+0,0,0,0,evt_476,46.197.130.190,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.2; Trident/5.1)",1670000476,1181,458,1476,T,F,F,csanders
+0,0,5,0,evt_477,38.217.210.112,null,1670000477,154,1031,1477,T,F,F,jose95
+0,0,6,0,evt_478,131.213.190.155,"Mozilla/5.0 (Linux; Android 4.2.2) AppleWebKit/534.1 (KHTML, like Gecko) Chrome/23.0.839.0 Safari/534.1",1670000478,779,236,1478,T,F,F,evansolivia
+1,0,9,0,evt_479,202.212.111.68,null,1670000479,872,549,1479,T,F,F,mjones
+1,0,6,0,evt_480,58.155.180.176,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_7; rv:1.9.2.20) Gecko/6001-04-05 22:01:46.037842 Firefox/9.0",1670000480,470,271,1480,T,F,T,dean18
+1,0,7,0,evt_481,70.43.56.191,null,1670000481,1919,555,1481,T,F,F,robert21
+0,0,5,0,evt_482,108.155.173.165,"Mozilla/5.0 (Linux; Android 2.2.1) AppleWebKit/531.1 (KHTML, like Gecko) Chrome/25.0.891.0 Safari/531.1",1670000482,1,951,1482,T,F,F,fergusonmichael
+2,0,2,0,evt_483,101.113.228.214,null,1670000483,1559,349,1483,T,F,F,fwoods
+2,0,1,0,evt_484,183.106.140.238,"Mozilla/5.0 (Windows NT 5.2; zu-ZA; rv:1.9.1.20) Gecko/2743-11-24 02:09:06.530251 Firefox/3.8",1670000484,974,103,1484,T,F,F,cookryan
+0,0,3,0,evt_485,19.0.213.150,null,1670000485,1368,804,1485,T,F,T,nnewton
+2,0,9,0,evt_486,120.20.119.213,"Mozilla/5.0 (Windows; U; Windows NT 5.2) AppleWebKit/534.46.2 (KHTML, like Gecko) Version/4.0.3 Safari/534.46.2",1670000486,1571,312,1486,T,F,F,maguirre
+2,0,3,0,evt_487,48.60.173.228,null,1670000487,1264,62,1487,T,F,F,fmoran
+2,0,8,0,evt_488,80.216.46.108,"Mozilla/5.0 (iPad; CPU iPad OS 16_7_6 like Mac OS X) AppleWebKit/535.2 (KHTML, like Gecko) CriOS/26.0.896.0 Mobile/11K865 Safari/535.2",1670000488,1881,706,1488,T,F,F,perezcalvin
+0,0,1,0,evt_489,130.157.134.93,null,1670000489,995,675,1489,T,F,F,aholmes
+2,0,1,0,evt_490,197.212.23.92,"Mozilla/5.0 (iPad; CPU iPad OS 17_2_1 like Mac OS X) AppleWebKit/532.2 (KHTML, like Gecko) CriOS/31.0.824.0 Mobile/66Z664 Safari/532.2",1670000490,475,970,1490,T,F,T,rodriguezrobert
+0,0,0,0,evt_491,199.93.77.177,null,1670000491,1487,538,1491,T,F,F,sarah79
+2,0,7,0,evt_492,47.30.31.101,"Mozilla/5.0 (Windows; U; Windows 95) AppleWebKit/531.3.5 (KHTML, like Gecko) Version/5.0.3 Safari/531.3.5",1670000492,95,653,1492,T,F,F,mannalexis
+0,0,6,0,evt_493,191.113.230.20,null,1670000493,1649,253,1493,T,F,F,tfletcher
+0,0,5,0,evt_494,48.157.167.182,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_11_6; rv:1.9.4.20) Gecko/2670-07-03 08:41:26.211475 Firefox/3.8",1670000494,1388,149,1494,T,F,F,hrobertson
+0,0,4,0,evt_495,195.166.33.147,null,1670000495,1516,1065,1495,T,F,T,tbradford
+2,0,2,0,evt_496,173.105.75.142,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 10.0; Trident/4.1)",1670000496,1413,462,1496,T,F,F,sancheznathan
+0,0,4,0,evt_497,39.238.89.46,null,1670000497,1391,4,1497,T,F,F,jonessandra
+1,0,0,0,evt_498,30.38.115.28,"Mozilla/5.0 (compatible; MSIE 9.0; Windows CE; Trident/4.1)",1670000498,1639,94,1498,T,F,F,tiffanyglass
+1,0,4,0,evt_499,82.8.9.189,null,1670000499,269,434,1499,T,F,F,srice
+1,0,4,0,evt_500,160.193.218.24,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_1 like Mac OS X; wae-CH) AppleWebKit/531.26.3 (KHTML, like Gecko) Version/4.0.5 Mobile/8B111 Safari/6531.26.3",1670000500,1769,974,1500,T,F,T,oking
+1,0,3,0,evt_501,215.47.62.120,null,1670000501,832,980,1501,T,F,F,annamann
+1,0,5,0,evt_502,21.135.39.175,"Mozilla/5.0 (Windows; U; Windows NT 6.2) AppleWebKit/532.33.7 (KHTML, like Gecko) Version/5.0.4 Safari/532.33.7",1670000502,183,278,1502,T,F,F,mary72
+2,0,3,0,evt_503,134.149.122.78,null,1670000503,559,921,1503,T,F,F,nicolenichols
+1,0,0,0,evt_504,150.213.199.61,"Mozilla/5.0 (X11; Linux i686) AppleWebKit/535.0 (KHTML, like Gecko) Chrome/13.0.872.0 Safari/535.0",1670000504,543,134,1504,T,F,F,larryhill
+2,0,1,0,evt_505,39.227.9.31,null,1670000505,1294,540,1505,T,F,T,henrymelissa
+0,0,9,0,evt_506,30.136.55.37,"Mozilla/5.0 (compatible; MSIE 5.0; Windows 98; Win 9x 4.90; Trident/5.0)",1670000506,674,751,1506,T,F,F,tara53
+0,0,2,0,evt_507,68.87.98.246,null,1670000507,1051,784,1507,T,F,F,alexandrawilliams
+0,0,3,0,evt_508,184.100.130.87,"Mozilla/5.0 (Linux; Android 3.2.3) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/24.0.856.0 Safari/532.0",1670000508,1359,223,1508,T,F,F,whitneyruth
+1,0,6,0,evt_509,80.39.96.232,null,1670000509,443,49,1509,T,F,F,cory59
+1,0,0,0,evt_510,41.2.139.36,"Mozilla/5.0 (compatible; MSIE 5.0; Windows 98; Trident/5.0)",1670000510,1837,41,1510,T,F,T,jessica79
+0,0,8,0,evt_511,35.2.249.199,null,1670000511,723,898,1511,T,F,F,hjimenez
+1,0,9,0,evt_512,195.65.235.160,"Mozilla/5.0 (Linux; Android 2.0.1) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/55.0.899.0 Safari/531.0",1670000512,280,589,1512,T,F,F,dorseykaren
+1,0,2,0,evt_513,26.31.154.215,null,1670000513,1030,300,1513,T,F,F,maryhayes
+2,0,6,0,evt_514,12.22.161.180,"Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 4.0; Trident/3.0)",1670000514,1074,1019,1514,T,F,F,pamelaferrell
+0,0,3,0,evt_515,171.182.127.164,null,1670000515,74,604,1515,T,F,T,dhamilton
+1,0,9,0,evt_516,12.25.117.4,"Mozilla/5.0 (Linux; Android 4.2.1) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/29.0.851.0 Safari/532.0",1670000516,1676,505,1516,T,F,F,morgansamantha
+1,0,4,0,evt_517,72.112.25.19,null,1670000517,1153,878,1517,T,F,F,sburns
+1,0,4,0,evt_518,13.132.110.235,"Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 6.2; Trident/3.0)",1670000518,1420,34,1518,T,F,F,ellen90
+2,0,5,0,evt_519,23.23.71.64,null,1670000519,781,583,1519,T,F,F,thomasjoel
+1,0,7,0,evt_520,174.48.206.63,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_9) AppleWebKit/535.0 (KHTML, like Gecko) Chrome/63.0.867.0 Safari/535.0",1670000520,807,505,1520,T,F,T,ohood
+1,0,9,0,evt_521,140.148.101.136,null,1670000521,1386,774,1521,T,F,F,becky40
+0,0,9,0,evt_522,184.241.109.233,"Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 6.1; Trident/3.1)",1670000522,837,332,1522,T,F,F,maryjohnson
+1,0,4,0,evt_523,214.192.204.102,null,1670000523,1692,154,1523,T,F,F,jenniferking
+0,0,5,0,evt_524,31.15.151.173,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_6_8; rv:1.9.6.20) Gecko/7574-07-01 01:14:14.694794 Firefox/3.6.15",1670000524,1473,1057,1524,T,F,F,lori16
+2,0,4,0,evt_525,46.100.201.220,null,1670000525,988,330,1525,T,F,T,adam81
+1,0,5,0,evt_526,48.11.65.121,"Mozilla/5.0 (Windows; U; Windows NT 6.1) AppleWebKit/535.1.5 (KHTML, like Gecko) Version/5.0.3 Safari/535.1.5",1670000526,58,589,1526,T,F,F,wcosta
+0,0,4,0,evt_527,197.9.49.251,null,1670000527,795,555,1527,T,F,F,kelseygibson
+1,0,2,0,evt_528,44.249.222.166,"Opera/8.79.(Windows 95; ro-RO) Presto/2.9.174 Version/10.00",1670000528,46,488,1528,T,F,F,ryansheila
+2,0,7,0,evt_529,205.67.249.237,null,1670000529,1471,869,1529,T,F,F,norrisdebra
+1,0,3,0,evt_530,203.53.43.40,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/5.1)",1670000530,220,11,1530,T,F,T,sotoeric
+2,0,3,0,evt_531,79.55.136.118,null,1670000531,1351,581,1531,T,F,F,jeffrey17
+2,0,8,0,evt_532,186.58.59.204,"Opera/8.62.(X11; Linux x86_64; wo-SN) Presto/2.9.172 Version/12.00",1670000532,598,686,1532,T,F,F,michealmedina
+0,0,3,0,evt_533,194.101.19.2,null,1670000533,1550,746,1533,T,F,F,dcohen
+0,0,8,0,evt_534,133.126.248.62,"Mozilla/5.0 (Android 4.1.2; Mobile; rv:20.0) Gecko/20.0 Firefox/20.0",1670000534,151,23,1534,T,F,F,matthew87
+1,0,2,0,evt_535,72.59.106.49,null,1670000535,1326,132,1535,T,F,T,wardmatthew
+2,0,3,0,evt_536,168.36.167.173,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_1 like Mac OS X; lij-IT) AppleWebKit/535.33.2 (KHTML, like Gecko) Version/3.0.5 Mobile/8B119 Safari/6535.33.2",1670000536,117,783,1536,T,F,F,caleb75
+0,0,2,0,evt_537,222.138.159.129,null,1670000537,1842,958,1537,T,F,F,kevinhurst
+2,0,6,0,evt_538,93.216.226.71,"Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 10.0; Trident/4.0)",1670000538,101,394,1538,T,F,F,justinwalker
+0,0,6,0,evt_539,79.46.213.190,null,1670000539,523,543,1539,T,F,F,martinrobert
+0,0,6,0,evt_540,168.210.188.145,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_3 like Mac OS X; ayc-PE) AppleWebKit/535.24.3 (KHTML, like Gecko) Version/3.0.5 Mobile/8B116 Safari/6535.24.3",1670000540,1098,702,1540,T,F,T,patriciagalvan
+1,0,8,0,evt_541,150.99.151.197,null,1670000541,499,376,1541,T,F,F,iansandoval
+0,0,8,0,evt_542,90.29.145.220,"Mozilla/5.0 (compatible; MSIE 8.0; Windows CE; Trident/5.0)",1670000542,72,71,1542,T,F,F,jasonbeck
+0,0,4,0,evt_543,34.17.249.134,null,1670000543,954,774,1543,T,F,F,janice96
+1,0,8,0,evt_544,43.226.49.23,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.2; Trident/5.1)",1670000544,1404,309,1544,T,F,F,regina51
+1,0,8,0,evt_545,200.238.81.237,null,1670000545,1658,266,1545,T,F,T,maria61
+0,0,6,0,evt_546,20.104.114.236,"Opera/9.52.(Windows 98; lg-UG) Presto/2.9.182 Version/11.00",1670000546,1258,598,1546,T,F,F,jacksonmichael
+0,0,9,0,evt_547,219.128.219.205,null,1670000547,12,305,1547,T,F,F,wgrimes
+1,0,5,0,evt_548,126.229.91.72,"Opera/9.12.(Windows 98; Win 9x 4.90; ik-CA) Presto/2.9.182 Version/10.00",1670000548,467,691,1548,T,F,F,melindahill
+2,0,8,0,evt_549,7.43.27.103,null,1670000549,716,330,1549,T,F,F,newmantroy
+0,0,3,0,evt_550,158.136.185.27,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_3 like Mac OS X; es-PE) AppleWebKit/534.31.4 (KHTML, like Gecko) Version/3.0.5 Mobile/8B113 Safari/6534.31.4",1670000550,361,613,1550,T,F,T,walkerpeter
+2,0,4,0,evt_551,9.177.67.142,null,1670000551,388,1032,1551,T,F,F,johnnywatson
+1,0,0,0,evt_552,23.242.176.48,"Opera/9.36.(Windows NT 6.1; sa-IN) Presto/2.9.162 Version/10.00",1670000552,1158,367,1552,T,F,F,nelsonsusan
+0,0,5,0,evt_553,155.63.220.19,null,1670000553,213,210,1553,T,F,F,rossjack
+1,0,1,0,evt_554,218.184.47.19,"Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.0 (KHTML, like Gecko) Chrome/31.0.803.0 Safari/534.0",1670000554,1756,986,1554,T,F,F,moorelindsay
+1,0,7,0,evt_555,219.113.57.254,null,1670000555,1784,273,1555,T,F,T,whitemichael
+0,0,9,0,evt_556,134.152.167.71,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_2 like Mac OS X; ti-ET) AppleWebKit/534.31.3 (KHTML, like Gecko) Version/4.0.5 Mobile/8B115 Safari/6534.31.3",1670000556,639,952,1556,T,F,F,odillon
+2,0,1,0,evt_557,35.180.156.150,null,1670000557,456,969,1557,T,F,F,khanrobert
+0,0,7,0,evt_558,203.135.141.33,"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/534.1 (KHTML, like Gecko) Chrome/59.0.850.0 Safari/534.1",1670000558,1023,89,1558,T,F,F,rebecca85
+0,0,2,0,evt_559,204.162.29.37,null,1670000559,1127,120,1559,T,F,F,tyler59
+1,0,8,0,evt_560,112.107.107.162,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_7_6 rv:6.0; kn-IN) AppleWebKit/531.35.1 (KHTML, like Gecko) Version/4.0.2 Safari/531.35.1",1670000560,848,701,1560,T,F,T,merickson
+0,0,9,0,evt_561,134.243.180.77,null,1670000561,897,524,1561,T,F,F,kristicrane
+0,0,7,0,evt_562,223.229.245.73,"Mozilla/5.0 (iPad; CPU iPad OS 4_3_5 like Mac OS X) AppleWebKit/532.1 (KHTML, like Gecko) FxiOS/15.4g0589.0 Mobile/70R657 Safari/532.1",1670000562,145,279,1562,T,F,F,brandon11
+0,0,5,0,evt_563,43.227.62.70,null,1670000563,1712,992,1563,T,F,F,andrewtaylor
+2,0,0,0,evt_564,95.123.69.49,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_8_5 rv:4.0; de-AT) AppleWebKit/532.19.1 (KHTML, like Gecko) Version/5.0.5 Safari/532.19.1",1670000564,1176,415,1564,T,F,F,msanchez
+0,0,5,0,evt_565,53.93.221.195,null,1670000565,1870,157,1565,T,F,T,jasonfuller
+1,0,6,0,evt_566,53.134.182.133,"Opera/8.68.(Windows NT 6.1; mni-IN) Presto/2.9.173 Version/12.00",1670000566,1871,94,1566,T,F,F,marie34
+1,0,4,0,evt_567,171.93.138.78,null,1670000567,170,670,1567,T,F,F,whitejulie
+1,0,8,0,evt_568,111.224.2.209,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_10_9 rv:4.0; mt-MT) AppleWebKit/535.18.6 (KHTML, like Gecko) Version/4.1 Safari/535.18.6",1670000568,1674,428,1568,T,F,F,ewalters
+0,0,2,0,evt_569,172.130.111.112,null,1670000569,8,278,1569,T,F,F,twade
+1,0,9,0,evt_570,125.127.9.73,"Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 4.0; Trident/5.0)",1670000570,1332,237,1570,T,F,T,ashlee67
+2,0,9,0,evt_571,39.7.17.2,null,1670000571,1085,327,1571,T,F,F,kcarlson
+1,0,0,0,evt_572,134.120.132.176,"Mozilla/5.0 (Android 3.2.6; Mobile; rv:24.0) Gecko/24.0 Firefox/24.0",1670000572,1880,1032,1572,T,F,F,jeffreyburns
+2,0,2,0,evt_573,83.163.34.26,null,1670000573,1115,1001,1573,T,F,F,hacosta
+1,0,1,0,evt_574,27.101.252.214,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/531.1 (KHTML, like Gecko) Chrome/51.0.805.0 Safari/531.1",1670000574,1749,913,1574,T,F,F,karla80
+0,0,8,0,evt_575,121.215.203.157,null,1670000575,1443,742,1575,T,F,T,donaldsonanne
+2,0,4,0,evt_576,110.219.4.91,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 10.0; Trident/3.1)",1670000576,1433,1026,1576,T,F,F,moorecaitlin
+0,0,7,0,evt_577,13.227.183.18,null,1670000577,80,65,1577,T,F,F,jacob43
+0,0,3,0,evt_578,142.113.10.17,"Mozilla/5.0 (Linux; Android 4.3) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/17.0.819.0 Safari/531.2",1670000578,986,722,1578,T,F,F,theodoregutierrez
+2,0,6,0,evt_579,129.13.155.143,null,1670000579,1165,345,1579,T,F,F,james31
+2,0,6,0,evt_580,187.169.223.12,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_5 rv:4.0; mag-IN) AppleWebKit/534.26.5 (KHTML, like Gecko) Version/4.0.4 Safari/534.26.5",1670000580,1740,819,1580,T,F,T,erica43
+0,0,7,0,evt_581,41.251.191.142,null,1670000581,306,690,1581,T,F,F,westmichael
+0,0,9,0,evt_582,47.142.9.79,"Opera/8.94.(X11; Linux i686; doi-IN) Presto/2.9.183 Version/10.00",1670000582,192,752,1582,T,F,F,wheath
+1,0,6,0,evt_583,214.18.219.203,null,1670000583,1340,309,1583,T,F,F,blackbrandon
+0,0,4,0,evt_584,133.79.15.49,"Mozilla/5.0 (Windows NT 5.1; mk-MK; rv:1.9.1.20) Gecko/4819-05-18 06:39:12.234787 Firefox/3.8",1670000584,1132,908,1584,T,F,F,cody96
+0,0,4,0,evt_585,128.40.127.240,null,1670000585,1858,434,1585,T,F,T,ruizzachary
+0,0,5,0,evt_586,73.157.162.212,"Opera/9.92.(X11; Linux x86_64; mhr-RU) Presto/2.9.169 Version/10.00",1670000586,991,681,1586,T,F,F,caitlin59
+0,0,2,0,evt_587,2.18.96.114,null,1670000587,1412,933,1587,T,F,F,sara13
+2,0,2,0,evt_588,100.0.130.184,"Mozilla/5.0 (compatible; MSIE 7.0; Windows 95; Trident/4.1)",1670000588,1615,496,1588,T,F,F,stokesisaac
+0,0,2,0,evt_589,93.159.147.60,null,1670000589,1568,234,1589,T,F,F,nsmith
+2,0,2,0,evt_590,46.191.92.46,"Mozilla/5.0 (Windows NT 5.0; tt-RU; rv:1.9.1.20) Gecko/5630-08-16 16:20:36.628891 Firefox/6.0",1670000590,435,623,1590,T,F,T,stephen13
+2,0,2,0,evt_591,219.134.178.89,null,1670000591,1492,89,1591,T,F,F,pachecojesse
+2,0,0,0,evt_592,168.245.84.101,"Opera/9.92.(Windows NT 5.2; kl-GL) Presto/2.9.170 Version/12.00",1670000592,267,889,1592,T,F,F,tommymiller
+1,0,9,0,evt_593,9.58.61.233,null,1670000593,874,955,1593,T,F,F,barryfowler
+1,0,6,0,evt_594,175.181.106.52,"Mozilla/5.0 (Linux; Android 9) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/24.0.834.0 Safari/535.1",1670000594,1919,744,1594,T,F,F,simmonsjohn
+0,0,2,0,evt_595,137.156.128.233,null,1670000595,1307,269,1595,T,F,T,angelafuentes
+0,0,4,0,evt_596,164.3.39.218,"Opera/9.81.(Windows NT 6.2; hr-HR) Presto/2.9.172 Version/12.00",1670000596,1695,477,1596,T,F,F,lharrison
+1,0,0,0,evt_597,70.171.67.240,null,1670000597,548,774,1597,T,F,F,zneal
+2,0,4,0,evt_598,87.164.226.80,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_2 like Mac OS X; de-AT) AppleWebKit/531.26.4 (KHTML, like Gecko) Version/3.0.5 Mobile/8B112 Safari/6531.26.4",1670000598,1436,795,1598,T,F,F,jack70
+1,0,1,0,evt_599,120.1.116.247,null,1670000599,346,138,1599,T,F,F,susancoffey
+0,0,6,0,evt_600,52.172.201.210,"Opera/8.70.(X11; Linux i686; ce-RU) Presto/2.9.188 Version/12.00",1670000600,25,689,1600,T,F,T,yedwards
+0,0,0,0,evt_601,208.244.172.176,null,1670000601,345,439,1601,T,F,F,kimberlygriffin
+0,0,2,0,evt_602,112.226.204.190,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_8_6; rv:1.9.3.20) Gecko/2817-01-06 04:21:50.056236 Firefox/6.0",1670000602,11,973,1602,T,F,F,shannonlaura
+1,0,4,0,evt_603,204.71.64.176,null,1670000603,1388,456,1603,T,F,F,michaelrobertson
+1,0,2,0,evt_604,59.99.142.189,"Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 4.0; Trident/3.1)",1670000604,1704,429,1604,T,F,F,xgarcia
+1,0,5,0,evt_605,36.14.242.241,null,1670000605,583,456,1605,T,F,T,wallacehenry
+1,0,0,0,evt_606,208.241.17.107,"Mozilla/5.0 (Windows NT 5.1; ce-RU; rv:1.9.0.20) Gecko/7014-01-23 23:40:36.680481 Firefox/3.6.15",1670000606,786,905,1606,T,F,F,carrdavid
+1,0,3,0,evt_607,89.125.124.0,null,1670000607,1883,654,1607,T,F,F,smichael
+1,0,2,0,evt_608,56.20.155.66,"Mozilla/5.0 (Linux; Android 2.0.1) AppleWebKit/536.2 (KHTML, like Gecko) Chrome/40.0.880.0 Safari/536.2",1670000608,1462,629,1608,T,F,F,woconnell
+0,0,9,0,evt_609,8.254.214.99,null,1670000609,1294,290,1609,T,F,F,annewoods
+1,0,3,0,evt_610,93.67.237.128,"Mozilla/5.0 (Android 4.3; Mobile; rv:29.0) Gecko/29.0 Firefox/29.0",1670000610,703,553,1610,T,F,T,ebooth
+1,0,4,0,evt_611,125.126.104.147,null,1670000611,311,632,1611,T,F,F,imiller
+1,0,1,0,evt_612,117.21.110.226,"Mozilla/5.0 (Windows NT 5.1; bg-BG; rv:1.9.2.20) Gecko/5485-03-28 16:38:03.294769 Firefox/3.6.20",1670000612,1424,229,1612,T,F,F,haynesbeth
+1,0,0,0,evt_613,102.50.119.238,null,1670000613,738,372,1613,T,F,F,jessica91
+2,0,4,0,evt_614,200.43.71.166,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_10_1 rv:6.0; da-DK) AppleWebKit/535.29.2 (KHTML, like Gecko) Version/4.0.4 Safari/535.29.2",1670000614,608,249,1614,T,F,F,ruben69
+2,0,7,0,evt_615,99.130.166.225,null,1670000615,226,927,1615,T,F,T,williamsanthony
+1,0,7,0,evt_616,51.84.108.14,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_10_2 rv:6.0; sat-IN) AppleWebKit/532.20.7 (KHTML, like Gecko) Version/4.0.5 Safari/532.20.7",1670000616,868,140,1616,T,F,F,catherinewaller
+0,0,7,0,evt_617,3.224.181.87,null,1670000617,1429,973,1617,T,F,F,bellvictoria
+2,0,9,0,evt_618,10.207.129.32,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 10.0; Trident/3.1)",1670000618,516,19,1618,T,F,F,nicole17
+2,0,6,0,evt_619,124.236.163.155,null,1670000619,1697,453,1619,T,F,F,tamara52
+1,0,8,0,evt_620,62.178.49.167,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_5_6; rv:1.9.6.20) Gecko/5625-05-22 11:23:42.939484 Firefox/8.0",1670000620,1535,365,1620,T,F,T,thomaslong
+2,0,9,0,evt_621,16.232.16.36,null,1670000621,290,927,1621,T,F,F,mstevenson
+2,0,8,0,evt_622,137.202.181.73,"Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 5.0; Trident/3.1)",1670000622,719,980,1622,T,F,F,adam63
+1,0,0,0,evt_623,129.87.17.229,null,1670000623,1765,869,1623,T,F,F,xsummers
+0,0,1,0,evt_624,82.140.33.27,"Mozilla/5.0 (iPhone; CPU iPhone OS 17_4_1 like Mac OS X) AppleWebKit/535.0 (KHTML, like Gecko) FxiOS/13.0l6716.0 Mobile/35R703 Safari/535.0",1670000624,295,479,1624,T,F,F,gonzalezmichele
+1,0,7,0,evt_625,210.181.83.111,null,1670000625,751,800,1625,T,F,T,umejia
+1,0,2,0,evt_626,94.35.32.110,"Mozilla/5.0 (Linux; Android 9) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/42.0.825.0 Safari/531.2",1670000626,796,372,1626,T,F,F,danielkeith
+2,0,6,0,evt_627,60.255.241.87,null,1670000627,105,34,1627,T,F,F,kpittman
+2,0,9,0,evt_628,130.18.76.206,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.01; Trident/5.1)",1670000628,662,288,1628,T,F,F,nicole57
+2,0,2,0,evt_629,162.98.39.244,null,1670000629,574,670,1629,T,F,F,gmckinney
+1,0,8,0,evt_630,174.246.60.85,"Mozilla/5.0 (X11; Linux x86_64; rv:1.9.6.20) Gecko/5765-11-30 05:35:16.323883 Firefox/3.8",1670000630,1256,544,1630,T,F,T,smithbobby
+0,0,6,0,evt_631,219.236.79.146,null,1670000631,546,776,1631,T,F,F,ashleywatson
+1,0,3,0,evt_632,98.249.102.214,"Mozilla/5.0 (iPad; CPU iPad OS 1_1_5 like Mac OS X) AppleWebKit/531.0 (KHTML, like Gecko) CriOS/36.0.828.0 Mobile/65Y652 Safari/531.0",1670000632,50,441,1632,T,F,F,ashley57
+2,0,4,0,evt_633,142.239.171.220,null,1670000633,1354,985,1633,T,F,F,gcox
+0,0,0,0,evt_634,136.212.156.49,"Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 10.0; Trident/3.0)",1670000634,119,247,1634,T,F,F,ryanpowell
+1,0,5,0,evt_635,27.142.12.193,null,1670000635,346,893,1635,T,F,T,erichunt
+0,0,6,0,evt_636,124.51.220.60,"Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 5.01; Trident/5.0)",1670000636,1912,12,1636,T,F,F,mooneyjacob
+1,0,7,0,evt_637,152.168.30.217,null,1670000637,473,998,1637,T,F,F,jcruz
+1,0,9,0,evt_638,45.154.41.164,"Opera/9.18.(X11; Linux x86_64; id-ID) Presto/2.9.181 Version/12.00",1670000638,797,2,1638,T,F,F,kristyfigueroa
+2,0,9,0,evt_639,184.231.127.63,null,1670000639,131,311,1639,T,F,F,ogillespie
+1,0,8,0,evt_640,115.8.124.125,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8) AppleWebKit/531.1 (KHTML, like Gecko) Chrome/21.0.811.0 Safari/531.1",1670000640,812,585,1640,T,F,T,patricia97
+2,0,2,0,evt_641,108.202.221.115,null,1670000641,753,206,1641,T,F,F,zharris
+0,0,0,0,evt_642,120.183.144.221,"Mozilla/5.0 (Windows CE) AppleWebKit/533.1 (KHTML, like Gecko) Chrome/34.0.815.0 Safari/533.1",1670000642,1397,1021,1642,T,F,F,brittanystewart
+0,0,0,0,evt_643,157.95.184.233,null,1670000643,1258,835,1643,T,F,F,bandersen
+1,0,4,0,evt_644,31.8.119.131,"Mozilla/5.0 (X11; Linux x86_64; rv:1.9.5.20) Gecko/4327-08-13 18:30:54.620651 Firefox/14.0",1670000644,968,704,1644,T,F,F,kpadilla
+1,0,7,0,evt_645,177.15.88.76,null,1670000645,1754,807,1645,T,F,T,harrisalan
+2,0,7,0,evt_646,219.123.145.243,"Mozilla/5.0 (iPad; CPU iPad OS 5_1_1 like Mac OS X) AppleWebKit/531.2 (KHTML, like Gecko) FxiOS/16.2k2606.0 Mobile/70W596 Safari/531.2",1670000646,1579,3,1646,T,F,F,karenfitzpatrick
+2,0,4,0,evt_647,135.123.77.86,null,1670000647,745,564,1647,T,F,F,yjohnson
+1,0,7,0,evt_648,18.102.221.218,"Opera/9.60.(X11; Linux i686; lo-LA) Presto/2.9.188 Version/11.00",1670000648,1477,821,1648,T,F,F,michael25
+1,0,4,0,evt_649,153.55.9.234,null,1670000649,1381,81,1649,T,F,F,cameronsandra
+0,0,8,0,evt_650,107.146.40.195,"Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 5.2; Trident/3.0)",1670000650,1196,174,1650,T,F,T,brittanycollier
+2,0,2,0,evt_651,187.55.40.17,null,1670000651,1391,521,1651,T,F,F,wayne53
+1,0,2,0,evt_652,42.142.57.17,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_11_4 rv:5.0; es-PR) AppleWebKit/533.39.6 (KHTML, like Gecko) Version/4.0 Safari/533.39.6",1670000652,429,227,1652,T,F,F,smadden
+0,0,4,0,evt_653,87.233.152.155,null,1670000653,176,617,1653,T,F,F,kelseygreen
+1,0,8,0,evt_654,114.9.19.66,"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/63.0.852.0 Safari/531.0",1670000654,1885,220,1654,T,F,F,pbean
+2,0,5,0,evt_655,50.184.114.220,null,1670000655,1297,77,1655,T,F,T,joelduke
+0,0,5,0,evt_656,36.230.152.40,"Opera/8.80.(X11; Linux i686; el-CY) Presto/2.9.178 Version/11.00",1670000656,1461,485,1656,T,F,F,donnajones
+1,0,5,0,evt_657,204.115.77.91,null,1670000657,1357,767,1657,T,F,F,janet71
+1,0,7,0,evt_658,63.42.211.199,"Opera/9.56.(X11; Linux x86_64; id-ID) Presto/2.9.168 Version/11.00",1670000658,34,729,1658,T,F,F,donaldmyers
+2,0,7,0,evt_659,64.213.164.11,null,1670000659,1567,884,1659,T,F,F,vincentnatasha
+0,0,0,0,evt_660,223.168.208.158,"Mozilla/5.0 (iPad; CPU iPad OS 9_3_6 like Mac OS X) AppleWebKit/533.2 (KHTML, like Gecko) CriOS/62.0.838.0 Mobile/53G966 Safari/533.2",1670000660,646,766,1660,T,F,T,timothy16
+1,0,1,0,evt_661,74.153.97.62,null,1670000661,773,917,1661,T,F,F,emaldonado
+1,0,3,0,evt_662,215.245.192.238,"Mozilla/5.0 (compatible; MSIE 7.0; Windows 95; Trident/3.0)",1670000662,1029,541,1662,T,F,F,matthewsmith
+1,0,3,0,evt_663,222.81.77.255,null,1670000663,6,402,1663,T,F,F,xwarner
+1,0,3,0,evt_664,181.127.60.64,"Mozilla/5.0 (Windows NT 10.0; pl-PL; rv:1.9.1.20) Gecko/5661-09-29 21:19:12.258972 Firefox/12.0",1670000664,1203,784,1664,T,F,F,kimberly86
+1,0,5,0,evt_665,196.26.218.211,null,1670000665,1524,662,1665,T,F,T,pbradford
+0,0,3,0,evt_666,115.98.211.56,"Mozilla/5.0 (iPad; CPU iPad OS 13_5_1 like Mac OS X) AppleWebKit/532.0 (KHTML, like Gecko) FxiOS/10.4s8333.0 Mobile/94U488 Safari/532.0",1670000666,819,714,1666,T,F,F,cooperpamela
+1,0,6,0,evt_667,193.18.189.209,null,1670000667,1073,947,1667,T,F,F,katiepowell
+1,0,5,0,evt_668,177.156.73.177,"Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.2; Trident/3.0)",1670000668,1164,732,1668,T,F,F,bradfordstephen
+2,0,9,0,evt_669,84.208.11.153,null,1670000669,329,392,1669,T,F,F,cfitzgerald
+0,0,1,0,evt_670,201.218.119.116,"Mozilla/5.0 (Windows NT 6.1; kn-IN; rv:1.9.0.20) Gecko/8083-12-17 02:38:05.965546 Firefox/3.6.7",1670000670,1800,922,1670,T,F,T,browncharles
+2,0,3,0,evt_671,170.108.187.96,null,1670000671,1865,718,1671,T,F,F,joseph12
+1,0,5,0,evt_672,200.49.13.121,"Mozilla/5.0 (compatible; MSIE 7.0; Windows CE; Trident/4.0)",1670000672,1815,383,1672,T,F,F,jsullivan
+2,0,4,0,evt_673,61.10.168.219,null,1670000673,464,148,1673,T,F,F,pjohnson
+1,0,0,0,evt_674,161.68.45.131,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_9_5) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/24.0.880.0 Safari/532.0",1670000674,621,1040,1674,T,F,F,christineperkins
+1,0,7,0,evt_675,194.65.60.6,null,1670000675,1817,859,1675,T,F,T,qrodriguez
+0,0,2,0,evt_676,95.171.184.71,"Mozilla/5.0 (Windows; U; Windows NT 5.01) AppleWebKit/535.30.2 (KHTML, like Gecko) Version/5.0.3 Safari/535.30.2",1670000676,1542,220,1676,T,F,F,wrasmussen
+1,0,6,0,evt_677,161.190.174.147,null,1670000677,1223,465,1677,T,F,F,xshaw
+1,0,4,0,evt_678,26.114.87.250,"Mozilla/5.0 (Windows NT 4.0; ln-CD; rv:1.9.2.20) Gecko/2266-03-21 02:35:23.924244 Firefox/4.0",1670000678,1491,524,1678,T,F,F,michaelbrennan
+0,0,6,0,evt_679,36.156.151.62,null,1670000679,1826,1033,1679,T,F,F,mary05
+0,0,9,0,evt_680,88.246.139.109,"Opera/8.97.(X11; Linux x86_64; tk-TM) Presto/2.9.173 Version/10.00",1670000680,409,684,1680,T,F,T,david45
+1,0,9,0,evt_681,56.82.129.155,null,1670000681,1722,326,1681,T,F,F,cobbmarilyn
+1,0,1,0,evt_682,168.242.22.61,"Opera/8.24.(Windows 98; bs-BA) Presto/2.9.160 Version/11.00",1670000682,1156,746,1682,T,F,F,cynthia69
+1,0,3,0,evt_683,81.169.195.74,null,1670000683,379,396,1683,T,F,F,jamesdouglas
+2,0,1,0,evt_684,13.119.128.116,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/31.0.850.0 Safari/535.1",1670000684,1668,482,1684,T,F,F,shawn70
+0,0,8,0,evt_685,137.196.76.156,null,1670000685,1350,853,1685,T,F,T,vwilliams
+0,0,0,0,evt_686,199.120.166.30,"Mozilla/5.0 (X11; Linux x86_64; rv:1.9.5.20) Gecko/2293-11-21 18:23:26.807695 Firefox/9.0",1670000686,1811,764,1686,T,F,F,graystephanie
+2,0,5,0,evt_687,32.248.185.88,null,1670000687,840,874,1687,T,F,F,bradleystewart
+0,0,6,0,evt_688,35.254.71.57,"Mozilla/5.0 (compatible; MSIE 9.0; Windows 98; Trident/4.0)",1670000688,1184,566,1688,T,F,F,pamelasmith
+1,0,8,0,evt_689,96.237.120.80,null,1670000689,1782,637,1689,T,F,F,lwest
+1,0,8,0,evt_690,4.214.147.67,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.1; Trident/4.0)",1670000690,1470,1012,1690,T,F,T,connorlopez
+2,0,1,0,evt_691,16.213.127.158,null,1670000691,150,57,1691,T,F,F,william82
+1,0,4,0,evt_692,167.103.171.95,"Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 6.1; Trident/5.0)",1670000692,1735,775,1692,T,F,F,thomascynthia
+2,0,8,0,evt_693,18.250.5.159,null,1670000693,1897,956,1693,T,F,F,jday
+0,0,1,0,evt_694,160.232.65.55,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_12_8 rv:6.0; tig-ER) AppleWebKit/533.43.1 (KHTML, like Gecko) Version/5.1 Safari/533.43.1",1670000694,1850,750,1694,T,F,F,mathewskathleen
+1,0,8,0,evt_695,161.148.233.112,null,1670000695,424,810,1695,T,F,T,chelsea54
+1,0,3,0,evt_696,114.172.71.20,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.2; Trident/5.0)",1670000696,776,629,1696,T,F,F,smooney
+0,0,2,0,evt_697,73.15.37.84,null,1670000697,1305,667,1697,T,F,F,jwhite
+1,0,2,0,evt_698,105.70.26.104,"Mozilla/5.0 (X11; Linux i686; rv:1.9.7.20) Gecko/7699-07-20 13:30:21.127655 Firefox/3.8",1670000698,1703,351,1698,T,F,F,brandondrake
+2,0,8,0,evt_699,35.159.72.1,null,1670000699,1622,662,1699,T,F,F,markadams
+1,0,6,0,evt_700,181.27.20.129,"Opera/9.73.(Windows NT 5.1; tn-ZA) Presto/2.9.189 Version/12.00",1670000700,401,1007,1700,T,F,T,hhughes
+2,0,5,0,evt_701,191.213.150.126,null,1670000701,683,405,1701,T,F,F,cheryl14
+2,0,0,0,evt_702,123.187.131.81,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 11.0; Trident/4.1)",1670000702,747,340,1702,T,F,F,christopher70
+0,0,8,0,evt_703,153.90.112.222,null,1670000703,1009,417,1703,T,F,F,ramirezmonica
+1,0,9,0,evt_704,140.49.85.19,"Mozilla/5.0 (compatible; MSIE 5.0; Windows 98; Trident/4.1)",1670000704,1841,1048,1704,T,F,F,poolebryan
+1,0,2,0,evt_705,128.117.152.230,null,1670000705,1203,931,1705,T,F,T,michael70
+0,0,7,0,evt_706,141.193.134.58,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_10_4 rv:3.0; uk-UA) AppleWebKit/532.8.2 (KHTML, like Gecko) Version/4.0 Safari/532.8.2",1670000706,1484,174,1706,T,F,F,sruiz
+0,0,2,0,evt_707,201.28.57.64,null,1670000707,1179,59,1707,T,F,F,veronica33
+1,0,0,0,evt_708,20.154.71.36,"Mozilla/5.0 (Windows; U; Windows 98) AppleWebKit/531.34.7 (KHTML, like Gecko) Version/4.0.3 Safari/531.34.7",1670000708,1762,340,1708,T,F,F,joshuamartin
+1,0,0,0,evt_709,35.121.163.73,null,1670000709,1070,78,1709,T,F,F,mcochran
+2,0,8,0,evt_710,58.226.123.77,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_0) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/47.0.892.0 Safari/531.2",1670000710,460,176,1710,T,F,T,andreapierce
+2,0,9,0,evt_711,206.5.103.49,null,1670000711,1219,1,1711,T,F,F,claytonwarren
+1,0,6,0,evt_712,195.126.152.6,"Opera/8.92.(X11; Linux i686; ur-PK) Presto/2.9.181 Version/11.00",1670000712,306,879,1712,T,F,F,margaretanderson
+1,0,4,0,evt_713,9.190.211.79,null,1670000713,890,552,1713,T,F,F,catherine54
+0,0,0,0,evt_714,107.57.60.30,"Opera/8.57.(X11; Linux x86_64; km-KH) Presto/2.9.170 Version/11.00",1670000714,1131,870,1714,T,F,F,kathymccormick
+0,0,6,0,evt_715,167.91.148.51,null,1670000715,1428,906,1715,T,F,T,patrickholmes
+0,0,6,0,evt_716,104.10.128.40,"Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 10.0; Trident/4.0)",1670000716,913,1028,1716,T,F,F,jessemcpherson
+2,0,8,0,evt_717,23.29.19.84,null,1670000717,746,334,1717,T,F,F,wpayne
+2,0,2,0,evt_718,124.182.75.201,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/5.0)",1670000718,330,903,1718,T,F,F,jessegilbert
+0,0,3,0,evt_719,146.7.35.39,null,1670000719,156,82,1719,T,F,F,michellejackson
+1,0,0,0,evt_720,147.26.102.84,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_7_2 rv:3.0; gez-ER) AppleWebKit/533.10.7 (KHTML, like Gecko) Version/5.0.1 Safari/533.10.7",1670000720,603,880,1720,T,F,T,kkelley
+2,0,1,0,evt_721,36.201.253.128,null,1670000721,295,399,1721,T,F,F,sandra11
+2,0,7,0,evt_722,66.32.230.116,"Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 11.0; Trident/5.0)",1670000722,91,986,1722,T,F,F,vwalker
+2,0,3,0,evt_723,125.158.25.27,null,1670000723,580,899,1723,T,F,F,hreid
+1,0,1,0,evt_724,17.179.36.79,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_10_0; rv:1.9.4.20) Gecko/9265-07-01 21:49:32.826233 Firefox/3.6.20",1670000724,1187,820,1724,T,F,F,jacob65
+1,0,5,0,evt_725,94.49.42.114,null,1670000725,806,700,1725,T,F,T,diazdaniel
+2,0,5,0,evt_726,119.66.24.226,"Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)",1670000726,584,389,1726,T,F,F,emily07
+2,0,7,0,evt_727,98.132.134.250,null,1670000727,1275,132,1727,T,F,F,brewerchristopher
+2,0,8,0,evt_728,146.47.252.12,"Mozilla/5.0 (Windows NT 5.2; ts-ZA; rv:1.9.2.20) Gecko/8718-04-24 02:56:58.967407 Firefox/3.8",1670000728,1904,452,1728,T,F,F,margaret48
+2,0,9,0,evt_729,176.90.3.71,null,1670000729,1658,82,1729,T,F,F,martinezbrian
+1,0,1,0,evt_730,178.95.252.35,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_7; rv:1.9.4.20) Gecko/3735-01-27 01:29:47.408974 Firefox/9.0",1670000730,804,1061,1730,T,F,T,omarquez
+2,0,8,0,evt_731,95.32.251.66,null,1670000731,1117,1062,1731,T,F,F,fdean
+1,0,4,0,evt_732,210.56.53.10,"Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 5.01; Trident/3.0)",1670000732,723,910,1732,T,F,F,baxtersarah
+0,0,8,0,evt_733,163.218.143.200,null,1670000733,1898,572,1733,T,F,F,howardjoseph
+2,0,7,0,evt_734,134.58.22.38,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_7_8) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/47.0.882.0 Safari/535.2",1670000734,993,548,1734,T,F,F,dennisobrien
+2,0,3,0,evt_735,96.139.244.7,null,1670000735,94,1001,1735,T,F,T,manuelerickson
+1,0,9,0,evt_736,147.55.34.108,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_6) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/46.0.810.0 Safari/535.1",1670000736,1874,481,1736,T,F,F,gbowers
+1,0,6,0,evt_737,121.214.57.14,null,1670000737,1706,333,1737,T,F,F,zacharystark
+1,0,5,0,evt_738,185.1.170.43,"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/38.0.826.0 Safari/532.0",1670000738,1705,657,1738,T,F,F,smithwilliam
+0,0,1,0,evt_739,97.218.58.83,null,1670000739,631,316,1739,T,F,F,tdavis
+2,0,7,0,evt_740,136.6.98.173,"Mozilla/5.0 (Windows; U; Windows 98; Win 9x 4.90) AppleWebKit/535.35.4 (KHTML, like Gecko) Version/4.0.5 Safari/535.35.4",1670000740,1196,1077,1740,T,F,T,danielsalexis
+0,0,5,0,evt_741,134.177.225.77,null,1670000741,519,649,1741,T,F,F,nbrown
+2,0,9,0,evt_742,175.109.129.19,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_10_7 rv:4.0; bhb-IN) AppleWebKit/531.45.1 (KHTML, like Gecko) Version/4.0.2 Safari/531.45.1",1670000742,1852,572,1742,T,F,F,lhenderson
+2,0,0,0,evt_743,29.78.1.229,null,1670000743,528,487,1743,T,F,F,jasmine80
+1,0,0,0,evt_744,79.40.66.80,"Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 10.0; Trident/3.0)",1670000744,1918,804,1744,T,F,F,tylerclark
+0,0,7,0,evt_745,141.175.148.188,null,1670000745,1727,179,1745,T,F,T,brenda62
+1,0,6,0,evt_746,147.241.96.144,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 4.0; Trident/4.1)",1670000746,1070,27,1746,T,F,F,crobinson
+1,0,1,0,evt_747,90.233.27.191,null,1670000747,1670,207,1747,T,F,F,joe84
+1,0,4,0,evt_748,188.72.222.249,"Mozilla/5.0 (Android 4.4; Mobile; rv:33.0) Gecko/33.0 Firefox/33.0",1670000748,542,365,1748,T,F,F,heatherortiz
+0,0,4,0,evt_749,13.45.232.78,null,1670000749,1160,706,1749,T,F,F,jessica08
+2,0,9,0,evt_750,122.105.108.245,"Opera/9.38.(Windows NT 5.1; cs-CZ) Presto/2.9.166 Version/12.00",1670000750,1632,704,1750,T,F,T,danielscheryl
+0,0,8,0,evt_751,165.165.248.141,null,1670000751,82,1014,1751,T,F,F,anthony06
+1,0,7,0,evt_752,147.186.126.27,"Mozilla/5.0 (Windows CE; ar-IQ; rv:1.9.0.20) Gecko/9054-07-27 20:54:41.481232 Firefox/11.0",1670000752,1565,414,1752,T,F,F,patrickmays
+0,0,5,0,evt_753,195.92.221.250,null,1670000753,1780,356,1753,T,F,F,rachel41
+0,0,6,0,evt_754,162.131.15.56,"Mozilla/5.0 (Windows NT 4.0) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/52.0.841.0 Safari/535.1",1670000754,5,860,1754,T,F,F,pottsmichael
+1,0,4,0,evt_755,165.88.138.241,null,1670000755,1310,966,1755,T,F,T,laura93
+0,0,3,0,evt_756,129.66.125.165,"Mozilla/5.0 (X11; Linux i686; rv:1.9.5.20) Gecko/3854-05-30 18:54:05.462219 Firefox/3.6.18",1670000756,126,626,1756,T,F,F,caldwelllinda
+2,0,7,0,evt_757,207.156.172.199,null,1670000757,1555,339,1757,T,F,F,patelmatthew
+0,0,3,0,evt_758,55.130.19.68,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_5_4 rv:4.0; da-DK) AppleWebKit/533.15.1 (KHTML, like Gecko) Version/5.0 Safari/533.15.1",1670000758,1247,647,1758,T,F,F,williamskaren
+0,0,9,0,evt_759,201.20.104.3,null,1670000759,835,994,1759,T,F,F,xhoffman
+1,0,9,0,evt_760,60.13.36.232,"Opera/9.79.(X11; Linux i686; te-IN) Presto/2.9.189 Version/10.00",1670000760,1438,833,1760,T,F,T,wreed
+1,0,2,0,evt_761,181.105.195.211,null,1670000761,1715,663,1761,T,F,F,erikarivera
+0,0,5,0,evt_762,45.235.106.115,"Mozilla/5.0 (Windows; U; Windows NT 5.1) AppleWebKit/534.49.1 (KHTML, like Gecko) Version/4.0.1 Safari/534.49.1",1670000762,1890,366,1762,T,F,F,omartinez
+2,0,1,0,evt_763,104.14.134.28,null,1670000763,1250,106,1763,T,F,F,gtran
+1,0,3,0,evt_764,202.42.183.37,"Mozilla/5.0 (Windows; U; Windows CE) AppleWebKit/531.46.4 (KHTML, like Gecko) Version/5.0 Safari/531.46.4",1670000764,1613,382,1764,T,F,F,helengomez
+1,0,7,0,evt_765,17.32.121.34,null,1670000765,445,929,1765,T,F,T,eric92
+1,0,5,0,evt_766,17.147.103.201,"Mozilla/5.0 (iPhone; CPU iPhone OS 13_5_1 like Mac OS X) AppleWebKit/535.0 (KHTML, like Gecko) CriOS/18.0.807.0 Mobile/02G040 Safari/535.0",1670000766,965,1047,1766,T,F,F,erin70
+0,0,7,0,evt_767,14.141.15.89,null,1670000767,1448,22,1767,T,F,F,dennis96
+1,0,9,0,evt_768,210.235.43.85,"Mozilla/5.0 (compatible; MSIE 5.0; Windows NT 5.01; Trident/5.0)",1670000768,278,84,1768,T,F,F,kayla36
+0,0,6,0,evt_769,216.98.66.80,null,1670000769,1668,310,1769,T,F,F,newmanrhonda
+2,0,8,0,evt_770,4.81.45.90,"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/532.1 (KHTML, like Gecko) Chrome/40.0.892.0 Safari/532.1",1670000770,1646,646,1770,T,F,T,gjackson
+1,0,3,0,evt_771,5.153.54.227,null,1670000771,1771,629,1771,T,F,F,tonybecker
+0,0,2,0,evt_772,181.175.33.116,"Opera/9.70.(X11; Linux i686; wa-BE) Presto/2.9.176 Version/11.00",1670000772,561,642,1772,T,F,F,ingramcrystal
+1,0,3,0,evt_773,174.164.100.39,null,1670000773,1743,341,1773,T,F,F,andersonwilliam
+0,0,2,0,evt_774,88.176.153.246,"Mozilla/5.0 (X11; Linux i686; rv:1.9.6.20) Gecko/7563-06-21 03:34:45.831543 Firefox/3.8",1670000774,1037,22,1774,T,F,F,anthonyward
+0,0,4,0,evt_775,12.119.193.0,null,1670000775,1240,42,1775,T,F,T,carlsonamy
+1,0,8,0,evt_776,216.94.46.43,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 5.0; Trident/5.1)",1670000776,43,452,1776,T,F,F,brooke69
+2,0,5,0,evt_777,2.254.96.157,null,1670000777,1029,437,1777,T,F,F,nbell
+0,0,1,0,evt_778,7.91.1.226,"Mozilla/5.0 (Windows; U; Windows NT 6.1) AppleWebKit/534.17.3 (KHTML, like Gecko) Version/4.0.5 Safari/534.17.3",1670000778,1640,877,1778,T,F,F,danielbrown
+1,0,5,0,evt_779,9.222.234.218,null,1670000779,1672,878,1779,T,F,F,rebecca54
+1,0,1,0,evt_780,97.13.39.183,"Opera/9.65.(X11; Linux x86_64; br-FR) Presto/2.9.180 Version/12.00",1670000780,1144,509,1780,T,F,T,phillipfields
+2,0,8,0,evt_781,215.76.85.246,null,1670000781,1784,367,1781,T,F,F,gball
+2,0,6,0,evt_782,189.102.248.224,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/48.0.892.0 Safari/531.0",1670000782,1352,116,1782,T,F,F,reidashley
+2,0,9,0,evt_783,172.126.166.78,null,1670000783,1421,160,1783,T,F,F,amberjones
+2,0,5,0,evt_784,153.212.20.69,"Opera/9.59.(Windows NT 5.1; bhb-IN) Presto/2.9.176 Version/11.00",1670000784,1451,170,1784,T,F,F,emclaughlin
+2,0,1,0,evt_785,9.16.230.226,null,1670000785,785,653,1785,T,F,T,jeffrey15
+0,0,7,0,evt_786,28.248.7.110,"Mozilla/5.0 (Linux; Android 2.2.2) AppleWebKit/536.2 (KHTML, like Gecko) Chrome/44.0.827.0 Safari/536.2",1670000786,523,433,1786,T,F,F,hollandmelissa
+2,0,7,0,evt_787,152.151.52.55,null,1670000787,1321,510,1787,T,F,F,boothlaura
+0,0,6,0,evt_788,103.87.20.112,"Mozilla/5.0 (Windows NT 6.1; mr-IN; rv:1.9.2.20) Gecko/7034-06-01 15:14:03.256226 Firefox/3.6.14",1670000788,135,799,1788,T,F,F,krista58
+0,0,7,0,evt_789,21.169.165.105,null,1670000789,1450,125,1789,T,F,F,christophercortez
+2,0,4,0,evt_790,155.106.164.235,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_10_4 rv:4.0; fa-IR) AppleWebKit/535.18.3 (KHTML, like Gecko) Version/5.0 Safari/535.18.3",1670000790,196,979,1790,T,F,T,matthew21
+0,0,2,0,evt_791,117.150.211.85,null,1670000791,1476,964,1791,T,F,F,nmeyer
+1,0,0,0,evt_792,200.78.59.254,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_11_7 rv:3.0; ml-IN) AppleWebKit/535.31.7 (KHTML, like Gecko) Version/5.1 Safari/535.31.7",1670000792,1037,313,1792,T,F,F,johncooper
+1,0,1,0,evt_793,119.241.64.151,null,1670000793,294,274,1793,T,F,F,benjamin22
+1,0,5,0,evt_794,157.185.161.144,"Mozilla/5.0 (iPhone; CPU iPhone OS 4_2_1 like Mac OS X) AppleWebKit/531.1 (KHTML, like Gecko) FxiOS/15.7l5936.0 Mobile/87F181 Safari/531.1",1670000794,1522,204,1794,T,F,F,tylerbradford
+2,0,1,0,evt_795,78.175.118.157,null,1670000795,1572,336,1795,T,F,T,lucas54
+2,0,4,0,evt_796,209.190.184.49,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/27.0.800.0 Safari/531.2",1670000796,1871,202,1796,T,F,F,dreed
+2,0,5,0,evt_797,40.27.170.191,null,1670000797,1486,522,1797,T,F,F,pwright
+2,0,6,0,evt_798,58.234.162.57,"Mozilla/5.0 (X11; Linux i686; rv:1.9.5.20) Gecko/7941-06-01 10:53:18.606812 Firefox/3.6.11",1670000798,984,332,1798,T,F,F,wwilson
+2,0,5,0,evt_799,4.55.246.97,null,1670000799,937,486,1799,T,F,F,monicahamilton
+0,0,5,0,evt_800,148.165.244.164,"Opera/9.60.(X11; Linux x86_64; hne-IN) Presto/2.9.184 Version/10.00",1670000800,997,217,1800,T,F,T,smithjoshua
+0,0,3,0,evt_801,57.111.198.178,null,1670000801,224,5,1801,T,F,F,stacyhuffman
+1,0,3,0,evt_802,217.208.213.219,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_2 like Mac OS X; doi-IN) AppleWebKit/532.3.4 (KHTML, like Gecko) Version/4.0.5 Mobile/8B115 Safari/6532.3.4",1670000802,123,890,1802,T,F,F,karen10
+1,0,5,0,evt_803,192.64.41.231,null,1670000803,540,874,1803,T,F,F,jonesrandall
+1,0,0,0,evt_804,121.33.220.40,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_3 like Mac OS X; lg-UG) AppleWebKit/534.29.4 (KHTML, like Gecko) Version/4.0.5 Mobile/8B116 Safari/6534.29.4",1670000804,1870,462,1804,T,F,F,adam69
+1,0,4,0,evt_805,212.239.190.222,null,1670000805,952,734,1805,T,F,T,hillyvonne
+1,0,9,0,evt_806,143.36.113.50,"Mozilla/5.0 (compatible; MSIE 8.0; Windows 98; Trident/3.1)",1670000806,739,686,1806,T,F,F,jerry38
+2,0,8,0,evt_807,27.231.26.1,null,1670000807,1379,474,1807,T,F,F,snorton
+2,0,7,0,evt_808,40.16.14.2,"Mozilla/5.0 (X11; Linux x86_64; rv:1.9.5.20) Gecko/9841-04-05 08:33:16.301422 Firefox/3.6.12",1670000808,1905,685,1808,T,F,F,laura98
+0,0,3,0,evt_809,71.47.34.94,null,1670000809,1215,671,1809,T,F,F,betty68
+1,0,1,0,evt_810,124.197.27.5,"Mozilla/5.0 (compatible; MSIE 8.0; Windows 95; Trident/5.0)",1670000810,1915,770,1810,T,F,T,carrolltimothy
+1,0,6,0,evt_811,174.228.67.78,null,1670000811,954,993,1811,T,F,F,kim27
+0,0,2,0,evt_812,51.111.120.186,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_8) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/60.0.809.0 Safari/534.2",1670000812,1210,64,1812,T,F,F,spencernicholas
+0,0,4,0,evt_813,116.227.99.153,null,1670000813,120,301,1813,T,F,F,rebecca79
+2,0,4,0,evt_814,13.237.172.31,"Opera/9.64.(X11; Linux i686; fil-PH) Presto/2.9.174 Version/11.00",1670000814,272,820,1814,T,F,F,jeffreyvang
+2,0,3,0,evt_815,33.161.129.7,null,1670000815,1424,690,1815,T,F,T,john33
+0,0,6,0,evt_816,18.230.120.217,"Mozilla/5.0 (compatible; MSIE 6.0; Windows NT 6.0; Trident/4.1)",1670000816,980,335,1816,T,F,F,richard91
+0,0,3,0,evt_817,21.247.254.214,null,1670000817,629,610,1817,T,F,F,brettwilliams
+2,0,8,0,evt_818,165.212.222.110,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_8_7 rv:6.0; ja-JP) AppleWebKit/532.39.2 (KHTML, like Gecko) Version/4.0.2 Safari/532.39.2",1670000818,1090,416,1818,T,F,F,brett20
+2,0,1,0,evt_819,81.90.144.20,null,1670000819,1803,540,1819,T,F,F,dylan79
+0,0,4,0,evt_820,73.117.162.108,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_3 like Mac OS X; wa-BE) AppleWebKit/535.40.2 (KHTML, like Gecko) Version/3.0.5 Mobile/8B112 Safari/6535.40.2",1670000820,143,751,1820,T,F,T,avillarreal
+1,0,4,0,evt_821,178.139.206.233,null,1670000821,979,218,1821,T,F,F,coreymunoz
+2,0,3,0,evt_822,54.251.95.236,"Mozilla/5.0 (Windows NT 5.01; mi-NZ; rv:1.9.0.20) Gecko/4220-10-02 22:47:46.101868 Firefox/9.0",1670000822,1019,817,1822,T,F,F,cindyromero
+2,0,0,0,evt_823,2.143.197.36,null,1670000823,630,661,1823,T,F,F,santosmichelle
+2,0,7,0,evt_824,118.177.10.234,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.01; Trident/3.1)",1670000824,85,510,1824,T,F,F,iwyatt
+0,0,7,0,evt_825,125.185.236.19,null,1670000825,1891,938,1825,T,F,T,cowancathy
+2,0,4,0,evt_826,90.44.34.161,"Opera/8.32.(Windows NT 5.2; the-NP) Presto/2.9.183 Version/12.00",1670000826,1822,386,1826,T,F,F,mabbott
+0,0,1,0,evt_827,172.190.232.32,null,1670000827,1207,386,1827,T,F,F,jilllopez
+2,0,7,0,evt_828,78.99.68.34,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/5.0)",1670000828,597,1008,1828,T,F,F,elizabethclarke
+0,0,6,0,evt_829,18.215.111.144,null,1670000829,1780,186,1829,T,F,F,bchen
+2,0,2,0,evt_830,195.8.198.142,"Opera/9.40.(Windows NT 5.2; hak-TW) Presto/2.9.165 Version/11.00",1670000830,1053,734,1830,T,F,T,stacy79
+0,0,3,0,evt_831,92.221.243.115,null,1670000831,1370,19,1831,T,F,F,jamesburton
+1,0,1,0,evt_832,212.31.111.224,"Mozilla/5.0 (iPad; CPU iPad OS 17_3_1 like Mac OS X) AppleWebKit/532.0 (KHTML, like Gecko) FxiOS/16.3p5677.0 Mobile/51L094 Safari/532.0",1670000832,801,545,1832,T,F,F,sandersjoseph
+2,0,9,0,evt_833,48.152.55.174,null,1670000833,45,941,1833,T,F,F,paulcharles
+1,0,4,0,evt_834,55.24.19.11,"Opera/8.16.(Windows NT 6.1; th-TH) Presto/2.9.184 Version/12.00",1670000834,1752,35,1834,T,F,F,jhubbard
+2,0,5,0,evt_835,45.206.70.186,null,1670000835,998,948,1835,T,F,T,alyssa12
+0,0,0,0,evt_836,101.15.140.168,"Mozilla/5.0 (compatible; MSIE 8.0; Windows 95; Trident/5.0)",1670000836,409,435,1836,T,F,F,gomezandrew
+0,0,6,0,evt_837,223.193.144.57,null,1670000837,506,982,1837,T,F,F,xjones
+1,0,4,0,evt_838,200.46.95.151,"Opera/9.37.(X11; Linux x86_64; da-DK) Presto/2.9.166 Version/12.00",1670000838,466,783,1838,T,F,F,matthew56
+0,0,0,0,evt_839,154.23.138.198,null,1670000839,1234,985,1839,T,F,F,alittle
+1,0,3,0,evt_840,138.32.241.231,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_3 like Mac OS X; ti-ET) AppleWebKit/531.15.7 (KHTML, like Gecko) Version/4.0.5 Mobile/8B111 Safari/6531.15.7",1670000840,216,650,1840,T,F,T,zmartin
+0,0,5,0,evt_841,192.112.78.48,null,1670000841,1530,9,1841,T,F,F,joshua96
+0,0,8,0,evt_842,214.215.26.45,"Mozilla/5.0 (iPad; CPU iPad OS 17_1_2 like Mac OS X) AppleWebKit/533.1 (KHTML, like Gecko) FxiOS/14.1z9433.0 Mobile/67I695 Safari/533.1",1670000842,64,329,1842,T,F,F,bellderrick
+1,0,6,0,evt_843,173.98.190.82,null,1670000843,1709,564,1843,T,F,F,emily37
+0,0,1,0,evt_844,170.220.31.50,"Mozilla/5.0 (Windows; U; Windows 98; Win 9x 4.90) AppleWebKit/535.12.5 (KHTML, like Gecko) Version/5.0.5 Safari/535.12.5",1670000844,619,779,1844,T,F,F,steven92
+2,0,3,0,evt_845,222.192.82.45,null,1670000845,961,29,1845,T,F,T,christinejones
+0,0,8,0,evt_846,171.73.65.119,"Mozilla/5.0 (iPhone; CPU iPhone OS 17_3_1 like Mac OS X) AppleWebKit/533.1 (KHTML, like Gecko) FxiOS/18.7x5993.0 Mobile/94G991 Safari/533.1",1670000846,894,1035,1846,T,F,F,kristie32
+0,0,5,0,evt_847,179.1.1.68,null,1670000847,40,326,1847,T,F,F,allenbradley
+0,0,6,0,evt_848,151.151.143.182,"Mozilla/5.0 (Linux; Android 5.1) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/63.0.804.0 Safari/531.0",1670000848,588,835,1848,T,F,F,hmartinez
+1,0,6,0,evt_849,49.208.144.112,null,1670000849,1402,353,1849,T,F,F,josephbarnes
+2,0,6,0,evt_850,100.189.37.201,"Mozilla/5.0 (Android 2.1; Mobile; rv:11.0) Gecko/11.0 Firefox/11.0",1670000850,813,682,1850,T,F,T,hessmarcus
+2,0,8,0,evt_851,169.183.230.79,null,1670000851,1912,802,1851,T,F,F,vgonzalez
+1,0,6,0,evt_852,29.190.162.97,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_10_2 rv:5.0; fur-IT) AppleWebKit/533.14.6 (KHTML, like Gecko) Version/5.0.3 Safari/533.14.6",1670000852,1746,144,1852,T,F,F,lambadam
+1,0,5,0,evt_853,125.214.108.133,null,1670000853,1292,422,1853,T,F,F,pagelauren
+0,0,5,0,evt_854,174.13.184.100,"Opera/8.69.(X11; Linux i686; tt-RU) Presto/2.9.189 Version/10.00",1670000854,256,956,1854,T,F,F,tabitha59
+0,0,1,0,evt_855,41.135.18.253,null,1670000855,873,736,1855,T,F,T,burnettkevin
+0,0,6,0,evt_856,118.180.3.103,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_12_4; rv:1.9.3.20) Gecko/7210-07-20 23:40:00.286987 Firefox/3.6.7",1670000856,485,620,1856,T,F,F,ricky10
+2,0,8,0,evt_857,1.198.233.230,null,1670000857,427,41,1857,T,F,F,bellrobert
+0,0,4,0,evt_858,148.217.233.112,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_9 rv:2.0; ss-ZA) AppleWebKit/533.35.5 (KHTML, like Gecko) Version/5.1 Safari/533.35.5",1670000858,1753,661,1858,T,F,F,scott95
+1,0,5,0,evt_859,43.123.5.249,null,1670000859,1056,546,1859,T,F,F,ycampbell
+0,0,9,0,evt_860,66.87.163.106,"Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.1; Trident/3.1)",1670000860,1248,524,1860,T,F,T,karentaylor
+2,0,3,0,evt_861,111.114.156.134,null,1670000861,1072,877,1861,T,F,F,stoneandrew
+1,0,6,0,evt_862,73.241.168.249,"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_6_7 rv:6.0; ig-NG) AppleWebKit/532.27.7 (KHTML, like Gecko) Version/5.0.2 Safari/532.27.7",1670000862,420,867,1862,T,F,F,vsmith
+1,0,9,0,evt_863,165.171.228.77,null,1670000863,889,186,1863,T,F,F,pedwards
+2,0,4,0,evt_864,215.11.220.176,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_2 like Mac OS X; dz-BT) AppleWebKit/531.13.2 (KHTML, like Gecko) Version/3.0.5 Mobile/8B119 Safari/6531.13.2",1670000864,1271,187,1864,T,F,F,jared50
+2,0,2,0,evt_865,1.79.236.84,null,1670000865,1274,985,1865,T,F,T,qpetersen
+0,0,7,0,evt_866,165.201.87.181,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_0 like Mac OS X; hne-IN) AppleWebKit/535.21.2 (KHTML, like Gecko) Version/3.0.5 Mobile/8B118 Safari/6535.21.2",1670000866,243,844,1866,T,F,F,bcruz
+1,0,0,0,evt_867,13.47.153.85,null,1670000867,1583,666,1867,T,F,F,angela19
+1,0,2,0,evt_868,56.232.49.4,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5; rv:1.9.5.20) Gecko/6645-03-12 17:22:50.163208 Firefox/3.6.14",1670000868,1450,728,1868,T,F,F,darren05
+1,0,4,0,evt_869,159.125.47.67,null,1670000869,924,1049,1869,T,F,F,james73
+0,0,9,0,evt_870,168.32.5.167,"Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_4 like Mac OS X) AppleWebKit/534.0 (KHTML, like Gecko) CriOS/56.0.816.0 Mobile/64P868 Safari/534.0",1670000870,1350,638,1870,T,F,T,davidwalker
+0,0,1,0,evt_871,50.233.226.7,null,1670000871,1736,546,1871,T,F,F,charles52
+2,0,5,0,evt_872,78.103.4.199,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_5_3) AppleWebKit/533.1 (KHTML, like Gecko) Chrome/34.0.889.0 Safari/533.1",1670000872,1901,176,1872,T,F,F,peterramirez
+0,0,6,0,evt_873,205.211.147.41,null,1670000873,649,647,1873,T,F,F,karamendoza
+0,0,0,0,evt_874,68.225.35.8,"Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 4.0; Trident/5.0)",1670000874,1070,93,1874,T,F,F,mruiz
+2,0,5,0,evt_875,54.222.202.69,null,1670000875,1210,889,1875,T,F,T,acortez
+2,0,9,0,evt_876,6.238.107.207,"Opera/9.90.(X11; Linux x86_64; tn-ZA) Presto/2.9.190 Version/10.00",1670000876,690,34,1876,T,F,F,tannerdunn
+2,0,6,0,evt_877,7.136.193.224,null,1670000877,1202,697,1877,T,F,F,lduncan
+2,0,3,0,evt_878,167.241.92.107,"Opera/9.77.(X11; Linux x86_64; kl-GL) Presto/2.9.168 Version/10.00",1670000878,378,992,1878,T,F,F,scottjenna
+0,0,4,0,evt_879,191.203.227.82,null,1670000879,730,329,1879,T,F,F,zrodriguez
+1,0,1,0,evt_880,222.111.179.107,"Mozilla/5.0 (Windows NT 6.2; wal-ET; rv:1.9.1.20) Gecko/6520-01-07 17:39:07.101501 Firefox/15.0",1670000880,1004,149,1880,T,F,T,brad79
+1,0,6,0,evt_881,173.26.16.68,null,1670000881,1029,200,1881,T,F,F,collinsadam
+0,0,5,0,evt_882,50.167.3.102,"Mozilla/5.0 (Windows NT 5.0) AppleWebKit/531.1 (KHTML, like Gecko) Chrome/31.0.878.0 Safari/531.1",1670000882,56,824,1882,T,F,F,boyddana
+0,0,6,0,evt_883,164.164.126.126,null,1670000883,1832,124,1883,T,F,F,jasonmason
+1,0,6,0,evt_884,43.201.84.21,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_3 like Mac OS X; cv-RU) AppleWebKit/533.45.3 (KHTML, like Gecko) Version/4.0.5 Mobile/8B113 Safari/6533.45.3",1670000884,1803,1000,1884,T,F,F,kara17
+0,0,5,0,evt_885,43.187.109.103,null,1670000885,1719,895,1885,T,F,T,craig75
+1,0,3,0,evt_886,177.228.67.6,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_3 like Mac OS X; de-AT) AppleWebKit/535.48.3 (KHTML, like Gecko) Version/3.0.5 Mobile/8B113 Safari/6535.48.3",1670000886,797,654,1886,T,F,F,austinkatherine
+0,0,5,0,evt_887,175.22.23.239,null,1670000887,771,609,1887,T,F,F,travisbruce
+2,0,0,0,evt_888,117.165.129.81,"Mozilla/5.0 (Windows; U; Windows NT 5.1) AppleWebKit/531.47.3 (KHTML, like Gecko) Version/5.1 Safari/531.47.3",1670000888,808,413,1888,T,F,F,sheila93
+0,0,3,0,evt_889,149.31.235.65,null,1670000889,683,588,1889,T,F,F,shannonmiller
+0,0,9,0,evt_890,104.87.136.73,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_1 like Mac OS X; xh-ZA) AppleWebKit/533.17.3 (KHTML, like Gecko) Version/4.0.5 Mobile/8B115 Safari/6533.17.3",1670000890,1344,87,1890,T,F,T,laurabaker
+1,0,0,0,evt_891,141.193.97.71,null,1670000891,491,477,1891,T,F,F,jonathanhernandez
+1,0,4,0,evt_892,188.135.239.148,"Mozilla/5.0 (Windows; U; Windows 98; Win 9x 4.90) AppleWebKit/532.27.6 (KHTML, like Gecko) Version/5.0 Safari/532.27.6",1670000892,1887,777,1892,T,F,F,spencefrank
+2,0,0,0,evt_893,149.198.69.45,null,1670000893,683,61,1893,T,F,F,adrianahernandez
+0,0,5,0,evt_894,64.69.142.171,"Mozilla/5.0 (X11; Linux i686; rv:1.9.6.20) Gecko/3993-03-20 23:11:33.524445 Firefox/15.0",1670000894,1127,927,1894,T,F,F,ryan82
+0,0,8,0,evt_895,129.199.201.128,null,1670000895,355,703,1895,T,F,T,nibarra
+1,0,2,0,evt_896,91.4.209.202,"Mozilla/5.0 (X11; Linux x86_64; rv:1.9.7.20) Gecko/5798-04-09 11:55:27.442688 Firefox/3.6.14",1670000896,5,942,1896,T,F,F,pellis
+2,0,2,0,evt_897,123.115.37.211,null,1670000897,372,770,1897,T,F,F,wyattcarrie
+2,0,4,0,evt_898,18.64.62.18,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_10_3 rv:3.0; li-NL) AppleWebKit/531.3.1 (KHTML, like Gecko) Version/5.0.3 Safari/531.3.1",1670000898,1765,378,1898,T,F,F,ymcintyre
+0,0,2,0,evt_899,202.212.6.238,null,1670000899,516,82,1899,T,F,F,estradajason
+1,0,3,0,evt_900,180.105.191.21,"Mozilla/5.0 (Windows; U; Windows NT 4.0) AppleWebKit/534.12.1 (KHTML, like Gecko) Version/5.0 Safari/534.12.1",1670000900,1530,997,1900,T,F,T,qadams
+0,0,6,0,evt_901,7.181.104.43,null,1670000901,1642,1066,1901,T,F,F,harrisonlucas
+2,0,5,0,evt_902,52.232.67.201,"Mozilla/5.0 (compatible; MSIE 9.0; Windows 98; Trident/5.0)",1670000902,926,227,1902,T,F,F,janetshepherd
+0,0,4,0,evt_903,162.44.235.181,null,1670000903,630,1073,1903,T,F,F,conradsarah
+0,0,2,0,evt_904,25.37.168.47,"Mozilla/5.0 (Windows; U; Windows NT 6.0) AppleWebKit/531.12.1 (KHTML, like Gecko) Version/4.0 Safari/531.12.1",1670000904,357,631,1904,T,F,F,seth01
+0,0,0,0,evt_905,135.179.81.91,null,1670000905,86,695,1905,T,F,T,brandonlane
+1,0,7,0,evt_906,17.30.168.91,"Opera/8.32.(Windows 98; sv-FI) Presto/2.9.174 Version/12.00",1670000906,165,365,1906,T,F,F,christopherwang
+2,0,0,0,evt_907,160.102.98.128,null,1670000907,844,126,1907,T,F,F,amy60
+0,0,3,0,evt_908,47.176.156.142,"Opera/9.24.(Windows NT 10.0; ug-CN) Presto/2.9.190 Version/11.00",1670000908,879,731,1908,T,F,F,kylecarroll
+0,0,2,0,evt_909,201.132.151.125,null,1670000909,1391,824,1909,T,F,F,sanchezdaniel
+1,0,7,0,evt_910,117.35.236.187,"Mozilla/5.0 (Android 3.2.1; Mobile; rv:28.0) Gecko/28.0 Firefox/28.0",1670000910,1583,320,1910,T,F,T,kimberlyzamora
+2,0,8,0,evt_911,19.63.44.193,null,1670000911,227,1024,1911,T,F,F,ufaulkner
+2,0,4,0,evt_912,109.2.108.248,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/22.0.872.0 Safari/535.1",1670000912,1185,511,1912,T,F,F,robinsonwhitney
+1,0,8,0,evt_913,195.17.134.219,null,1670000913,906,518,1913,T,F,F,tsmith
+2,0,7,0,evt_914,216.111.215.122,"Mozilla/5.0 (Windows; U; Windows NT 5.01) AppleWebKit/533.9.4 (KHTML, like Gecko) Version/5.1 Safari/533.9.4",1670000914,1541,26,1914,T,F,F,schneiderjulie
+1,0,1,0,evt_915,205.129.189.146,null,1670000915,519,966,1915,T,F,T,johnschristopher
+0,0,4,0,evt_916,167.222.214.167,"Mozilla/5.0 (compatible; MSIE 9.0; Windows 98; Win 9x 4.90; Trident/3.0)",1670000916,1489,186,1916,T,F,F,sgibson
+2,0,9,0,evt_917,108.93.35.162,null,1670000917,63,793,1917,T,F,F,bennetttracy
+2,0,0,0,evt_918,41.81.98.110,"Mozilla/5.0 (compatible; MSIE 9.0; Windows CE; Trident/5.1)",1670000918,1280,971,1918,T,F,F,wgaines
+2,0,1,0,evt_919,91.121.150.80,null,1670000919,1424,909,1919,T,F,F,johnsonmackenzie
+0,0,8,0,evt_920,50.46.120.109,"Mozilla/5.0 (Windows NT 11.0; nn-NO; rv:1.9.2.20) Gecko/6182-10-06 05:52:57.088211 Firefox/3.8",1670000920,278,634,1920,T,F,T,mbrown
+0,0,9,0,evt_921,70.69.144.63,null,1670000921,1439,472,1921,T,F,F,christopherchang
+0,0,7,0,evt_922,169.6.17.157,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_3 like Mac OS X; tig-ER) AppleWebKit/535.8.3 (KHTML, like Gecko) Version/3.0.5 Mobile/8B111 Safari/6535.8.3",1670000922,1208,1026,1922,T,F,F,fraziermaria
+2,0,6,0,evt_923,196.208.167.148,null,1670000923,1325,1042,1923,T,F,F,teresamedina
+0,0,7,0,evt_924,210.198.26.196,"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.2 (KHTML, like Gecko) Chrome/27.0.858.0 Safari/534.2",1670000924,1785,733,1924,T,F,F,scottford
+2,0,7,0,evt_925,158.6.11.82,null,1670000925,1828,201,1925,T,F,T,averyjoseph
+0,0,4,0,evt_926,40.94.158.127,"Mozilla/5.0 (X11; Linux i686) AppleWebKit/532.0 (KHTML, like Gecko) Chrome/63.0.818.0 Safari/532.0",1670000926,1873,268,1926,T,F,F,mcdanielmiranda
+2,0,3,0,evt_927,60.120.245.72,null,1670000927,1624,581,1927,T,F,F,hannah81
+2,0,6,0,evt_928,192.242.179.245,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 4.0; Trident/4.1)",1670000928,1546,970,1928,T,F,F,gmoore
+0,0,6,0,evt_929,123.158.198.148,null,1670000929,1292,848,1929,T,F,F,melanie24
+2,0,0,0,evt_930,145.115.241.171,"Mozilla/5.0 (compatible; MSIE 8.0; Windows 98; Win 9x 4.90; Trident/4.0)",1670000930,797,345,1930,T,F,T,colleenunderwood
+0,0,3,0,evt_931,94.232.85.154,null,1670000931,1035,230,1931,T,F,F,elizabeth00
+0,0,6,0,evt_932,190.114.193.132,"Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.1)",1670000932,1330,995,1932,T,F,F,nicole38
+0,0,8,0,evt_933,16.247.217.120,null,1670000933,1248,1064,1933,T,F,F,gregoryadams
+0,0,1,0,evt_934,147.95.182.152,"Opera/8.30.(X11; Linux x86_64; gv-GB) Presto/2.9.160 Version/10.00",1670000934,1161,990,1934,T,F,F,todd55
+0,0,4,0,evt_935,122.140.229.244,null,1670000935,48,621,1935,T,F,T,gonzalezrebecca
+2,0,9,0,evt_936,53.56.91.133,"Opera/8.78.(Windows NT 6.2; mg-MG) Presto/2.9.176 Version/11.00",1670000936,1815,108,1936,T,F,F,shahthomas
+1,0,1,0,evt_937,46.85.63.190,null,1670000937,1118,534,1937,T,F,F,jfreeman
+1,0,4,0,evt_938,28.60.93.114,"Mozilla/5.0 (Windows; U; Windows NT 6.2) AppleWebKit/532.37.1 (KHTML, like Gecko) Version/4.0.4 Safari/532.37.1",1670000938,136,685,1938,T,F,F,mistymckenzie
+0,0,1,0,evt_939,94.133.135.199,null,1670000939,885,0,1939,T,F,F,johnsontheresa
+2,0,6,0,evt_940,85.84.121.95,"Mozilla/5.0 (X11; Linux x86_64; rv:1.9.5.20) Gecko/6769-06-10 11:47:50.457397 Firefox/3.6.4",1670000940,1455,478,1940,T,F,T,jamesashley
+1,0,4,0,evt_941,62.106.171.152,null,1670000941,250,870,1941,T,F,F,rfigueroa
+0,0,7,0,evt_942,9.77.12.202,"Opera/9.60.(X11; Linux i686; de-CH) Presto/2.9.174 Version/10.00",1670000942,343,631,1942,T,F,F,melissamartin
+0,0,4,0,evt_943,160.203.77.154,null,1670000943,1191,323,1943,T,F,F,wjohnson
+1,0,2,0,evt_944,133.194.226.89,"Mozilla/5.0 (Linux; Android 2.3.1) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/21.0.896.0 Safari/531.2",1670000944,1028,1012,1944,T,F,F,greenroy
+2,0,3,0,evt_945,140.30.64.99,null,1670000945,1305,644,1945,T,F,T,noahsmall
+0,0,7,0,evt_946,25.146.198.149,"Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.1)",1670000946,1748,164,1946,T,F,F,margaretsnyder
+1,0,6,0,evt_947,47.123.241.77,null,1670000947,360,387,1947,T,F,F,armstrongvictor
+0,0,2,0,evt_948,73.60.65.136,"Mozilla/5.0 (iPad; CPU iPad OS 15_8_2 like Mac OS X) AppleWebKit/536.2 (KHTML, like Gecko) CriOS/48.0.810.0 Mobile/79M365 Safari/536.2",1670000948,290,670,1948,T,F,F,williamhernandez
+1,0,2,0,evt_949,168.189.202.248,null,1670000949,1494,587,1949,T,F,F,david02
+0,0,5,0,evt_950,210.134.148.200,"Mozilla/5.0 (compatible; MSIE 6.0; Windows 95; Trident/4.0)",1670000950,1521,484,1950,T,F,T,frank88
+1,0,4,0,evt_951,215.118.222.27,null,1670000951,1638,366,1951,T,F,F,betty35
+0,0,1,0,evt_952,43.150.103.199,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_9) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/44.0.864.0 Safari/535.2",1670000952,649,347,1952,T,F,F,morrisonjustin
+2,0,7,0,evt_953,3.67.195.114,null,1670000953,1361,802,1953,T,F,F,jespinoza
+2,0,8,0,evt_954,46.162.19.140,"Mozilla/5.0 (iPad; CPU iPad OS 14_8_1 like Mac OS X) AppleWebKit/533.2 (KHTML, like Gecko) CriOS/38.0.860.0 Mobile/62U308 Safari/533.2",1670000954,274,59,1954,T,F,F,jesse16
+0,0,5,0,evt_955,106.159.64.216,null,1670000955,1022,342,1955,T,F,T,bdaugherty
+2,0,9,0,evt_956,77.154.143.140,"Mozilla/5.0 (Linux; Android 14) AppleWebKit/531.2 (KHTML, like Gecko) Chrome/62.0.869.0 Safari/531.2",1670000956,1720,927,1956,T,F,F,michaelgould
+2,0,9,0,evt_957,29.178.66.235,null,1670000957,1007,976,1957,T,F,F,tony12
+0,0,8,0,evt_958,75.191.68.81,"Mozilla/5.0 (Windows 95; ko-KR; rv:1.9.0.20) Gecko/6370-12-15 07:47:14.486572 Firefox/6.0",1670000958,1103,843,1958,T,F,F,annettehaas
+1,0,6,0,evt_959,166.227.88.128,null,1670000959,830,90,1959,T,F,F,qharris
+2,0,9,0,evt_960,180.12.68.245,"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_3) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/17.0.825.0 Safari/531.0",1670000960,14,347,1960,T,F,T,jamiejohnson
+2,0,8,0,evt_961,128.44.87.48,null,1670000961,1820,199,1961,T,F,F,ericaperry
+0,0,6,0,evt_962,176.233.31.140,"Mozilla/5.0 (Linux; Android 2.2) AppleWebKit/534.0 (KHTML, like Gecko) Chrome/43.0.847.0 Safari/534.0",1670000962,517,216,1962,T,F,F,jonathan90
+0,0,1,0,evt_963,113.150.249.194,null,1670000963,372,267,1963,T,F,F,jacksonrobert
+2,0,0,0,evt_964,182.189.247.125,"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_8_5; rv:1.9.4.20) Gecko/5504-06-20 01:55:09.582703 Firefox/3.6.7",1670000964,683,1078,1964,T,F,F,gilbertmorales
+0,0,9,0,evt_965,179.223.200.74,null,1670000965,1604,25,1965,T,F,T,lukenash
+0,0,0,0,evt_966,32.29.22.103,"Mozilla/5.0 (Linux; Android 3.2.1) AppleWebKit/531.0 (KHTML, like Gecko) Chrome/63.0.855.0 Safari/531.0",1670000966,67,985,1966,T,F,F,levykurt
+0,0,2,0,evt_967,151.40.218.149,null,1670000967,669,151,1967,T,F,F,tnelson
+0,0,5,0,evt_968,197.11.243.28,"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_12_3 rv:2.0; ro-RO) AppleWebKit/532.17.6 (KHTML, like Gecko) Version/5.1 Safari/532.17.6",1670000968,1069,892,1968,T,F,F,ronald16
+2,0,7,0,evt_969,17.228.234.235,null,1670000969,446,945,1969,T,F,F,hallveronica
+2,0,6,0,evt_970,131.254.136.57,"Opera/9.89.(Windows 95; rw-RW) Presto/2.9.160 Version/12.00",1670000970,1352,136,1970,T,F,T,mendozachristie
+0,0,4,0,evt_971,37.183.159.1,null,1670000971,401,858,1971,T,F,F,knewman
+1,0,4,0,evt_972,164.218.193.9,"Mozilla/5.0 (Linux; Android 1.5) AppleWebKit/536.2 (KHTML, like Gecko) Chrome/60.0.859.0 Safari/536.2",1670000972,946,722,1972,T,F,F,averysherry
+1,0,4,0,evt_973,51.83.29.20,null,1670000973,1364,909,1973,T,F,F,jonathan87
+0,0,6,0,evt_974,172.163.74.200,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_3 like Mac OS X; gd-GB) AppleWebKit/532.14.1 (KHTML, like Gecko) Version/4.0.5 Mobile/8B112 Safari/6532.14.1",1670000974,738,724,1974,T,F,F,heather92
+0,0,6,0,evt_975,223.1.191.0,null,1670000975,1128,69,1975,T,F,T,debbiedavies
+1,0,8,0,evt_976,46.134.24.127,"Opera/8.90.(X11; Linux x86_64; mni-IN) Presto/2.9.176 Version/12.00",1670000976,970,139,1976,T,F,F,nritter
+2,0,7,0,evt_977,13.231.35.250,null,1670000977,120,997,1977,T,F,F,kevin38
+1,0,8,0,evt_978,162.183.7.37,"Mozilla/5.0 (Android 2.3.7; Mobile; rv:53.0) Gecko/53.0 Firefox/53.0",1670000978,490,150,1978,T,F,F,matthewsashley
+2,0,6,0,evt_979,198.80.136.86,null,1670000979,1085,785,1979,T,F,F,evan29
+1,0,6,0,evt_980,43.135.42.18,"Opera/8.49.(Windows NT 5.0; bem-ZM) Presto/2.9.190 Version/12.00",1670000980,955,893,1980,T,F,T,lwalker
+1,0,4,0,evt_981,202.103.7.9,null,1670000981,1786,316,1981,T,F,F,alexis02
+2,0,5,0,evt_982,166.14.96.33,"Mozilla/5.0 (iPad; CPU iPad OS 3_2_2 like Mac OS X) AppleWebKit/533.0 (KHTML, like Gecko) FxiOS/11.9v4634.0 Mobile/92R226 Safari/533.0",1670000982,216,540,1982,T,F,F,bhicks
+0,0,5,0,evt_983,148.0.179.102,null,1670000983,983,25,1983,T,F,F,zcline
+1,0,5,0,evt_984,155.68.188.128,"Opera/9.21.(Windows NT 5.0; ss-ZA) Presto/2.9.181 Version/11.00",1670000984,1734,988,1984,T,F,F,james35
+0,0,2,0,evt_985,168.176.177.148,null,1670000985,720,249,1985,T,F,T,tdudley
+1,0,3,0,evt_986,168.17.241.218,"Mozilla/5.0 (Windows; U; Windows NT 5.01) AppleWebKit/535.40.3 (KHTML, like Gecko) Version/4.0.3 Safari/535.40.3",1670000986,1415,145,1986,T,F,F,alexa49
+2,0,2,0,evt_987,153.81.192.117,null,1670000987,46,234,1987,T,F,F,gibsonerica
+1,0,2,0,evt_988,149.100.245.231,"Mozilla/5.0 (iPod; U; CPU iPhone OS 4_0 like Mac OS X; ts-ZA) AppleWebKit/534.24.4 (KHTML, like Gecko) Version/4.0.5 Mobile/8B112 Safari/6534.24.4",1670000988,1542,897,1988,T,F,F,levans
+1,0,1,0,evt_989,4.25.194.117,null,1670000989,1383,744,1989,T,F,F,danielleroberts
+0,0,4,0,evt_990,40.135.179.220,"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 4.0; Trident/4.0)",1670000990,74,914,1990,T,F,T,arnoldkelly
+2,0,1,0,evt_991,60.98.42.20,null,1670000991,159,832,1991,T,F,F,stevensjared
+1,0,6,0,evt_992,82.134.117.122,"Opera/9.80.(Windows 95; vi-VN) Presto/2.9.182 Version/12.00",1670000992,499,2,1992,T,F,F,aford
+2,0,3,0,evt_993,183.138.38.83,null,1670000993,1454,482,1993,T,F,F,victoria65
+1,0,3,0,evt_994,39.178.178.7,"Mozilla/5.0 (Android 2.0; Mobile; rv:19.0) Gecko/19.0 Firefox/19.0",1670000994,1202,115,1994,T,F,F,ojefferson
+0,0,0,0,evt_995,159.106.178.15,null,1670000995,1308,178,1995,T,F,T,ibishop
+0,0,3,0,evt_996,188.187.130.153,"Mozilla/5.0 (iPod; U; CPU iPhone OS 3_1 like Mac OS X; ti-ER) AppleWebKit/531.50.5 (KHTML, like Gecko) Version/3.0.5 Mobile/8B113 Safari/6531.50.5",1670000996,1598,4,1996,T,F,F,tina96
+0,0,9,0,evt_997,18.68.33.204,null,1670000997,236,481,1997,T,F,F,donald99
+0,0,5,0,evt_998,136.123.116.118,"Mozilla/5.0 (Windows NT 4.0; ber-MA; rv:1.9.1.20) Gecko/6338-09-13 18:08:38.138763 Firefox/3.6.13",1670000998,1165,896,1998,T,F,F,sherigarcia
+0,0,4,0,evt_999,205.148.208.104,null,1670000999,1807,738,1999,T,F,F,charles23

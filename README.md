@@ -4,16 +4,16 @@
 [![PyPI downloads](https://img.shields.io/pypi/dm/zon-format?color=red)](https://pypi.org/project/zon-format/)
 [![PyPI version](https://img.shields.io/pypi/v/zon-format.svg)](https://pypi.org/project/zon-format/)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Tests](https://img.shields.io/badge/tests-121%2F121%20passing-brightgreen.svg)](#quality--testing)
+[![Tests](https://img.shields.io/badge/tests-220%2F220%20passing-brightgreen.svg)](#quality--testing)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-# ZON → JSON is dead. TOON was cute. ZON just won. (Now in Python)
+# ZON → JSON is dead. TOON was cute. ZON just won. (Now in Python v1.1.0)
 
 **Zero Overhead Notation** - A compact, human-readable way to encode JSON for LLMs.
 
 **File Extension:** `.zonf` | **Media Type:** `text/zon` | **Encoding:** UTF-8
 
-ZON is a token-efficient serialization format designed for LLM workflows. It achieves 35-50% token reduction vs JSON through tabular encoding, single-character primitives, and intelligent compression while maintaining 100% data fidelity.
+ZON is a token-efficient serialization format designed for LLM workflows. It achieves 35-50% token reduction vs JSON through tabular encoding, single-character primitives, and intelligent compression (Delta, Dictionary) while maintaining 100% data fidelity.
 
 Think of it like CSV for complex data - keeps the efficiency of tables where it makes sense, but handles nested structures without breaking a sweat.
 
@@ -460,11 +460,23 @@ data = zon.decode(zon_string, strict=False)
 
 ## Installation & Quick Start
 
-### From PyPI (Recommended)
+### Installation
 
+**Using pip (traditional):**
 ```bash
 pip install zon-format
 ```
+
+**Using UV (faster alternative):**
+```bash
+# Install with UV (5-10x faster than pip)
+uv pip install zon-format
+
+# Or for UV-based projects
+uv add zon-format
+```
+
+> **What is UV?** [UV](https://github.com/astral-sh/uv) is a blazing-fast Python package installer and resolver, written in Rust. It's a drop-in replacement for pip that's 10-100x faster.
 
 ### Basic Usage
 

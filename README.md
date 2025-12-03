@@ -24,6 +24,12 @@ Think of it like CSV for complex data - keeps the efficiency of tables where it 
 
 ```bash
 pip install zon-format
+
+# Install with UV (5-10x faster than pip)
+uv pip install zon-format
+
+# Or for UV-based projects
+uv add zon-format
 ```
 
 > [!TIP]

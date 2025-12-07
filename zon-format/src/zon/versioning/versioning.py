@@ -89,7 +89,7 @@ def embed_version(
         version=version,
         schema_id=schema_id,
         encoding=encoding,
-        timestamp=int(time.time() * 1000)  # milliseconds
+        timestamp=int(time.time_ns() // 1_000_000)  # milliseconds
     )
     
     return {

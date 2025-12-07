@@ -126,7 +126,9 @@ class BinaryZonEncoder:
             self._write_uint32(length)
         
         for key, val in value.items():
-            self._encode_string(str(key))
+            if not isinstance(key, str):
+                key = str(key)
+            self._encode_string(key)
             self._encode_value(val)
     
     def _write_uint16(self, value: int) -> None:

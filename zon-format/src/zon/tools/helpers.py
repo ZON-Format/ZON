@@ -56,14 +56,21 @@ def compare_formats(data: Any) -> Dict[str, Any]:
     binary_size = size(data, 'binary')
     json_size = size(data, 'json')
     
+    def calc_savings(smaller: int, larger: int) -> float:
+        if larger == 0:
+            return 0.0
+        if smaller == 0:
+            return 100.0
+        return (1 - smaller / larger) * 100
+    
     return {
         'zon': zon_size,
         'binary': binary_size,
         'json': json_size,
         'savings': {
-            'zon_vs_json': ((1 - zon_size / json_size) * 100) if json_size > 0 else 0,
-            'binary_vs_json': ((1 - binary_size / json_size) * 100) if json_size > 0 else 0,
-            'binary_vs_zon': ((1 - binary_size / zon_size) * 100) if zon_size > 0 else 0
+            'zon_vs_json': calc_savings(zon_size, json_size),
+            'binary_vs_json': calc_savings(binary_size, json_size),
+            'binary_vs_zon': calc_savings(binary_size, zon_size)
         }
     }
 

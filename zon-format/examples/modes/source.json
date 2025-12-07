@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Smith",
+      "role": "admin",
+      "active": true,
+      "email": "alice@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Bob Jones",
+      "role": "user",
+      "active": true,
+      "email": "bob@example.com"
+    },
+    {
+      "id": 3,
+      "name": "Carol White",
+      "role": "guest",
+      "active": false,
+      "email": "carol@example.com"
+    }
+  ],
+  "metadata": {
+    "version": "1.2.0",
+    "timestamp": "2024-12-07T08:00:00Z",
+    "source": "demo"
+  }
+}

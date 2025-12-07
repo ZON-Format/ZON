@@ -29,6 +29,13 @@ from .core.analyzer import (
     ComplexityMetrics,
     AnalysisResult
 )
+from .binary import (
+    encode_binary,
+    decode_binary,
+    BinaryZonEncoder,
+    BinaryZonDecoder,
+    MAGIC_HEADER
+)
 from .llm.optimizer import LLMOptimizer
 from .llm.token_counter import TokenCounter
 from .schema.inference import TypeInferrer
@@ -42,15 +49,20 @@ __all__ = [
     "encode", 
     "encode_llm",
     "encode_adaptive",
+    "encode_binary",
     "recommend_mode",
     "ZonEncoder",
     "AdaptiveEncoder",
     "AdaptiveEncodeOptions",
     "AdaptiveEncodeResult",
+    "BinaryZonEncoder",
+    "BinaryZonDecoder",
+    "MAGIC_HEADER",
     "DataComplexityAnalyzer",
     "ComplexityMetrics",
     "AnalysisResult",
     "decode", 
+    "decode_binary",
     "ZonDecoder",
     "ZonStreamEncoder",
     "ZonStreamDecoder",

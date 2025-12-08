@@ -21,6 +21,11 @@ from .validator import (
     LintOptions
 )
 
+from .printer import (
+    expand_print,
+    compact_print
+)
+
 __all__ = [
     'size',
     'compare_formats',
@@ -34,4 +39,6 @@ __all__ = [
     'ValidationError',
     'ValidationWarning',
     'LintOptions',
+    'expand_print',
+    'compact_print',
 ]

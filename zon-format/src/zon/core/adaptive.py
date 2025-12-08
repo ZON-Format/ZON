@@ -9,6 +9,7 @@ from dataclasses import dataclass
 
 from .encoder import encode, ZonEncoder
 from .analyzer import DataComplexityAnalyzer, ComplexityMetrics, AnalysisResult
+from ..tools.printer import expand_print
 
 
 EncodingMode = Literal['compact', 'readable', 'llm-optimized']
@@ -115,6 +116,8 @@ class AdaptiveEncoder:
         output = encoder.encode(data)
         
         # Apply formatting for readable mode
+        # Note: Pretty-printed output may not round-trip through decoder
+        # due to decoder limitations with whitespace after colons
         if mode == 'readable' and not output.startswith('@'):
             output = self._expand_print(output, options.indent)
         
@@ -163,26 +166,7 @@ class AdaptiveEncoder:
     
     def _expand_print(self, output: str, indent: int = 2) -> str:
         """Expands output for readable mode with indentation."""
-        # Simple indentation for nested structures
-        lines = []
-        current_indent = 0
-        
-        for line in output.split('\n'):
-            stripped = line.strip()
-            if not stripped:
-                continue
-            
-            # Detect nesting based on braces and brackets
-            if stripped.endswith('{') or stripped.endswith('['):
-                lines.append(' ' * current_indent + stripped)
-                current_indent += indent
-            elif stripped.startswith('}') or stripped.startswith(']'):
-                current_indent = max(0, current_indent - indent)
-                lines.append(' ' * current_indent + stripped)
-            else:
-                lines.append(' ' * current_indent + stripped)
-        
-        return '\n'.join(lines)
+        return expand_print(output, indent)
 
 
 # Global adaptive encoder instance

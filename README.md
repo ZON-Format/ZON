@@ -4,10 +4,10 @@
 [![PyPI downloads](https://img.shields.io/pypi/dm/zon-format?color=red)](https://pypi.org/project/zon-format/)
 [![PyPI version](https://img.shields.io/pypi/v/zon-format.svg)](https://pypi.org/project/zon-format/)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Tests](https://img.shields.io/badge/tests-220%2F220%20passing-brightgreen.svg)](#quality--testing)
+[![Tests](https://img.shields.io/badge/tests-340%2F340%20passing-brightgreen.svg)](#quality--testing)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-# ZON → JSON is dead. TOON was cute. ZON just won. (Now in Python v1.2.0)
+# ZON → JSON is dead. TOON was cute. ZON just won. (Python v1.2.0 - Now with Binary Format, Versioning & Enterprise Tools)
 
 **Zero Overhead Notation** - A compact, human-readable way to encode JSON for LLMs.
 
@@ -425,12 +425,162 @@ ZON is **immune to code injection attacks** that plague other formats:
 
 ---
 
+## New in v1.2.0: Enterprise Features
+
+### Binary Format (ZON-B)
+
+Compact binary encoding with 40-60% space savings vs JSON:
+
+```python
+from zon import encode_binary, decode_binary
+
+# Encode to binary
+data = {"users": [{"id": 1, "name": "Alice"}, {"id": 2, "name": "Bob"}]}
+binary = encode_binary(data)  # 40-60% smaller than JSON
+
+# Decode from binary
+decoded = decode_binary(binary)
+```
+
+**Features:**
+- MessagePack-inspired format with magic header (`ZNB\x01`)
+- Full type support for all ZON primitives
+- Perfect round-trip fidelity
+- Ideal for storage, APIs, and network transmission
+
+### Versioning & Migration System
+
+Document-level schema versioning with automatic migrations:
+
+```python
+from zon import embed_version, extract_version, ZonMigrationManager
+
+# Embed version metadata
+versioned = embed_version(data, "2.0.0", "user-schema")
+
+# Extract version info
+meta = extract_version(versioned)
+
+# Setup migration manager
+manager = ZonMigrationManager()
+manager.register_migration("1.0.0", "2.0.0", upgrade_function)
+
+# Automatically migrate
+migrated = manager.migrate(old_data, "1.0.0", "2.0.0")
+```
+
+**Features:**
+- Semantic versioning support
+- BFS-based migration path finding
+- Backward/forward compatibility checking
+- Chained migrations for complex upgrades
+
+### Adaptive Encoding
+
+Three encoding modes optimized for different use cases:
+
+```python
+from zon import encode_adaptive, recommend_mode, AdaptiveEncodeOptions
+
+# Auto-recommend best mode
+recommendation = recommend_mode(data)
+# {'mode': 'compact', 'confidence': 0.95, 'reason': 'Large uniform array...'}
+
+# Compact mode - maximum compression
+compact = encode_adaptive(data, AdaptiveEncodeOptions(mode='compact'))
+
+# Readable mode - pretty-printed with indentation
+readable = encode_adaptive(data, AdaptiveEncodeOptions(mode='readable', indent=2))
+
+# LLM-optimized - balanced for AI workflows
+llm = encode_adaptive(data, AdaptiveEncodeOptions(mode='llm-optimized'))
+```
+
+**Encoding Modes:**
+
+| Mode | Best For | Features |
+|------|----------|----------|
+| **compact** | Production APIs | Maximum compression, T/F booleans |
+| **readable** | Config files | Multi-line indentation, human-friendly |
+| **llm-optimized** | AI workflows | true/false booleans, no type coercion |
+
+**Readable Mode Example:**
+```zon
+metadata:{
+  generated:2025-01-01T12:00:00Z
+  version:1.2.0
+}
+
+users:@(2):id,name,role
+1,Alice,admin
+2,Bob,user
+```
+
+### Developer Tools
+
+Comprehensive utilities for working with ZON data:
+
+```python
+from zon import size, compare_formats, analyze, ZonValidator
+
+# Analyze data size across formats
+comparison = compare_formats(data)
+# {'json': {'size': 1200, 'percentage': 100.0},
+#  'zon': {'size': 800, 'percentage': 66.7},
+#  'binary': {'size': 480, 'percentage': 40.0}}
+
+# Data complexity analysis
+analysis = analyze(data)
+# {'depth': 3, 'complexity': 'moderate', 'recommended_format': 'zon'}
+
+# Enhanced validation
+validator = ZonValidator()
+result = validator.validate(zon_string)
+if not result.is_valid:
+    for error in result.errors:
+        print(f"Error at line {error.line}: {error.message}")
+```
+
+**Tools Available:**
+- `size()` - Calculate data size in different formats
+- `compare_formats()` - Compare JSON/ZON/Binary sizes
+- `analyze()` - Comprehensive data structure analysis
+- `infer_schema()` - Automatic schema inference
+- `ZonValidator` - Enhanced validation with linting rules
+- `expand_print()` - Pretty-printer for readable formatting
+
+### Complete API
+
+```python
+from zon import (
+    # Core encoding
+    encode, decode, encode_llm,
+    
+    # Adaptive encoding (v1.2.0)
+    encode_adaptive, recommend_mode, AdaptiveEncodeOptions,
+    
+    # Binary format (v1.2.0)
+    encode_binary, decode_binary,
+    
+    # Versioning (v1.2.0)
+    embed_version, extract_version, compare_versions,
+    is_compatible, strip_version, ZonMigrationManager,
+    
+    # Developer tools (v1.2.0)
+    size, compare_formats, analyze, infer_schema,
+    compare, is_safe, ZonValidator, expand_print
+)
+```
+
+---
+
 ## Quality & Security
 
 ### Data Integrity
-- **Unit tests:** 94/94 passed (+66 new validation/security/conformance tests)
-- **Roundtrip tests:** 27/27 datasets verified
+- **Unit tests:** 340/340 passed (v1.2.0 adds 103 new tests for binary, versioning, tools)
+- **Roundtrip tests:** 27/27 datasets verified + 51 cross-language examples
 - **No data loss or corruption**
+- **Cross-language compatibility:** 51% exact match with TypeScript v1.3.0
 
 ### Security Limits (DOS Prevention)
 

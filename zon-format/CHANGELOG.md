@@ -27,11 +27,14 @@ This release brings major enhancements aligned with the TypeScript v1.3.0 implem
 - **Data Complexity Analyzer**: Automatic analysis of nesting depth, irregularity, field count
 - **Mode Recommendation**: `recommend_mode()` suggests optimal encoding based on data structure
 - **Intelligent Format Selection**: `encode_adaptive()` with customizable options
+- **Readable Mode Enhancement**: Pretty-printing with indentation and multi-line nested objects
+- **LLM Mode Enhancement**: Long booleans (`true`/`false`) and integer type preservation
 - **Test Coverage**: 17 tests for adaptive encoding functionality
 
 #### Developer Tools
 - **Helper Utilities**: `size()`, `compare_formats()`, `analyze()`, `infer_schema()`, `compare()`, `is_safe()`
 - **Enhanced Validator**: `ZonValidator` with linting rules for depth, fields, performance
+- **Pretty Printer**: `expand_print()` for readable mode with multi-line formatting and indentation
 - **Test Coverage**: 37 tests for developer tools
 
 ### Changed

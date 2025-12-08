@@ -146,7 +146,8 @@ class AdaptiveEncoder:
         decisions.append('Readable mode: optimizing for human readability')
         return {
             'enable_dict_compression': False,
-            'enable_type_coercion': False
+            'enable_type_coercion': False,
+            'use_long_booleans': True  # Use true/false for readability
         }
     
     def _get_llm_optimized_options(

@@ -5,6 +5,6 @@ metadata:{
 }
 
 users:@(3):active,email,id,name,role
-T,alice@example.com,1,Alice Smith,admin
-T,bob@example.com,2,Bob Jones,user
-F,carol@example.com,3,Carol White,guest
+true,alice@example.com,1,Alice Smith,admin
+true,bob@example.com,2,Bob Jones,user
+false,carol@example.com,3,Carol White,guest

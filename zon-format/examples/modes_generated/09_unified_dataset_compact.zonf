@@ -1,0 +1,12 @@
+config{cache{enabled:T,nodes[redis-1,redis-2,redis-3],provider:redis,ttl:3600},database{host:db-primary.internal,poolSize:50,port:5432,replicas[{host:db-read-1.internal,priority:10},{host:db-read-2.internal,priority:5}],timeout:30000},features{analytics{enabled:T,sampleRate:0.5},betaAccess:F,darkMode:T}}
+feed[{author:tech_guru,content:ZON is the future of data serialization!,id:f1,likes:120,shares:45,type:post},{author:dev_jane,content:"Totally agree, the token savings are insane.",id:f2,likes:30,replyTo:f1,type:comment},{clickCount:500,content:Deploy your ZON apps instantly.,id:f3,sponsor:CloudCorp,type:ad}]
+logs[{id:101,level:INFO,message:System startup,source:kernel,timestamp:2025-02-01T10:00:00Z},{id:102,latency:12,level:INFO,message:Database connected,source:db-pool,timestamp:2025-02-01T10:00:05Z},{id:103,level:WARN,message:High memory usage,source:monitor,timestamp:2025-02-01T10:01:20Z,usage:85},{id:104,level:ERROR,message:Connection timeout,requestId:req-abc-123,source:api-gateway,timestamp:2025-02-01T10:05:00Z},{id:105,level:INFO,message:Scheduled backup started,source:backup-service,timestamp:2025-02-01T10:10:00Z},{duration:300,id:106,level:INFO,message:Scheduled backup completed,source:backup-service,timestamp:2025-02-01T10:15:00Z}]
+metadata{location:us-east-1,systemId:SYS-CORE-001,tags[production,critical,web-cluster],uptime:1245600,version:2.5.0}
+products[{category:Electronics,id:p1,inStock:T,name:Wireless Headphones,price:99.99,tags[audio,bluetooth,sale]},{category:Furniture,id:p2,inStock:F,name:Ergonomic Chair,price:249.5,tags[office,comfort]},{category:Electronics,id:p3,inStock:T,name:Gaming Mouse,price:59.99,tags[gaming,rgb]}]
+
+users:@(5):id:delta,loginCount:delta,active,lastLogin,name,role
+1,154,T,2025-02-01T08:30:00Z,Alice Admin,admin
++1,-65,T,2025-02-01T09:15:00Z,Bob Builder,dev
++1,-47,F,2025-01-28T14:20:00Z,Charlie Check,qa
++1,+168,T,2025-02-01T07:45:00Z,Dave Deploy,ops
++1,-205,T,2025-02-01T10:00:00Z,Eve External,guest

@@ -1,0 +1,18 @@
+config: {
+  database: {
+    primary: {
+      host:db-01
+      port:5432
+      ssl:T
+    }
+    replica: {
+      host:db-02
+      port:5432
+      ssl:T
+    }
+  }
+  features: {
+    beta:T
+    deprecated:[v1,v2]
+  }
+}

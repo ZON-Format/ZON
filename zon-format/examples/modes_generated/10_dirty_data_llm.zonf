@@ -1,0 +1,2 @@
+edge_cases{empty_arr[],empty_obj{},mixed_arr[1,two,T,null,{a:1},[2]],nested_empty{a{},b[]}}
+primitives{booleans[T,F],floats[0,1.1,-1.1,3.14159,-2.71828,15000000000,1.5e-10],integers[0,1,-1,42,-42,9007199254740991,-9007199254740991],nulls[null],strings[""," ",simple,with spaces,"with, comma",with: colon,"with \"quotes\"",with 'single quotes',with \n newline,https://example.com/path?query=1&param=2,"special: !@#$%^&*()_+{}[]|\\\\:;\"'<>,.?/~`"]}

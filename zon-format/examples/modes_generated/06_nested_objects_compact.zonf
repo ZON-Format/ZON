@@ -1,0 +1,6 @@
+customer{address{city:Wonderland,street:123 Main St},name:Alice}
+orderId:ORD-123
+
+items:@(2):price,productId,qty
+10.5,P1,2
+20,P2,1

@@ -1,0 +1,1 @@
+app{database{primary{connection:db://primary},replica{connection:db://replica}},server{host:localhost,options{retry:3,timeout:5000},port:8080}}

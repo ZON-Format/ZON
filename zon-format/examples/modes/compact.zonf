@@ -1,0 +1,6 @@
+metadata{source:demo,timestamp:2024-12-07T08:00:00Z,version:1.2.0}
+
+users:@(3):active,email,id,name,role
+T,alice@example.com,1,Alice Smith,admin
+T,bob@example.com,2,Bob Jones,user
+F,carol@example.com,3,Carol White,guest

@@ -1,5 +1,53 @@
 # Changelog
 
+## [1.2.0] - 2024-12-07
+
+### Major Release: Enterprise Features & Production Readiness
+
+This release brings major enhancements aligned with the TypeScript v1.3.0 implementation, focusing on adaptive encoding, binary format, versioning, developer tools, and production-ready features.
+
+### Added
+
+#### Binary Format (ZON-B)
+- **MessagePack-Inspired Encoding**: Compact binary format with magic header (`ZNB\x01`)
+- **40-60% Space Savings**: Significantly smaller than JSON while maintaining structure
+- **Full Type Support**: Primitives, arrays, objects, nested structures
+- **APIs**: `encode_binary()`, `decode_binary()` with round-trip validation
+- **Test Coverage**: 27 tests for binary format
+
+#### Document-Level Schema Versioning
+- **Version Embedding/Extraction**: `embed_version()` and `extract_version()` for metadata management
+- **Migration Manager**: `ZonMigrationManager` with BFS path-finding for schema evolution
+- **Backward/Forward Compatibility**: Automatic migration between schema versions
+- **Utilities**: `compare_versions()`, `is_compatible()`, `strip_version()`
+- **Test Coverage**: 39 tests covering all versioning scenarios
+
+#### Adaptive Encoding System
+- **3 Encoding Modes**: `compact`, `readable`, `llm-optimized` for optimal output
+- **Data Complexity Analyzer**: Automatic analysis of nesting depth, irregularity, field count
+- **Mode Recommendation**: `recommend_mode()` suggests optimal encoding based on data structure
+- **Intelligent Format Selection**: `encode_adaptive()` with customizable options
+- **Readable Mode Enhancement**: Pretty-printing with indentation and multi-line nested objects
+- **LLM Mode Enhancement**: Long booleans (`true`/`false`) and integer type preservation
+- **Test Coverage**: 17 tests for adaptive encoding functionality
+
+#### Developer Tools
+- **Helper Utilities**: `size()`, `compare_formats()`, `analyze()`, `infer_schema()`, `compare()`, `is_safe()`
+- **Enhanced Validator**: `ZonValidator` with linting rules for depth, fields, performance
+- **Pretty Printer**: `expand_print()` for readable mode with multi-line formatting and indentation
+- **Test Coverage**: 37 tests for developer tools
+
+### Changed
+- **Version**: Updated to 1.2.0 for feature parity with TypeScript package
+- **API**: Expanded exports to include binary, versioning, and tools modules
+- **Documentation**: Aligned with TypeScript v1.3.0 feature set
+
+### Performance
+- **Binary Format**: 40-60% smaller than JSON
+- **ZON Text**: Maintains 16-19% smaller than JSON
+- **Adaptive Selection**: Automatically chooses best encoding for your data
+- **Test Suite**: All 340 tests passing (up from 237)
+
 ## [1.1.0] - 2024-12-01
 
 ### Added

@@ -1,0 +1,1 @@
+level1{children[{config{settings{deep{deeper{deepest:value}}}},id:L2-A,items[{id:L3-A1,tags[a,b],val:10},{id:L3-A2,tags[c],val:20}],type:group},{data[{x:1,y:2},{x:3,y:4,z:5},{x:6}],id:L2-B,type:leaf}],id:L1,meta{active:T,created:2025-01-01}}

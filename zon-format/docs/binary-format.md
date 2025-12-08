@@ -328,15 +328,38 @@ binary = encode_binary(data)
 
 ## CLI Support
 
+The CLI currently focuses on text ZON format. For binary format operations, use the Python API:
+
 ```bash
-# Convert JSON to ZON-B
-zon convert data.json --to=binary > data.zonb
+# Encode JSON to text ZON
+zon encode data.json -o output.zonf
 
-# Convert ZON-B to JSON
-zon convert data.zonb --to=json > data.json
+# Decode ZON to JSON
+zon decode output.zonf --pretty -o result.json
 
-# Compare sizes
-zon analyze data.json --format=binary
+# Analyze data and compare sizes
+zon analyze data.json --compare
+```
+
+For binary format, use Python:
+
+```python
+from zon import encode_binary, decode_binary
+import json
+
+# JSON to ZON-B
+with open('data.json') as f:
+    data = json.load(f)
+binary = encode_binary(data)
+with open('data.zonb', 'wb') as f:
+    f.write(binary)
+
+# ZON-B to JSON
+with open('data.zonb', 'rb') as f:
+    binary = f.read()
+data = decode_binary(binary)
+with open('result.json', 'w') as f:
+    json.dump(data, f)
 ```
 
 ## Further Reading

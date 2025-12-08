@@ -1,0 +1,7 @@
+department[1]:Engineering
+@5:department,active,id,name,role
+0,T,1,User 1,admin
+0,T,2,User 2,user
+0,T,3,User 3,admin
+0,T,4,User 4,user
+0,T,5,User 5,admin

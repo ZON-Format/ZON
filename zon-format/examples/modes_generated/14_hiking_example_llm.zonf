@@ -1,0 +1,7 @@
+context{location:Boulder,season:spring_2025,task:Our favorite hikes together}
+friends[ana,luis,sam]
+
+hikes:@(3):companion,distanceKm,elevationGain,id,name,wasSunny
+ana,7.5,320,1,Blue Lake Trail,true
+luis,9.2,540,2,Ridge Overlook,false
+sam,5.1,180,3,Wildflower Loop,true

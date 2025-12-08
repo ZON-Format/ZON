@@ -34,7 +34,8 @@ class ZonEncoder:
         self, 
         anchor_interval: int = DEFAULT_ANCHOR_INTERVAL,
         enable_dict_compression: bool = True,
-        enable_type_coercion: bool = False
+        enable_type_coercion: bool = False,
+        use_long_booleans: bool = False
     ):
         """Initialize the ZON encoder.
         
@@ -42,11 +43,13 @@ class ZonEncoder:
             anchor_interval: Interval for anchor points in streams
             enable_dict_compression: Enable dictionary compression for repeated values
             enable_type_coercion: Enable type coercion for string values
+            use_long_booleans: Use 'true'/'false' instead of 'T'/'F' for LLM clarity
         """
         self.anchor_interval = anchor_interval
         self._safe_str_re = re.compile(r'^[a-zA-Z0-9_\-\.]+$')
         self.enable_dict_compression = enable_dict_compression
         self.enable_type_coercion = enable_type_coercion
+        self.use_long_booleans = use_long_booleans
         self.type_inferrer = TypeInferrer()
 
     def encode(self, data: Any) -> str:
@@ -702,12 +705,11 @@ class ZonEncoder:
         """
         if val is None:
             return "null"
-        if val is True:
-            return "T"
-        if val is False:
-            return "F"
         if isinstance(val, bool):
-            return "T" if val else "F"
+            if self.use_long_booleans:
+                return "true" if val else "false"
+            else:
+                return "T" if val else "F"
         if isinstance(val, (int, float)):
             if isinstance(val, float):
                 if not math.isfinite(val):

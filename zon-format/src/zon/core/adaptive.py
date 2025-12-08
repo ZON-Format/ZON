@@ -107,7 +107,8 @@ class AdaptiveEncoder:
         # Create encoder with the selected options
         encoder = ZonEncoder(
             enable_dict_compression=encode_options.get('enable_dict_compression', True),
-            enable_type_coercion=encode_options.get('enable_type_coercion', False)
+            enable_type_coercion=encode_options.get('enable_type_coercion', False),
+            use_long_booleans=encode_options.get('use_long_booleans', False)
         )
         
         # Encode data
@@ -156,7 +157,8 @@ class AdaptiveEncoder:
         # For LLMs, prioritize clarity over compression
         return {
             'enable_dict_compression': False,  # Show actual values
-            'enable_type_coercion': True       # Use true/false for clarity
+            'enable_type_coercion': False,     # Keep original types
+            'use_long_booleans': True          # Use true/false for clarity
         }
     
     def _expand_print(self, output: str, indent: int = 2) -> str:

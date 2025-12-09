@@ -1,17 +1,18 @@
 # Zero Overhead Notation (ZON) Format
 
 [![GitHub stars](https://img.shields.io/github/stars/ZON-Format/ZON?style=social&label=Star)](https://github.com/ZON-Format/ZON)
-[![PyPI downloads](https://img.shields.io/pypi/dm/zon-format?color=red)](https://pypi.org/project/zon-format/)
+[![Downloads](https://static.pepy.tech/badge/zon-format/month)](https://pepy.tech/project/zon-format)
 [![PyPI version](https://img.shields.io/pypi/v/zon-format.svg)](https://pypi.org/project/zon-format/)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Tests](https://img.shields.io/badge/tests-121%2F121%20passing-brightgreen.svg)](#quality--testing)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Tests](https://img.shields.io/badge/tests-340%2F340%20passing-brightgreen.svg)](#quality--testing)
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/ZON-Format/ZON?utm_source=oss&utm_medium=github&utm_campaign=ZON-Format%2FZON&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](../LICENSE)
 
-# ZON → JSON is dead. TOON was cute. ZON just won. (Now in Python v1.1.0)
+# ZON → JSON is dead. TOON was cute. ZON just won. (Python v1.2.0 - Now with Binary Format, Versioning & Enterprise Tools)
 
 **Zero Overhead Notation** - A compact, human-readable way to encode JSON for LLMs.
 
-**File Extension:** `.zonf` | **Media Type:** `text/zon` | **Encoding:** UTF-8
+**File Extension:** `.zonf` | **Media Type:** `text/zonf` | **Encoding:** UTF-8
 
 ZON is a token-efficient serialization format designed for LLM workflows. It achieves 35-50% token reduction vs JSON through tabular encoding, single-character primitives, and intelligent compression (Delta, Dictionary) while maintaining 100% data fidelity.
 
@@ -24,6 +25,12 @@ Think of it like CSV for complex data - keeps the efficiency of tables where it 
 
 ```bash
 pip install zon-format
+
+# Install with UV (5-10x faster than pip)
+uv pip install zon-format
+
+# Or for UV-based projects
+uv add zon-format
 ```
 
 > [!TIP]
@@ -419,12 +426,162 @@ ZON is **immune to code injection attacks** that plague other formats:
 
 ---
 
+## New in v1.2.0: Enterprise Features
+
+### Binary Format (ZON-B)
+
+Compact binary encoding with 40-60% space savings vs JSON:
+
+```python
+from zon import encode_binary, decode_binary
+
+# Encode to binary
+data = {"users": [{"id": 1, "name": "Alice"}, {"id": 2, "name": "Bob"}]}
+binary = encode_binary(data)  # 40-60% smaller than JSON
+
+# Decode from binary
+decoded = decode_binary(binary)
+```
+
+**Features:**
+- MessagePack-inspired format with magic header (`ZNB\x01`)
+- Full type support for all ZON primitives
+- Perfect round-trip fidelity
+- Ideal for storage, APIs, and network transmission
+
+### Versioning & Migration System
+
+Document-level schema versioning with automatic migrations:
+
+```python
+from zon import embed_version, extract_version, ZonMigrationManager
+
+# Embed version metadata
+versioned = embed_version(data, "2.0.0", "user-schema")
+
+# Extract version info
+meta = extract_version(versioned)
+
+# Setup migration manager
+manager = ZonMigrationManager()
+manager.register_migration("1.0.0", "2.0.0", upgrade_function)
+
+# Automatically migrate
+migrated = manager.migrate(old_data, "1.0.0", "2.0.0")
+```
+
+**Features:**
+- Semantic versioning support
+- BFS-based migration path finding
+- Backward/forward compatibility checking
+- Chained migrations for complex upgrades
+
+### Adaptive Encoding
+
+Three encoding modes optimized for different use cases:
+
+```python
+from zon import encode_adaptive, recommend_mode, AdaptiveEncodeOptions
+
+# Auto-recommend best mode
+recommendation = recommend_mode(data)
+# {'mode': 'compact', 'confidence': 0.95, 'reason': 'Large uniform array...'}
+
+# Compact mode - maximum compression
+compact = encode_adaptive(data, AdaptiveEncodeOptions(mode='compact'))
+
+# Readable mode - pretty-printed with indentation
+readable = encode_adaptive(data, AdaptiveEncodeOptions(mode='readable', indent=2))
+
+# LLM-optimized - balanced for AI workflows
+llm = encode_adaptive(data, AdaptiveEncodeOptions(mode='llm-optimized'))
+```
+
+**Encoding Modes:**
+
+| Mode | Best For | Features |
+|------|----------|----------|
+| **compact** | Production APIs | Maximum compression, T/F booleans |
+| **readable** | Config files | Multi-line indentation, human-friendly |
+| **llm-optimized** | AI workflows | true/false booleans, no type coercion |
+
+**Readable Mode Example:**
+```zon
+metadata:{
+  generated:2025-01-01T12:00:00Z
+  version:1.2.0
+}
+
+users:@(2):id,name,role
+1,Alice,admin
+2,Bob,user
+```
+
+### Developer Tools
+
+Comprehensive utilities for working with ZON data:
+
+```python
+from zon import size, compare_formats, analyze, ZonValidator
+
+# Analyze data size across formats
+comparison = compare_formats(data)
+# {'json': {'size': 1200, 'percentage': 100.0},
+#  'zon': {'size': 800, 'percentage': 66.7},
+#  'binary': {'size': 480, 'percentage': 40.0}}
+
+# Data complexity analysis
+analysis = analyze(data)
+# {'depth': 3, 'complexity': 'moderate', 'recommended_format': 'zon'}
+
+# Enhanced validation
+validator = ZonValidator()
+result = validator.validate(zon_string)
+if not result.is_valid:
+    for error in result.errors:
+        print(f"Error at line {error.line}: {error.message}")
+```
+
+**Tools Available:**
+- `size()` - Calculate data size in different formats
+- `compare_formats()` - Compare JSON/ZON/Binary sizes
+- `analyze()` - Comprehensive data structure analysis
+- `infer_schema()` - Automatic schema inference
+- `ZonValidator` - Enhanced validation with linting rules
+- `expand_print()` - Pretty-printer for readable formatting
+
+### Complete API
+
+```python
+from zon import (
+    # Core encoding
+    encode, decode, encode_llm,
+    
+    # Adaptive encoding (v1.2.0)
+    encode_adaptive, recommend_mode, AdaptiveEncodeOptions,
+    
+    # Binary format (v1.2.0)
+    encode_binary, decode_binary,
+    
+    # Versioning (v1.2.0)
+    embed_version, extract_version, compare_versions,
+    is_compatible, strip_version, ZonMigrationManager,
+    
+    # Developer tools (v1.2.0)
+    size, compare_formats, analyze, infer_schema,
+    compare, is_safe, ZonValidator, expand_print
+)
+```
+
+---
+
 ## Quality & Security
 
 ### Data Integrity
-- **Unit tests:** 94/94 passed (+66 new validation/security/conformance tests)
-- **Roundtrip tests:** 27/27 datasets verified
+- **Unit tests:** 340/340 passed (v1.2.0 adds 103 new tests for binary, versioning, tools)
+- **Roundtrip tests:** 27/27 datasets verified + 51 cross-language examples
 - **No data loss or corruption**
+- **Cross-language compatibility:** 51% exact match with TypeScript v1.3.0
 
 ### Security Limits (DOS Prevention)
 
@@ -565,6 +722,56 @@ logs:"[{id:101,level:INFO},{id:102,level:WARN}]"
 
 ---
 
+## Encoding Modes (New in v1.2.0)
+
+ZON now provides **three encoding modes** optimized for different use cases:
+
+### Mode Overview
+
+| Mode | Best For | Token Efficiency | Human Readable | LLM Clarity | Default |
+|------|----------|------------------|----------------|-------------|---------|
+| **compact** | Production APIs, LLMs | ⭐⭐⭐⭐⭐ | ⭐⭐ | ⭐⭐⭐⭐ | ✅ YES |
+| **llm-optimized** | AI workflows | ⭐⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | |
+| **readable** | Config files, debugging | ⭐⭐ | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | |
+
+### Adaptive Encoding
+
+```python
+from zon import encode_adaptive, AdaptiveEncodeOptions, recommend_mode
+
+# Use compact mode (default - maximum compression)
+output = encode_adaptive(data)
+
+# Use readable mode (human-friendly)
+output = encode_adaptive(data, AdaptiveEncodeOptions(mode='readable'))
+
+# Use LLM-optimized mode (balanced for AI)
+output = encode_adaptive(data, AdaptiveEncodeOptions(mode='llm-optimized'))
+
+# Get recommendation for your data
+recommendation = recommend_mode(data)
+print(f"Use {recommendation['mode']} mode: {recommendation['reason']}")
+```
+
+### Mode Details
+
+**Compact Mode (Default)**
+- Maximum compression using tables and abbreviations (`T`/`F` for booleans)
+- Dictionary compression for repeated values
+- Best for production APIs and cost-sensitive LLM workflows
+
+**LLM-Optimized Mode**
+- Balances token efficiency with AI comprehension
+- Uses `true`/`false` instead of `T`/`F` for better LLM understanding
+- Disables dictionary compression for clarity
+
+**Readable Mode**
+- Human-friendly formatting with proper indentation
+- Perfect for configuration files and debugging
+- Easy editing and version control
+
+---
+
 ## API Reference
 
 ### `zon.encode(data: Any) -> str`
@@ -583,6 +790,47 @@ zon_str = zon.encode({
 ```
 
 **Returns:** ZON-formatted string
+
+### `zon.encode_adaptive(data: Any, options: AdaptiveEncodeOptions = None) -> str`
+
+Encodes Python data using adaptive mode selection (New in v1.2.0).
+
+```python
+from zon import encode_adaptive, AdaptiveEncodeOptions
+
+# Compact mode (default)
+output = encode_adaptive(data)
+
+# Readable mode with custom indentation
+output = encode_adaptive(
+    data,
+    AdaptiveEncodeOptions(mode='readable', indent=4)
+)
+
+# With debug information
+result = encode_adaptive(
+    data,
+    AdaptiveEncodeOptions(mode='compact', debug=True)
+)
+print(result.decisions)  # See encoding decisions
+```
+
+**Returns:** ZON-formatted string or `AdaptiveEncodeResult` if debug=True
+
+### `zon.recommend_mode(data: Any) -> dict`
+
+Analyzes data and recommends optimal encoding mode (New in v1.2.0).
+
+```python
+from zon import recommend_mode
+
+recommendation = recommend_mode(my_data)
+print(f"Use {recommendation['mode']} mode")
+print(f"Confidence: {recommendation['confidence']}")
+print(f"Reason: {recommendation['reason']}")
+```
+
+**Returns:** Dictionary with mode, confidence, reason, and metrics
 
 ### `zon.decode(zon_string: str, strict: bool = True) -> Any`
 
@@ -744,9 +992,9 @@ zon_products = zon.encode(products)
 
 ## Documentation
 
-Comprehensive guides and references are available in the [`zon-format/docs/`](./zon-format/docs/) directory:
+Comprehensive guides and references are available in the [`./docs/`](./docs/) directory:
 
-### 📖 [Syntax Cheatsheet](./zon-format/docs/syntax-cheatsheet.md)
+### 📖 [Syntax Cheatsheet](./docs/syntax-cheatsheet.md)
 Quick reference for ZON format syntax with practical examples.
 
 **What's inside:**
@@ -761,7 +1009,7 @@ Quick reference for ZON format syntax with practical examples.
 
 ---
 
-### 🔧 [API Reference](./zon-format/docs/api-reference.md)
+### 🔧 [API Reference](./docs/api-reference.md)
 Complete API documentation for `zon-format` v1.0.4.
 
 **What's inside:**
@@ -769,7 +1017,7 @@ Complete API documentation for `zon-format` v1.0.4.
 - `decode()` function - detailed parameters and examples
 - Python type definitions
 
-### 📘 [Complete Specification](./SPEC.md)
+### 📘 [Complete Specification](../SPEC.md)
 
 Comprehensive formal specification including:
 - Data model and encoding rules
@@ -781,16 +1029,16 @@ Comprehensive formal specification including:
 
 ### 📚 Other Documentation
 
-- **[API Reference](./zon-format/docs/api-reference.md)** - Encoder/decoder API, options, error codes
-- **[Syntax Cheatsheet](./zon-format/docs/syntax-cheatsheet.md)** - Quick reference guide
-- **[LLM Best Practices](./zon-format/docs/llm-best-practices.md)** - Using ZON with LLMs
+- **[API Reference](./docs/api-reference.md)** - Encoder/decoder API, options, error codes
+- **[Syntax Cheatsheet](./docs/syntax-cheatsheet.md)** - Quick reference guide
+- **[LLM Best Practices](./docs/llm-best-practices.md)** - Using ZON with LLMs
 
 ---
 
 ## Links
 
 - [PyPI Package](https://pypi.org/project/zon-format/)
-- [Changelog](./zon-format/CHANGELOG.md)
+- [Changelog](./CHANGELOG.md)
 - [GitHub Repository](https://github.com/ZON-Format/ZON)
 - [GitHub Issues](https://github.com/ZON-Format/ZON/issues)
 - [TypeScript Implementation](https://github.com/ZON-Format/zon-TS)
@@ -811,10 +1059,10 @@ Contributions welcome! Please:
 
 Copyright (c) 2025 ZON-FORMAT (Roni Bhakta)
 
-MIT License - see [LICENSE](LICENSE) for details.
+MIT License - see [LICENSE](../LICENSE) for details.
 
 ---
 
 **Made with ❤️ for the LLM community**
 
-*ZON v1.0.4 - Token efficiency that scales with complexity*
+*ZON v1.2.0 - Token efficiency that scales with complexity, now with adaptive encoding*

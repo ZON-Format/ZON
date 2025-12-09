@@ -1,7 +1,7 @@
 # Zero Overhead Notation (ZON) Format
 
 [![GitHub stars](https://img.shields.io/github/stars/ZON-Format/ZON?style=social&label=Star)](https://github.com/ZON-Format/ZON)
-[![PyPI downloads](https://img.shields.io/pypi/dm/zon-format?color=red)](https://pypi.org/project/zon-format/)
+[![Downloads](https://static.pepy.tech/badge/zon-format/month)](https://pepy.tech/project/zon-format)
 [![PyPI version](https://img.shields.io/pypi/v/zon-format.svg)](https://pypi.org/project/zon-format/)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Tests](https://img.shields.io/badge/tests-340%2F340%20passing-brightgreen.svg)](#quality--testing)

@@ -6,6 +6,7 @@
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Tests](https://img.shields.io/badge/tests-340%2F340%20passing-brightgreen.svg)](#quality--testing)
 ![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/ZON-Format/ZON?utm_source=oss&utm_medium=github&utm_campaign=ZON-Format%2FZON&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ZON-Format/ZON)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 # ZON → JSON is dead. TOON was cute. ZON just won. (Python v1.2.0 - Now with Binary Format, Versioning & Enterprise Tools)

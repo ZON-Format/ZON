@@ -173,13 +173,17 @@ class ZonEncoder:
         if len(values) < 5:
             return SparseMode.NONE
 
-        is_numeric = True
+        # Only int columns are eligible for delta encoding. Float delta
+        # encoding cannot satisfy the spec §2.3 MUST round-trip requirement:
+        # prev + (cur - prev) in IEEE-754 does not preserve the original
+        # double's bit pattern for arbitrary floats.
+        is_int_only = True
         for val in values:
-            if not isinstance(val, (int, float)) or isinstance(val, bool):
-                is_numeric = False
+            if not isinstance(val, int) or isinstance(val, bool):
+                is_int_only = False
                 break
-        
-        if is_numeric:
+
+        if is_int_only:
             return SparseMode.DELTA
 
         return SparseMode.NONE

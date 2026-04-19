@@ -1,3 +1,4 @@
+import math
 import unittest
 from zon import ZonEncoder, ZonDecoder
 
@@ -107,12 +108,41 @@ class TestDeltaEncoding(unittest.TestCase):
         data = [
             {'a': {'b': {'c': {'d': {'e': 1}}}}}
         ]
-        
+
         encoded = self.encoder.encode(data)
         self.assertIn('a.b.c.d.e', encoded)
-        
+
         decoded = self.decoder.decode(encoded)
         self.assertEqual(decoded, data)
+
+    def test_float_column_roundtrip_is_lossless(self):
+        """Float columns must round-trip bit-exactly (spec §2.3 MUST).
+
+        Covers multiple precision regimes so a partial fix (e.g. round-to-N)
+        cannot sneak through.
+        """
+        data = [
+            {'v': 1865.43},     # benchmark regression case
+            {'v': 3579.16},     # benchmark regression case
+            {'v': math.pi},     # 17-sig-digit irrational
+            {'v': math.e},      # 17-sig-digit irrational
+            {'v': 0.1 + 0.2},   # classic non-terminating binary: 0.30000000000000004
+            {'v': -42.5},       # negative, crosses zero in deltas
+            {'v': 1e-10},       # small exponent
+            {'v': 1e15},        # large exponent
+        ]
+
+        decoded = self.decoder.decode(self.encoder.encode(data))
+
+        for original, got in zip(data, decoded):
+            # repr(float) is the shortest string that round-trips to the same
+            # double, so repr equality is equivalent to bit equality.
+            self.assertEqual(
+                repr(original['v']),
+                repr(got['v']),
+                f"float roundtrip lost precision: {original['v']!r} -> {got['v']!r}",
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
